@@ -1,0 +1,56 @@
+./linear-algebra/kernels/atax/atax_time
+38.936416
+./linear-algebra/kernels/atax/atax_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/bicg/bicg_time
+31.425344
+./linear-algebra/kernels/bicg/bicg_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/gemver/gemver_time
+285.196007
+./linear-algebra/kernels/gemver/gemver_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: cannot allocate memory 80000000000
+./linear-algebra/kernels/gesummv/gesummv_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/mvt/mvt_time
+256.774596
+./linear-algebra/kernels/mvt/mvt_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/trisolv/trisolv_time
+12.778781
+./linear-algebra/kernels/trisolv/trisolv_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: cannot allocate memory 80000000000
+./linear-algebra/solvers/durbin/durbin_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/atax/atax_time
+39.140003
+./linear-algebra/kernels/atax/atax_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/bicg/bicg_time
+31.120368
+./linear-algebra/kernels/bicg/bicg_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/gemver/gemver_time
+285.466486
+./linear-algebra/kernels/gemver/gemver_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: cannot allocate memory 80000000000
+./linear-algebra/kernels/gesummv/gesummv_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/mvt/mvt_time
+247.618005
+./linear-algebra/kernels/mvt/mvt_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/kernels/trisolv/trisolv_time
+12.798037
+./linear-algebra/kernels/trisolv/trisolv_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: cannot allocate memory 80000000000
+./linear-algebra/solvers/durbin/durbin_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device

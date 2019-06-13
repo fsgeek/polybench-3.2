@@ -1,0 +1,52 @@
+./linear-algebra/kernels/2mm/2mm_time
+1189.125041
+./linear-algebra/kernels/3mm/3mm_time
+1787.101994
+./linear-algebra/kernels/atax/atax_time
+[PolyBench] posix_memalign: cannot allocate memory./linear-algebra/kernels/bicg/bicg_time
+[PolyBench] posix_memalign: cannot allocate memory./linear-algebra/kernels/cholesky/cholesky_time
+15.811759
+./linear-algebra/kernels/doitgen/doitgen_time
+1654.298640
+./linear-algebra/kernels/gemm/gemm_time
+598.625398
+./linear-algebra/kernels/gemver/gemver_time
+[PolyBench] posix_memalign: cannot allocate memory./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: cannot allocate memory./linear-algebra/kernels/mvt/mvt_time
+[PolyBench] posix_memalign: cannot allocate memory./linear-algebra/kernels/symm/symm_time
+1057.079485
+./linear-algebra/kernels/syr2k/syr2k_time
+223.267301
+./linear-algebra/kernels/syrk/syrk_time
+148.569441
+./linear-algebra/kernels/trisolv/trisolv_time
+[PolyBench] posix_memalign: cannot allocate memory./linear-algebra/kernels/trmm/trmm_time
+73.904521
+./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: cannot allocate memory./linear-algebra/solvers/dynprog/dynprog_time
+643.005824
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+1037.157953
+./linear-algebra/solvers/lu/lu_time
+52.458392
+./linear-algebra/solvers/ludcmp/ludcmp_time
+112.762953
+./datamining/correlation/correlation_time
+418.671500
+./datamining/covariance/covariance_time
+1.953793
+./medley/floyd-warshall/floyd-warshall_time
+153.256482
+./medley/reg_detect/reg_detect_time
+0.188403
+./stencils/adi/adi_time
+65.193862
+./stencils/fdtd-2d/fdtd-2d_time
+25.859349
+./stencils/fdtd-apml/fdtd-apml_time
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+4.588648
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+16.092266
+./stencils/seidel-2d/seidel-2d_time
+16.522065
