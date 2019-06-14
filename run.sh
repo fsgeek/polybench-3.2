@@ -14,7 +14,7 @@ RESULTS_DIR="./pb-results-"$timestamp
 MAKE_LOG=$RESULTS_DIR"/pb-make-"$hostname"-"$timestamp".log"
 DRAM_FILE=$RESULTS_DIR"/pb-dram-"$hostname"-"$timestamp".log"
 PMEM7_FILE=$RESULTS_DIR"/pb-pmem7-"$hostname"-"$timestamp".log"
-PMEM1_FILE=$RESULTS_DIR"/pb-pmem7-"$hostname"-"$timestamp".log"
+PMEM1_FILE=$RESULTS_DIR"/pb-pmem1-"$hostname"-"$timestamp".log"
 PMEM7_POOL_DIR="/mnt/pmem7/fsgeek"
 PMEM1_POOL_DIR="/mnt/pmem1/fsgeek"
 
@@ -62,17 +62,18 @@ for b in $BENCH
 do
     echo "Start $b"
     echo $b >> $DRAM_FILE
-    #$b &>>$DRAM_FILE
-    aeplog="./aep-"$(basename -- $b)"-"$timestamp".csv"
-    #AEPWatch 1 -f $aeplog &
+    $b &>>$DRAM_FILE
+    aeplog=$RESULTS_DIR"/aep-pmem7-"$(basename -- $b)"-"$timestamp".csv"
+    AEPWatch 1 -f $aeplog &
     echo $b >> $PMEM7_FILE
-    #VMMALLOC_POOL_DIR=$PMEM7_POOL_DIR LD_PRELOAD=libvmmalloc.so.1 hwloc-bind node:$node_pmem7 -- $b &>>$PMEM7_FILE
-    #AEPWatch-stop
-    #sleep 1
-    #AEPWatch 1 -f $aeplog &
+    VMMALLOC_POOL_DIR=$PMEM7_POOL_DIR LD_PRELOAD=libvmmalloc.so.1 hwloc-bind node:$node_pmem7 -- $b &>>$PMEM7_FILE
+    AEPWatch-stop
+    sleep 1
+    aeplog=$RESULTS_DIR"/aep-pmem1-"$(basename -- $b)"-"$timestamp".csv"
+    AEPWatch 1 -f $aeplog &
     echo $b >> $PMEM1_FILE
-    #VMMALLOC_POOL_DIR=$PMEM1_POOL_DIR LD_PRELOAD=libvmmalloc.so.1 hwloc-bind node:$node_pmem1 -- $b &>>$PMEM1_FILE
-    #AEPWatch-stop
+    VMMALLOC_POOL_DIR=$PMEM1_POOL_DIR LD_PRELOAD=libvmmalloc.so.1 hwloc-bind node:$node_pmem1 -- $b &>>$PMEM1_FILE
+    AEPWatch-stop
     echo "End $b"
 done
 
