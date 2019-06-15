@@ -130,3 +130,35 @@ jacobi-2d-imper:
 seidel-2d:
 	gcc ${CFLAGS} -I utilities -I stencils/seidel-2d utilities/polybench.c stencils/seidel-2d/seidel-2d.c  -o stencils/seidel-2d/seidel-2d_time
 
+clean:
+	rm linear-algebra/kernels/atax/atax_time
+	rm linear-algebra/kernels/2mm/2mm_time
+	rm linear-algebra/kernels/3mm/3mm_time
+	rm linear-algebra/kernels/bicg/bicg_time
+	rm linear-algebra/kernels/cholesky/cholesky_time
+	rm linear-algebra/kernels/doitgen/doitgen_time 
+	rm linear-algebra/kernels/gemm/gemm_time 
+	rm linear-algebra/kernels/gemver/gemver_time 
+	rm linear-algebra/kernels/gesummv/gesummv_time 
+	rm linear-algebra/kernels/mvt/mvt_time 
+	rm linear-algebra/kernels/symm/symm_time 
+	rm linear-algebra/kernels/syr2k/syr2k_time 
+	rm linear-algebra/kernels/syrk/syrk_time 
+	rm linear-algebra/kernels/trisolv/trisolv_time 
+	rm linear-algebra/kernels/trmm/trmm_time 
+	rm linear-algebra/solvers/durbin/durbin_time 
+	rm linear-algebra/solvers/dynprog/dynprog_time 
+	rm linear-algebra/solvers/gramschmidt/gramschmidt_time
+	rm linear-algebra/solvers/lu/lu_time 
+	rm linear-algebra/solvers/ludcmp/ludcmp_time 
+	rm datamining/correlation/correlation_time
+	rm datamining/covariance/covariance_time 
+	rm medley/floyd-warshall/floyd-warshall_time
+	rm medley/reg_detect/reg_detect_time
+	rm stencils/adi/adi_time
+	rm stencils/fdtd-2d/fdtd-2d_time
+	rm stencils/fdtd-apml/fdtd-apml_time
+	rm stencils/jacobi-1d-imper/jacobi-1d-imper_time
+	rm stencils/jacobi-2d-imper/jacobi-2d-imper_time
+	rm stencils/seidel-2d/seidel-2d_time
+
