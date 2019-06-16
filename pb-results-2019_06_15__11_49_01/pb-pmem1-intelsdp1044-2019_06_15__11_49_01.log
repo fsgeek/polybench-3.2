@@ -1,0 +1,4 @@
+./linear-algebra/kernels/gesummv/gesummv_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./linear-algebra/solvers/durbin/durbin_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device

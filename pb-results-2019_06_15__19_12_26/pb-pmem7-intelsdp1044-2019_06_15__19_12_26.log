@@ -1,0 +1,6 @@
+./linear-algebra/kernels/gesummv/gesummv_time
+hwloc-bind: Failed to launch executable "VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek"
+execvp: No such file or directory
+./linear-algebra/solvers/durbin/durbin_time
+hwloc-bind: Failed to launch executable "VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek"
+execvp: No such file or directory
