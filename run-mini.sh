@@ -1,6 +1,6 @@
 #/bin/sh
 
-export VMMALLOC_POOL_SIZE=$((90*1024*1024*1024))
+VMMALLOC_POOL_SIZE=$((90*1024*1024*1024))
 #export VMMALLOC_POOL_DIR="/mnt/pmem7/fsgeek"
 
 #LD_PRELOAD=libvmmalloc.so.1 grep "pmem" /proc/mounts
@@ -63,17 +63,17 @@ do
     echo "Start $b"
     echo $b >> $DRAM_FILE
     $b &>>$DRAM_FILE
-    aeplog=$RESULTS_DIR"/aep-pmem7-"$(basename -- $b)"-"$timestamp".csv"
-    AEPWatch 1 -f $aeplog &
+    #aeplog=$RESULTS_DIR"/aep-pmem7-"$(basename -- $b)"-"$timestamp".csv"
+    #AEPWatch 1 -f $aeplog &
     echo $b >> $PMEM7_FILE
-    VMMALLOC_POOL_DIR=$PMEM7_POOL_DIR LD_PRELOAD=libvmmalloc.so.1 hwloc-bind node:$node_pmem7 -- $b &>>$PMEM7_FILE
-    AEPWatch-stop
+    hwloc-bind node:$node_pmem7 -- ./wrapper.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b PMEM7_FILE
+    #AEPWatch-stop
     sleep 1
-    aeplog=$RESULTS_DIR"/aep-pmem1-"$(basename -- $b)"-"$timestamp".csv"
-    AEPWatch 1 -f $aeplog &
+    #aeplog=$RESULTS_DIR"/aep-pmem1-"$(basename -- $b)"-"$timestamp".csv"
+    #AEPWatch 1 -f $aeplog &
     echo $b >> $PMEM1_FILE
-    VMMALLOC_POOL_DIR=$PMEM1_POOL_DIR LD_PRELOAD=libvmmalloc.so.1 hwloc-bind node:$node_pmem1 -- $b &>>$PMEM1_FILE
-    AEPWatch-stop
+    hwloc-bind node:$node_pmem1 -- ./wrapper.sh $PMEM1_POOL_DIR $VMMALLOC_POOL_SIZE $b PMEM1_FILE
+    #AEPWatch-stop
     echo "End $b"
 done
 
