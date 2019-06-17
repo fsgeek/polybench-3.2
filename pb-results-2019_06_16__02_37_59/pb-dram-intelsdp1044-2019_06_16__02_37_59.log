@@ -1,0 +1,177 @@
+./linear-algebra/kernels/2mm/2mm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+132204991114
+./linear-algebra/kernels/3mm/3mm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+201169518132
+./linear-algebra/kernels/atax/atax_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+244922742
+./linear-algebra/kernels/bicg/bicg_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+360924388
+./linear-algebra/kernels/cholesky/cholesky_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 16000
+3144218722
+./linear-algebra/kernels/doitgen/doitgen_time
+[PolyBench] posix_memalign: request to allocate 134217728
+[PolyBench] posix_memalign: request to allocate 134217728
+[PolyBench] posix_memalign: request to allocate 524288
+15026062266
+./linear-algebra/kernels/gemm/gemm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+65921589700
+./linear-algebra/kernels/gemver/gemver_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+1298763966
+./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+362711492
+./linear-algebra/kernels/mvt/mvt_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+1190711870
+./linear-algebra/kernels/symm/symm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+113206414870
+./linear-algebra/kernels/syr2k/syr2k_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+40558250520
+./linear-algebra/kernels/syrk/syrk_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+19861999478
+./linear-algebra/kernels/trisolv/trisolv_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+97528728
+./linear-algebra/kernels/trmm/trmm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+10474582344
+./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+[PolyBench] posix_memalign: request to allocate 64000
+1859538264
+./linear-algebra/solvers/dynprog/dynprog_time
+[PolyBench] posix_memalign: request to allocate 500000000
+[PolyBench] posix_memalign: request to allocate 1000000
+[PolyBench] posix_memalign: request to allocate 1000000
+55861523230
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+154878817060
+./linear-algebra/solvers/lu/lu_time
+[PolyBench] posix_memalign: request to allocate 32000000
+2585694654
+./linear-algebra/solvers/ludcmp/ludcmp_time
+[PolyBench] posix_memalign: request to allocate 32032008
+[PolyBench] posix_memalign: request to allocate 16008
+[PolyBench] posix_memalign: request to allocate 16008
+[PolyBench] posix_memalign: request to allocate 16008
+14529125376
+./datamining/correlation/correlation_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 16000
+[PolyBench] posix_memalign: request to allocate 16000
+62419210700
+./datamining/covariance/covariance_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 16000
+62381691006
+./medley/floyd-warshall/floyd-warshall_time
+[PolyBench] posix_memalign: request to allocate 32000000
+12284363642
+./medley/reg_detect/reg_detect_time
+[PolyBench] posix_memalign: request to allocate 576
+[PolyBench] posix_memalign: request to allocate 576
+[PolyBench] posix_memalign: request to allocate 576
+[PolyBench] posix_memalign: request to allocate 288000
+[PolyBench] posix_memalign: request to allocate 288000
+82047074
+./stencils/adi/adi_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+5910776796
+./stencils/fdtd-2d/fdtd-2d_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 400
+1934869128
+./stencils/fdtd-apml/fdtd-apml_time
+[PolyBench] posix_memalign: request to allocate 2105352
+[PolyBench] posix_memalign: request to allocate 2105352
+[PolyBench] posix_memalign: request to allocate 2105352
+[PolyBench] posix_memalign: request to allocate 2105352
+[PolyBench] posix_memalign: request to allocate 1080045576
+[PolyBench] posix_memalign: request to allocate 1080045576
+[PolyBench] posix_memalign: request to allocate 1080045576
+[PolyBench] posix_memalign: request to allocate 1080045576
+[PolyBench] posix_memalign: request to allocate 4104
+[PolyBench] posix_memalign: request to allocate 4104
+[PolyBench] posix_memalign: request to allocate 4104
+[PolyBench] posix_memalign: request to allocate 4104
+[PolyBench] posix_memalign: request to allocate 4104
+[PolyBench] posix_memalign: request to allocate 4104
+4620816652
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+[PolyBench] posix_memalign: request to allocate 800000
+[PolyBench] posix_memalign: request to allocate 800000
+314335238
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+445194772
+./stencils/seidel-2d/seidel-2d_time
+[PolyBench] posix_memalign: request to allocate 32000000
+1809431402
