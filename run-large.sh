@@ -63,17 +63,21 @@ do
     echo "Start $b"
     echo $b >> $DRAM_FILE
     $b &>>$DRAM_FILE
-    #aeplog=$RESULTS_DIR"/aep-pmem7-"$(basename -- $b)"-"$timestamp".csv"
-    #AEPWatch 1 -f $aeplog &
+    aeplog=$RESULTS_DIR"/aep-pmem7-"$(basename -- $b)"-"$timestamp".csv"
+    AEPWatch 1 -f $aeplog &
+    sleep 2
     echo $b >> $PMEM7_FILE
     hwloc-bind node:$node_pmem7 -- ./wrapper.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM7_FILE
-    #AEPWatch-stop
+    sleep 16
+    AEPWatch-stop
     sleep 1
-    #aeplog=$RESULTS_DIR"/aep-pmem1-"$(basename -- $b)"-"$timestamp".csv"
-    #AEPWatch 1 -f $aeplog &
+    aeplog=$RESULTS_DIR"/aep-pmem1-"$(basename -- $b)"-"$timestamp".csv"
+    AEPWatch 1 -f $aeplog &
+    sleep 2
     echo $b >> $PMEM1_FILE
     hwloc-bind node:$node_pmem1 -- ./wrapper.sh $PMEM1_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM1_FILE
-    #AEPWatch-stop
+    sleep 16
+    AEPWatch-stop
     echo "End $b"
 done
 
