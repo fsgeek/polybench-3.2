@@ -76,7 +76,7 @@ do
     sleep 2
     echo $b >> $PMEM1_FILE
     hwloc-bind node:$node_pmem1 -- ./wrapper.sh $PMEM1_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM1_FILE
-    sleep 16
+    sleep 100
     AEPWatch-stop
     echo "End $b"
 done
