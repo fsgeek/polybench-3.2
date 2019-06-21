@@ -137,3 +137,41 @@
 [PolyBench] posix_memalign: request to allocate 7200
 [PolyBench] posix_memalign: request to allocate 7200
 168798
+./stencils/adi/adi_time
+[PolyBench] posix_memalign: request to allocate 2000000
+[PolyBench] posix_memalign: request to allocate 2000000
+[PolyBench] posix_memalign: request to allocate 2000000
+119547044
+./stencils/fdtd-2d/fdtd-2d_time
+[PolyBench] posix_memalign: request to allocate 2000000
+[PolyBench] posix_memalign: request to allocate 2000000
+[PolyBench] posix_memalign: request to allocate 2000000
+[PolyBench] posix_memalign: request to allocate 80
+34352360
+./stencils/fdtd-apml/fdtd-apml_time
+[PolyBench] posix_memalign: request to allocate 33800
+[PolyBench] posix_memalign: request to allocate 33800
+[PolyBench] posix_memalign: request to allocate 33800
+[PolyBench] posix_memalign: request to allocate 33800
+[PolyBench] posix_memalign: request to allocate 2197000
+[PolyBench] posix_memalign: request to allocate 2197000
+[PolyBench] posix_memalign: request to allocate 2197000
+[PolyBench] posix_memalign: request to allocate 2197000
+[PolyBench] posix_memalign: request to allocate 520
+[PolyBench] posix_memalign: request to allocate 520
+[PolyBench] posix_memalign: request to allocate 520
+[PolyBench] posix_memalign: request to allocate 520
+[PolyBench] posix_memalign: request to allocate 520
+[PolyBench] posix_memalign: request to allocate 520
+11357502
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+[PolyBench] posix_memalign: request to allocate 8000
+[PolyBench] posix_memalign: request to allocate 8000
+12536
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+[PolyBench] posix_memalign: request to allocate 2000000
+[PolyBench] posix_memalign: request to allocate 2000000
+9409268
+./stencils/seidel-2d/seidel-2d_time
+[PolyBench] posix_memalign: request to allocate 2000000
+60300198
