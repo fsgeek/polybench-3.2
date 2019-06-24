@@ -1,0 +1,1684 @@
+mkdir ./pb-results-2019_06_20__22_23_49
+Start ./linear-algebra/kernels/2mm/2mm_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62381 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/2mm/2mm_time
+Start ./linear-algebra/kernels/3mm/3mm_time
+./run-extralarge.sh: line 61: 62415 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62702 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/3mm/3mm_time
+Start ./linear-algebra/kernels/atax/atax_time
+./run-extralarge.sh: line 61: 62751 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62796 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62816 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/atax/atax_time
+Start ./linear-algebra/kernels/bicg/bicg_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62839 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62861 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/bicg/bicg_time
+Start ./linear-algebra/kernels/cholesky/cholesky_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62879 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62899 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/cholesky/cholesky_time
+Start ./linear-algebra/kernels/doitgen/doitgen_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 62938 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/doitgen/doitgen_time
+Start ./linear-algebra/kernels/gemm/gemm_time
+./run-extralarge.sh: line 61: 62969 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63013 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/gemm/gemm_time
+Start ./linear-algebra/kernels/gemver/gemver_time
+./run-extralarge.sh: line 61: 63038 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63064 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (80 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/gemver/gemver_time
+Start ./linear-algebra/kernels/gesummv/gesummv_time
+./run-extralarge.sh: line 61: 63090 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63121 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63140 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gesummv/gesummv_time
+Start ./linear-algebra/kernels/mvt/mvt_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63160 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/mvt/mvt_time
+Start ./linear-algebra/kernels/symm/symm_time
+./run-extralarge.sh: line 61: 63181 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63209 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/symm/symm_time
+Start ./linear-algebra/kernels/syr2k/syr2k_time
+./run-extralarge.sh: line 61: 63241 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63272 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/syr2k/syr2k_time
+Start ./linear-algebra/kernels/syrk/syrk_time
+./run-extralarge.sh: line 61: 63296 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63324 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (80 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63346 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/syrk/syrk_time
+Start ./linear-algebra/kernels/trisolv/trisolv_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63366 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63386 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trisolv/trisolv_time
+Start ./linear-algebra/kernels/trmm/trmm_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63409 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63430 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trmm/trmm_time
+Start ./linear-algebra/solvers/durbin/durbin_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63450 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63473 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/durbin/durbin_time
+Start ./linear-algebra/solvers/dynprog/dynprog_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63492 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/solvers/dynprog/dynprog_time
+Start ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+./run-extralarge.sh: line 61: 63522 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63553 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+Start ./linear-algebra/solvers/lu/lu_time
+./run-extralarge.sh: line 61: 63582 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63615 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/solvers/lu/lu_time
+Start ./linear-algebra/solvers/ludcmp/ludcmp_time
+./run-extralarge.sh: line 61: 63634 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63659 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63680 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/ludcmp/ludcmp_time
+Start ./datamining/correlation/correlation_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63709 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./datamining/correlation/correlation_time
+Start ./datamining/covariance/covariance_time
+./run-extralarge.sh: line 61: 63738 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63764 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63788 Killed                  AEPWatch 1 -f $aeplog
+End ./datamining/covariance/covariance_time
+Start ./medley/floyd-warshall/floyd-warshall_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63814 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63836 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/floyd-warshall/floyd-warshall_time
+Start ./medley/reg_detect/reg_detect_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63860 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63881 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/reg_detect/reg_detect_time
+Start ./stencils/adi/adi_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63899 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./stencils/adi/adi_time
+Start ./stencils/fdtd-2d/fdtd-2d_time
+./run-extralarge.sh: line 61: 63919 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63942 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63963 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/fdtd-2d/fdtd-2d_time
+Start ./stencils/fdtd-apml/fdtd-apml_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 63983 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (80 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 64002 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/fdtd-apml/fdtd-apml_time
+Start ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 64022 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 64042 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+Start ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 64061 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+End ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+Start ./stencils/seidel-2d/seidel-2d_time
+./run-extralarge.sh: line 61: 64082 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem7-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (44 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 64105 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_20__22_23_49/pb-pmem1-intelsdp1044-2019_06_20__22_23_49.log
+
+WARNING: The collection overhead (79 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 128 sec
+AEPWatch stopped successfully.
+./run-extralarge.sh: line 61: 64124 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/seidel-2d/seidel-2d_time
+mkdir ./pb-results-2019_06_21__11_02_44
+Start ./linear-algebra/kernels/2mm/2mm_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64363 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64382 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/2mm/2mm_time
+Start ./linear-algebra/kernels/3mm/3mm_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64404 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64425 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/3mm/3mm_time
+Start ./linear-algebra/kernels/atax/atax_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64445 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64466 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/atax/atax_time
+Start ./linear-algebra/kernels/bicg/bicg_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64485 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64506 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/bicg/bicg_time
+Start ./linear-algebra/kernels/cholesky/cholesky_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64523 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64543 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/cholesky/cholesky_time
+Start ./linear-algebra/kernels/doitgen/doitgen_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64561 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64581 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/doitgen/doitgen_time
+Start ./linear-algebra/kernels/gemm/gemm_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64599 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64619 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gemm/gemm_time
+Start ./linear-algebra/kernels/gemver/gemver_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64639 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64658 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gemver/gemver_time
+Start ./linear-algebra/kernels/gesummv/gesummv_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64682 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/gesummv/gesummv_time
+Start ./linear-algebra/kernels/mvt/mvt_time
+./run-large.sh: line 61: 64704 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64724 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64743 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/mvt/mvt_time
+Start ./linear-algebra/kernels/symm/symm_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64762 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64783 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/symm/symm_time
+Start ./linear-algebra/kernels/syr2k/syr2k_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64803 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64823 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/syr2k/syr2k_time
+Start ./linear-algebra/kernels/syrk/syrk_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64844 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64862 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/syrk/syrk_time
+Start ./linear-algebra/kernels/trisolv/trisolv_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64886 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64904 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trisolv/trisolv_time
+Start ./linear-algebra/kernels/trmm/trmm_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64924 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64943 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trmm/trmm_time
+Start ./linear-algebra/solvers/durbin/durbin_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64962 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 64989 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/durbin/durbin_time
+Start ./linear-algebra/solvers/dynprog/dynprog_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65006 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/solvers/dynprog/dynprog_time
+Start ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+./run-large.sh: line 61: 65035 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65057 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+Start ./linear-algebra/solvers/lu/lu_time
+./run-large.sh: line 61: 65076 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65098 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65118 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/lu/lu_time
+Start ./linear-algebra/solvers/ludcmp/ludcmp_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65137 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65157 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/ludcmp/ludcmp_time
+Start ./datamining/correlation/correlation_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65175 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./datamining/correlation/correlation_time
+Start ./datamining/covariance/covariance_time
+./run-large.sh: line 61: 65198 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65217 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65237 Killed                  AEPWatch 1 -f $aeplog
+End ./datamining/covariance/covariance_time
+Start ./medley/floyd-warshall/floyd-warshall_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65258 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65277 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/floyd-warshall/floyd-warshall_time
+Start ./medley/reg_detect/reg_detect_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65298 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65319 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/reg_detect/reg_detect_time
+Start ./stencils/adi/adi_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65339 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./stencils/adi/adi_time
+Start ./stencils/fdtd-2d/fdtd-2d_time
+./run-large.sh: line 61: 65364 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65383 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65404 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/fdtd-2d/fdtd-2d_time
+Start ./stencils/fdtd-apml/fdtd-apml_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65424 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65443 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/fdtd-apml/fdtd-apml_time
+Start ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65464 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65481 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+Start ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65502 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+Start ./stencils/seidel-2d/seidel-2d_time
+./run-large.sh: line 61: 65522 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem7-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65539 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__11_02_44/pb-pmem1-intelsdp1044-2019_06_21__11_02_44.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-large.sh: line 61: 65560 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/seidel-2d/seidel-2d_time
+mkdir ./pb-results-2019_06_21__14_39_06
+Start ./linear-algebra/kernels/2mm/2mm_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65792 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (52 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65813 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/2mm/2mm_time
+Start ./linear-algebra/kernels/3mm/3mm_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65832 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65851 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/3mm/3mm_time
+Start ./linear-algebra/kernels/atax/atax_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65871 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65893 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/atax/atax_time
+Start ./linear-algebra/kernels/bicg/bicg_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65912 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65931 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/bicg/bicg_time
+Start ./linear-algebra/kernels/cholesky/cholesky_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65956 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65976 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/cholesky/cholesky_time
+Start ./linear-algebra/kernels/doitgen/doitgen_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 65995 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66015 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/doitgen/doitgen_time
+Start ./linear-algebra/kernels/gemm/gemm_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66033 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/gemm/gemm_time
+Start ./linear-algebra/kernels/gemver/gemver_time
+./run-standard.sh: line 61: 66056 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66074 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66096 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gemver/gemver_time
+Start ./linear-algebra/kernels/gesummv/gesummv_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66115 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66138 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gesummv/gesummv_time
+Start ./linear-algebra/kernels/mvt/mvt_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66158 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66176 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/mvt/mvt_time
+Start ./linear-algebra/kernels/symm/symm_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66195 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (49 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66213 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/symm/symm_time
+Start ./linear-algebra/kernels/syr2k/syr2k_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66232 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66256 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/syr2k/syr2k_time
+Start ./linear-algebra/kernels/syrk/syrk_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66274 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/syrk/syrk_time
+Start ./linear-algebra/kernels/trisolv/trisolv_time
+./run-standard.sh: line 61: 66297 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66315 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66337 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trisolv/trisolv_time
+Start ./linear-algebra/kernels/trmm/trmm_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66359 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66378 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trmm/trmm_time
+Start ./linear-algebra/solvers/durbin/durbin_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66395 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66415 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/durbin/durbin_time
+Start ./linear-algebra/solvers/dynprog/dynprog_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66434 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66453 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/dynprog/dynprog_time
+Start ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66473 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66492 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+Start ./linear-algebra/solvers/lu/lu_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66510 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/solvers/lu/lu_time
+Start ./linear-algebra/solvers/ludcmp/ludcmp_time
+./run-standard.sh: line 61: 66531 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66551 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/solvers/ludcmp/ludcmp_time
+Start ./datamining/correlation/correlation_time
+./run-standard.sh: line 61: 66572 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66592 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./datamining/correlation/correlation_time
+Start ./datamining/covariance/covariance_time
+./run-standard.sh: line 61: 66611 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66628 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66648 Killed                  AEPWatch 1 -f $aeplog
+End ./datamining/covariance/covariance_time
+Start ./medley/floyd-warshall/floyd-warshall_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66667 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66687 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/floyd-warshall/floyd-warshall_time
+Start ./medley/reg_detect/reg_detect_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66707 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66731 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/reg_detect/reg_detect_time
+Start ./stencils/adi/adi_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66751 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66772 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/adi/adi_time
+Start ./stencils/fdtd-2d/fdtd-2d_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66790 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66810 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/fdtd-2d/fdtd-2d_time
+Start ./stencils/fdtd-apml/fdtd-apml_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66828 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66848 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/fdtd-apml/fdtd-apml_time
+Start ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66867 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66886 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+Start ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66905 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66926 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+Start ./stencils/seidel-2d/seidel-2d_time
+./pb-results-2019_06_21__14_39_06/pb-pmem7-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66944 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__14_39_06/pb-pmem1-intelsdp1044-2019_06_21__14_39_06.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-standard.sh: line 61: 66964 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/seidel-2d/seidel-2d_time
+mkdir ./pb-results-2019_06_21__17_48_12
+Start ./linear-algebra/kernels/2mm/2mm_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67198 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./linear-algebra/kernels/2mm/2mm_time
+Start ./linear-algebra/kernels/3mm/3mm_time
+./run-small.sh: line 61: 67218 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67237 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67256 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/3mm/3mm_time
+Start ./linear-algebra/kernels/atax/atax_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67275 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67293 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/atax/atax_time
+Start ./linear-algebra/kernels/bicg/bicg_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67314 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67338 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/bicg/bicg_time
+Start ./linear-algebra/kernels/cholesky/cholesky_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67360 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67379 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/cholesky/cholesky_time
+Start ./linear-algebra/kernels/doitgen/doitgen_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67399 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67421 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/doitgen/doitgen_time
+Start ./linear-algebra/kernels/gemm/gemm_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67439 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67462 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gemm/gemm_time
+Start ./linear-algebra/kernels/gemver/gemver_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67480 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67502 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gemver/gemver_time
+Start ./linear-algebra/kernels/gesummv/gesummv_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67520 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67540 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gesummv/gesummv_time
+Start ./linear-algebra/kernels/mvt/mvt_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67561 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67580 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/mvt/mvt_time
+Start ./linear-algebra/kernels/symm/symm_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67601 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67620 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/symm/symm_time
+Start ./linear-algebra/kernels/syr2k/syr2k_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67642 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67660 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/syr2k/syr2k_time
+Start ./linear-algebra/kernels/syrk/syrk_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67682 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67700 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/syrk/syrk_time
+Start ./linear-algebra/kernels/trisolv/trisolv_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67724 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67743 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trisolv/trisolv_time
+Start ./linear-algebra/kernels/trmm/trmm_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67762 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67784 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/trmm/trmm_time
+Start ./linear-algebra/solvers/durbin/durbin_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67803 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67823 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/durbin/durbin_time
+Start ./linear-algebra/solvers/dynprog/dynprog_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67843 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67862 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/dynprog/dynprog_time
+Start ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67882 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67901 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+Start ./linear-algebra/solvers/lu/lu_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67922 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67940 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/lu/lu_time
+Start ./linear-algebra/solvers/ludcmp/ludcmp_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67959 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67977 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/ludcmp/ludcmp_time
+Start ./datamining/correlation/correlation_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 67997 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68016 Killed                  AEPWatch 1 -f $aeplog
+End ./datamining/correlation/correlation_time
+Start ./datamining/covariance/covariance_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68036 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68054 Killed                  AEPWatch 1 -f $aeplog
+End ./datamining/covariance/covariance_time
+Start ./medley/floyd-warshall/floyd-warshall_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68073 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./medley/floyd-warshall/floyd-warshall_time
+Start ./medley/reg_detect/reg_detect_time
+./run-small.sh: line 61: 68095 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68118 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68139 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/reg_detect/reg_detect_time
+Start ./stencils/adi/adi_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68156 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (41 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68176 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/adi/adi_time
+Start ./stencils/fdtd-2d/fdtd-2d_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68193 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68214 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/fdtd-2d/fdtd-2d_time
+Start ./stencils/fdtd-apml/fdtd-apml_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68233 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+End ./stencils/fdtd-apml/fdtd-apml_time
+Start ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+./run-small.sh: line 61: 68252 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68272 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68293 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+Start ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68313 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (43 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68333 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+Start ./stencils/seidel-2d/seidel-2d_time
+./pb-results-2019_06_21__17_48_12/pb-pmem7-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (23 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68352 Killed                  AEPWatch 1 -f $aeplog
+./pb-results-2019_06_21__17_48_12/pb-pmem1-intelsdp1044-2019_06_21__17_48_12.log
+
+WARNING: The collection overhead (42 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 64 sec
+AEPWatch stopped successfully.
+./run-small.sh: line 61: 68371 Killed                  AEPWatch 1 -f $aeplog
+End ./stencils/seidel-2d/seidel-2d_time
