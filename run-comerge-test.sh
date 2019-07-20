@@ -12,7 +12,8 @@ hostname=`hostname`
 # log files
 RESULTS_DIR="./comerge-pb-results-"$timestamp
 MAKE_LOG=$RESULTS_DIR"/pb-make-"$hostname"-"$timestamp".log"
-DRAM_FILE=$RESULTS_DIR"/pb-dram-"$hostname"-"$timestamp".log"
+DRAM0_FILE=$RESULTS_DIR"/pb-dram-node0-"$hostname"-"$timestamp".log"
+DRAM1_FILE=$RESULTS_DIR"/pb-dram-node1-"$hostname"-"$timestamp".log"
 PMEM7_FILE=$RESULTS_DIR"/pb-pmem7-"$hostname"-"$timestamp".log"
 PMEM1_FILE=$RESULTS_DIR"/pb-pmem1-"$hostname"-"$timestamp".log"
 PMEM7_POOL_DIR="/mnt/pmem7/fsgeek"
@@ -61,8 +62,10 @@ make -f Makefile.comerge >> $MAKE_LOG 2>&1
 for b in $BENCH
 do
     echo "Start $b"
-    echo hwloc-bind --single node:1 -- perf stat -B -d -d -d $b >> $DRAM_FILE 2>&1
-    hwloc-bind --single node:1 -- perf stat -B -d -d -d $b >> $DRAM_FILE 2>&1
+    echo hwloc-bind --single node:0 -- perf stat -B -d -d -d $b >> $DRAM0_FILE 2>&1
+    hwloc-bind --single node:0 -- perf stat -B -d -d -d $b >> $DRAM0_FILE 2>&1
+    echo hwloc-bind --single node:1 -- perf stat -B -d -d -d $b >> $DRAM1_FILE 2>&1
+    hwloc-bind --single node:1 -- perf stat -B -d -d -d $b >> $DRAM1_FILE 2>&1
     # echo "End $b"
 done
 
