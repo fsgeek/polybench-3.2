@@ -63,16 +63,16 @@ for b in $BENCH
 do
     echo "Start $b"
     echo $b >> $PMEM7_FILE
-    hwloc-bind --single node:$node_pmem7 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM7_FILE >> $PMEM7_FILE 2>&1
+    hwloc-bind --single node:$node_pmem7 -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM7_FILE >> $PMEM7_FILE 2>&1
     echo finished >> $PMEM7_FILE
     echo $b >> $PMEM1_FILE
-    hwloc-bind --single node:$node_pmem1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM1_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM1_FILE >> $PMEM1_FILE 2>&1
+    hwloc-bind --single node:$node_pmem1 -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM1_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM1_FILE >> $PMEM1_FILE 2>&1
     echo finished >> $PMEM1_FILE
     echo $b >> $DRAM0_FILE
-    hwloc-bind --single node:0  --verbose -- perf stat -B -d -d -d $b >>$DRAM0_FILE 2>&1
+    hwloc-bind --single node:0 -- perf stat -B -d -d -d $b >>$DRAM0_FILE 2>&1
     echo finished >> $DRAM0_FILE
     echo $b >> $DRAM1_FILE
-    hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d $b >>$DRAM1_FILE 2>&1
+    hwloc-bind --single node:1 -- perf stat -B -d -d -d $b >>$DRAM1_FILE 2>&1
     echo finished >> $DRAM1_FILE
     echo "End $b"
 done
