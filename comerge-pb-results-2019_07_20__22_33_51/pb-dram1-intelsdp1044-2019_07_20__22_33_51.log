@@ -1,0 +1,1137 @@
+./linear-algebra/kernels/2mm/2mm_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+11.289407
+
+ Performance counter stats for './linear-algebra/kernels/2mm/2mm_time':
+
+         11,325.52 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.353 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            22,030      page-faults               # 1945.254 M/sec                  
+    41,574,666,140      cycles                    # 3671052.198 GHz                   (30.78%)
+    57,531,162,953      instructions              #    1.38  insn per cycle           (38.48%)
+     6,779,298,798      branches                  # 598613580.397 M/sec               (38.48%)
+         4,851,084      branch-misses             #    0.07% of all branches          (38.47%)
+    13,528,749,553      L1-dcache-loads           # 1194591572.009 M/sec              (38.47%)
+     8,968,571,842      L1-dcache-load-misses     #   66.29% of all L1-dcache hits    (38.46%)
+       849,602,580      LLC-loads                 # 75020095.364 M/sec                (30.76%)
+         8,148,865      LLC-load-misses           #    0.96% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+         3,474,190      L1-icache-load-misses                                         (30.76%)
+    13,543,748,152      dTLB-loads                # 1195915951.611 M/sec              (30.76%)
+     1,987,250,721      dTLB-load-misses          #   14.67% of all dTLB cache hits   (30.76%)
+             2,905      iTLB-loads                #  256.512 M/sec                    (30.77%)
+             5,827      iTLB-load-misses          #  200.59% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      11.325898388 seconds time elapsed
+
+      11.283736000 seconds user
+       0.042006000 seconds sys
+
+
+finished
+./linear-algebra/kernels/3mm/3mm_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+17.346162
+
+ Performance counter stats for './linear-algebra/kernels/3mm/3mm_time':
+
+         17,383.77 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.230 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            30,822      page-faults               # 1773.112 M/sec                  
+    63,821,436,213      cycles                    # 3671485.717 GHz                   (30.77%)
+    81,222,322,826      instructions              #    1.27  insn per cycle           (38.46%)
+    10,169,157,287      branches                  # 585005884.312 M/sec               (38.47%)
+         7,241,464      branch-misses             #    0.07% of all branches          (38.47%)
+    20,297,598,865      L1-dcache-loads           # 1167669496.922 M/sec              (38.47%)
+    13,552,644,713      L1-dcache-load-misses     #   66.77% of all L1-dcache hits    (38.47%)
+     1,274,080,703      LLC-loads                 # 73294638.612 M/sec                (30.77%)
+         9,146,730      LLC-load-misses           #    0.72% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+         6,624,763      L1-icache-load-misses                                         (30.76%)
+    20,305,484,770      dTLB-loads                # 1168123153.081 M/sec              (30.76%)
+     3,208,128,532      dTLB-load-misses          #   15.80% of all dTLB cache hits   (30.76%)
+               390      iTLB-loads                #   22.436 M/sec                    (30.76%)
+               618      iTLB-load-misses          #  158.46% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      17.384103349 seconds time elapsed
+
+      17.312984000 seconds user
+       0.070999000 seconds sys
+
+
+finished
+./linear-algebra/kernels/atax/atax_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+0.411282
+
+ Performance counter stats for './linear-algebra/kernels/atax/atax_time':
+
+          1,246.19 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    4.013 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           439,595      page-faults               # 352804.976 M/sec                
+     4,578,070,776      cycles                    # 3674214.106 GHz                   (30.68%)
+     4,831,985,222      instructions              #    1.06  insn per cycle           (38.38%)
+       678,126,675      branches                  # 544242917.335 M/sec               (38.38%)
+           911,888      branch-misses             #    0.13% of all branches          (38.40%)
+     1,060,256,336      L1-dcache-loads           # 850928038.523 M/sec               (38.48%)
+       146,152,313      L1-dcache-load-misses     #   13.78% of all L1-dcache hits    (38.51%)
+           681,159      LLC-loads                 # 546676.565 M/sec                  (30.81%)
+           385,687      LLC-load-misses           #   56.62% of all LL-cache hits     (30.81%)
+   <not supported>      L1-icache-loads                                             
+           669,687      L1-icache-load-misses                                         (30.81%)
+     1,079,996,603      dTLB-loads                # 866770949.438 M/sec               (30.81%)
+            52,361      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.81%)
+               357      iTLB-loads                #  286.517 M/sec                    (30.79%)
+               238      iTLB-load-misses          #   66.67% of all iTLB cache hits   (30.71%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       1.246511927 seconds time elapsed
+
+       0.584183000 seconds user
+       0.662208000 seconds sys
+
+
+finished
+./linear-algebra/kernels/bicg/bicg_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1352000000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+0.447621
+
+ Performance counter stats for './linear-algebra/kernels/bicg/bicg_time':
+
+          1,076.95 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    3.717 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           330,237      page-faults               # 306911.710 M/sec                
+     3,943,566,130      cycles                    # 3665024.284 GHz                   (30.65%)
+     3,609,850,875      instructions              #    0.92  insn per cycle           (38.36%)
+       425,852,430      branches                  # 395773633.829 M/sec               (38.36%)
+           680,877      branch-misses             #    0.16% of all branches          (38.38%)
+     1,296,914,678      L1-dcache-loads           # 1205311039.033 M/sec              (38.47%)
+        90,126,292      L1-dcache-load-misses     #    6.95% of all L1-dcache hits    (38.52%)
+           547,199      LLC-loads                 # 508549.257 M/sec                  (30.82%)
+           291,539      LLC-load-misses           #   53.28% of all LL-cache hits     (30.82%)
+   <not supported>      L1-icache-loads                                             
+           503,983      L1-icache-load-misses                                         (30.82%)
+     1,329,205,198      dTLB-loads                # 1235320815.985 M/sec              (30.82%)
+            68,936      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.82%)
+               432      iTLB-loads                #  401.487 M/sec                    (30.80%)
+               449      iTLB-load-misses          #  103.94% of all iTLB cache hits   (30.70%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       1.077307128 seconds time elapsed
+
+       0.610089000 seconds user
+       0.467068000 seconds sys
+
+
+finished
+./linear-algebra/kernels/cholesky/cholesky_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 32000
+12.364529
+
+ Performance counter stats for './linear-algebra/kernels/cholesky/cholesky_time':
+
+         12,420.87 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.242 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,325      page-faults               # 2522.142 M/sec                  
+    45,605,767,914      cycles                    # 3671961.990 GHz                   (30.76%)
+    48,293,163,302      instructions              #    1.06  insn per cycle           (38.45%)
+     5,406,859,961      branches                  # 435334940.499 M/sec               (38.46%)
+         8,200,683      branch-misses             #    0.15% of all branches          (38.47%)
+    10,726,969,375      L1-dcache-loads           # 863685134.863 M/sec               (38.48%)
+     1,975,679,343      L1-dcache-load-misses     #   18.42% of all L1-dcache hits    (38.48%)
+        24,794,363      LLC-loads                 # 1996325.523 M/sec                 (30.78%)
+         1,575,699      LLC-load-misses           #    6.36% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         3,684,329      L1-icache-load-misses                                         (30.77%)
+    10,726,651,495      dTLB-loads                # 863659540.660 M/sec               (30.76%)
+         9,464,862      dTLB-load-misses          #    0.09% of all dTLB cache hits   (30.75%)
+             8,981      iTLB-loads                #  723.108 M/sec                    (30.75%)
+             9,368      iTLB-load-misses          #  104.31% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      12.421186266 seconds time elapsed
+
+      12.371093000 seconds user
+       0.050000000 seconds sys
+
+
+finished
+./linear-algebra/kernels/doitgen/doitgen_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 268435456
+[PolyBench] posix_memalign: request to allocate 268435456
+[PolyBench] posix_memalign: request to allocate 524288
+13.959643
+
+ Performance counter stats for './linear-algebra/kernels/doitgen/doitgen_time':
+
+         14,087.65 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.213 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           131,259      page-faults               # 9317.740 M/sec                  
+    51,779,179,014      cycles                    # 3675671.116 GHz                   (30.76%)
+    69,625,503,701      instructions              #    1.34  insn per cycle           (38.45%)
+     8,741,990,803      branches                  # 620571505.856 M/sec               (38.46%)
+        34,783,727      branch-misses             #    0.40% of all branches          (38.46%)
+    17,327,059,382      L1-dcache-loads           # 1230003505.502 M/sec              (38.47%)
+     9,289,564,772      L1-dcache-load-misses     #   53.61% of all L1-dcache hits    (38.47%)
+           426,337      LLC-loads                 # 30264.570 M/sec                   (30.78%)
+           278,576      LLC-load-misses           #   65.34% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+        11,537,614      L1-icache-load-misses                                         (30.78%)
+    17,341,674,758      dTLB-loads                # 1231041013.559 M/sec              (30.77%)
+            44,607      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+               803      iTLB-loads                #   57.003 M/sec                    (30.76%)
+               218      iTLB-load-misses          #   27.15% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      14.087961628 seconds time elapsed
+
+      13.880833000 seconds user
+       0.207012000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gemm/gemm_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+30.967413
+
+ Performance counter stats for './linear-algebra/kernels/gemm/gemm_time':
+
+         31,014.69 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.129 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,495      page-faults               #  757.561 M/sec                  
+   113,880,389,716      cycles                    # 3671902.680 GHz                   (30.76%)
+    72,241,200,298      instructions              #    0.63  insn per cycle           (38.45%)
+     8,040,275,075      branches                  # 259246632.972 M/sec               (38.46%)
+         4,643,750      branch-misses             #    0.06% of all branches          (38.46%)
+    16,055,347,363      L1-dcache-loads           # 517680639.808 M/sec               (38.46%)
+    12,570,394,747      L1-dcache-load-misses     #   78.29% of all L1-dcache hits    (38.47%)
+     1,076,931,250      LLC-loads                 # 34724035.919 M/sec                (30.77%)
+       111,879,232      LLC-load-misses           #   10.39% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         4,753,790      L1-icache-load-misses                                         (30.77%)
+    16,075,484,005      dTLB-loads                # 518329915.683 M/sec               (30.77%)
+     6,920,788,947      dTLB-load-misses          #   43.05% of all dTLB cache hits   (30.77%)
+            18,828      iTLB-loads                #  607.081 M/sec                    (30.77%)
+            30,370      iTLB-load-misses          #  161.30% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      31.015022040 seconds time elapsed
+
+      30.974910000 seconds user
+       0.039999000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gemver/gemver_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+3.662492
+
+ Performance counter stats for './linear-algebra/kernels/gemver/gemver_time':
+
+          4,498.17 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    1.112 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           439,745      page-faults               # 97764.562 M/sec                 
+    16,513,326,170      cycles                    # 3671259.709 GHz                   (30.75%)
+     7,334,145,641      instructions              #    0.44  insn per cycle           (38.44%)
+       908,803,634      branches                  # 202046161.405 M/sec               (38.44%)
+           996,826      branch-misses             #    0.11% of all branches          (38.47%)
+     1,623,350,297      L1-dcache-loads           # 360904912.628 M/sec               (38.47%)
+       657,699,930      L1-dcache-load-misses     #   40.51% of all L1-dcache hits    (38.48%)
+       412,980,567      LLC-loads                 # 91814265.674 M/sec                (30.79%)
+        49,117,167      LLC-load-misses           #   11.89% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         1,657,917      L1-icache-load-misses                                         (30.77%)
+     1,641,372,109      dTLB-loads                # 364911540.462 M/sec               (30.77%)
+       225,602,772      dTLB-load-misses          #   13.74% of all dTLB cache hits   (30.77%)
+             2,678      iTLB-loads                #  595.376 M/sec                    (30.77%)
+             3,115      iTLB-load-misses          #  116.32% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       4.498548938 seconds time elapsed
+
+       3.817181000 seconds user
+       0.681210000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gesummv/gesummv_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+0.265965
+
+ Performance counter stats for './linear-algebra/kernels/gesummv/gesummv_time':
+
+            973.74 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    4.111 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           390,737      page-faults               # 401579.651 M/sec                
+     3,574,854,627      cycles                    # 3674054.087 GHz                   (30.69%)
+     2,809,600,571      instructions              #    0.79  insn per cycle           (38.39%)
+       376,460,542      branches                  # 386907031.860 M/sec               (38.39%)
+           769,318      branch-misses             #    0.20% of all branches          (38.40%)
+       938,947,411      L1-dcache-loads           # 965002477.903 M/sec               (38.50%)
+        74,941,285      L1-dcache-load-misses     #    7.98% of all L1-dcache hits    (38.50%)
+           862,895      LLC-loads                 # 886839.671 M/sec                  (30.80%)
+           408,337      LLC-load-misses           #   47.32% of all LL-cache hits     (30.80%)
+   <not supported>      L1-icache-loads                                             
+           546,607      L1-icache-load-misses                                         (30.80%)
+       954,373,727      dTLB-loads                # 980856862.282 M/sec               (30.81%)
+            55,986      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.80%)
+               321      iTLB-loads                #  329.908 M/sec                    (30.80%)
+               612      iTLB-load-misses          #  190.65% of all iTLB cache hits   (30.70%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.974123332 seconds time elapsed
+
+       0.377986000 seconds user
+       0.595979000 seconds sys
+
+
+finished
+./linear-algebra/kernels/mvt/mvt_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+3.613979
+
+ Performance counter stats for './linear-algebra/kernels/mvt/mvt_time':
+
+          4,449.10 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    1.124 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           439,625      page-faults               # 98814.340 M/sec                 
+    16,331,951,516      cycles                    # 3670926.392 GHz                   (30.76%)
+     5,668,685,519      instructions              #    0.35  insn per cycle           (38.47%)
+       809,281,292      branches                  # 181901841.313 M/sec               (38.49%)
+         1,017,866      branch-misses             #    0.13% of all branches          (38.51%)
+     1,302,180,076      L1-dcache-loads           # 292690509.328 M/sec               (38.51%)
+       573,685,603      L1-dcache-load-misses     #   44.06% of all L1-dcache hits    (38.50%)
+       439,961,903      LLC-loads                 # 98890065.857 M/sec                (30.77%)
+        41,890,322      LLC-load-misses           #    9.52% of all LL-cache hits     (30.75%)
+   <not supported>      L1-icache-loads                                             
+         1,672,779      L1-icache-load-misses                                         (30.75%)
+     1,294,665,952      dTLB-loads                # 291001562.598 M/sec               (30.75%)
+       225,647,083      dTLB-load-misses          #   17.43% of all dTLB cache hits   (30.75%)
+             2,579      iTLB-loads                #  579.681 M/sec                    (30.75%)
+             3,382      iTLB-load-misses          #  131.14% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       4.449451893 seconds time elapsed
+
+       3.806274000 seconds user
+       0.643046000 seconds sys
+
+
+finished
+./linear-algebra/kernels/symm/symm_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+52.932556
+
+ Performance counter stats for './linear-algebra/kernels/symm/symm_time':
+
+         52,978.09 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.057 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,496      page-faults               #  443.505 M/sec                  
+   194,520,918,334      cycles                    # 3671730.121 GHz                   (30.77%)
+    40,591,490,611      instructions              #    0.21  insn per cycle           (38.46%)
+     2,077,730,132      branches                  # 39218734.796 M/sec                (38.46%)
+         5,287,681      branch-misses             #    0.25% of all branches          (38.47%)
+    16,070,041,992      L1-dcache-loads           # 303334251.803 M/sec               (38.47%)
+    17,688,554,416      L1-dcache-load-misses     #  110.07% of all L1-dcache hits    (38.46%)
+     1,326,063,305      LLC-loads                 # 25030452.358 M/sec                (30.77%)
+       116,495,521      LLC-load-misses           #    8.79% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        11,957,007      L1-icache-load-misses                                         (30.77%)
+    16,092,839,051      dTLB-loads                # 303764563.611 M/sec               (30.77%)
+     9,968,138,411      dTLB-load-misses          #   61.94% of all dTLB cache hits   (30.77%)
+            31,264      iTLB-loads                #  590.132 M/sec                    (30.77%)
+            53,319      iTLB-load-misses          #  170.54% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      52.978408288 seconds time elapsed
+
+      52.943317000 seconds user
+       0.035000000 seconds sys
+
+
+finished
+./linear-algebra/kernels/syr2k/syr2k_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+18.912268
+
+ Performance counter stats for './linear-algebra/kernels/syr2k/syr2k_time':
+
+         18,957.98 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.211 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,491      page-faults               # 1239.173 M/sec                  
+    69,606,795,912      cycles                    # 3671825.495 GHz                   (30.77%)
+   104,178,155,689      instructions              #    1.50  insn per cycle           (38.46%)
+     8,033,991,742      branches                  # 423800798.755 M/sec               (38.47%)
+         4,473,091      branch-misses             #    0.06% of all branches          (38.47%)
+    32,034,435,067      L1-dcache-loads           # 1689847289.497 M/sec              (38.48%)
+     4,164,291,634      L1-dcache-load-misses     #   13.00% of all L1-dcache hits    (38.47%)
+         5,742,551      LLC-loads                 # 302925.094 M/sec                  (30.77%)
+         1,263,546      LLC-load-misses           #   22.00% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         4,249,790      L1-icache-load-misses                                         (30.76%)
+    32,067,703,595      dTLB-loads                # 1691602236.377 M/sec              (30.76%)
+           836,925      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            10,575      iTLB-loads                #  557.841 M/sec                    (30.76%)
+            18,389      iTLB-load-misses          #  173.89% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      18.958366872 seconds time elapsed
+
+      18.920205000 seconds user
+       0.038000000 seconds sys
+
+
+finished
+./linear-algebra/kernels/syrk/syrk_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+9.287314
+
+ Performance counter stats for './linear-algebra/kernels/syrk/syrk_time':
+
+          9,319.27 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.322 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            15,680      page-faults               # 1682.584 M/sec                  
+    34,204,534,925      cycles                    # 3670408.298 GHz                   (30.76%)
+    64,114,257,432      instructions              #    1.87  insn per cycle           (38.45%)
+     8,020,626,178      branches                  # 860674554.995 M/sec               (38.45%)
+         4,256,954      branch-misses             #    0.05% of all branches          (38.45%)
+    16,023,316,072      L1-dcache-loads           # 1719424409.486 M/sec              (38.46%)
+     1,039,417,528      L1-dcache-load-misses     #    6.49% of all L1-dcache hits    (38.47%)
+         4,194,518      LLC-loads                 # 450103.874 M/sec                  (30.77%)
+           426,762      LLC-load-misses           #   10.17% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         2,612,488      L1-icache-load-misses                                         (30.77%)
+    16,042,163,699      dTLB-loads                # 1721446904.067 M/sec              (30.77%)
+           288,312      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+               484      iTLB-loads                #   51.937 M/sec                    (30.77%)
+            28,009      iTLB-load-misses          # 5786.98% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       9.319585471 seconds time elapsed
+
+       9.293490000 seconds user
+       0.025998000 seconds sys
+
+
+finished
+./linear-algebra/kernels/trisolv/trisolv_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+0.161656
+
+ Performance counter stats for './linear-algebra/kernels/trisolv/trisolv_time':
+
+            996.49 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    3.012 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           439,569      page-faults               # 441334.337 M/sec                
+     3,659,955,693      cycles                    # 3674654.310 GHz                   (30.58%)
+     3,003,329,137      instructions              #    0.82  insn per cycle           (38.30%)
+       455,962,992      branches                  # 457794168.675 M/sec               (38.40%)
+           910,267      branch-misses             #    0.20% of all branches          (38.50%)
+       617,196,186      L1-dcache-loads           # 619674885.542 M/sec               (38.60%)
+        64,067,237      L1-dcache-load-misses     #   10.38% of all L1-dcache hits    (38.63%)
+           603,025      LLC-loads                 # 605446.787 M/sec                  (30.90%)
+           360,307      LLC-load-misses           #   59.75% of all LL-cache hits     (30.90%)
+   <not supported>      L1-icache-loads                                             
+           601,594      L1-icache-load-misses                                         (30.89%)
+       627,943,104      dTLB-loads                # 630464963.855 M/sec               (30.79%)
+            71,748      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.69%)
+               304      iTLB-loads                #  305.221 M/sec                    (30.60%)
+               138      iTLB-load-misses          #   45.39% of all iTLB cache hits   (30.51%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.996782042 seconds time elapsed
+
+       0.313217000 seconds user
+       0.683473000 seconds sys
+
+
+finished
+./linear-algebra/kernels/trmm/trmm_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 128000000
+45.747575
+
+ Performance counter stats for './linear-algebra/kernels/trmm/trmm_time':
+
+         45,865.01 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.087 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            62,560      page-faults               # 1364.003 M/sec                  
+   168,489,650,405      cycles                    # 3673599.704 GHz                   (30.77%)
+   256,377,433,434      instructions              #    1.52  insn per cycle           (38.46%)
+    32,074,458,677      branches                  # 699323202.377 M/sec               (38.46%)
+        16,959,346      branch-misses             #    0.05% of all branches          (38.46%)
+    64,092,458,436      L1-dcache-loads           # 1397415424.310 M/sec              (38.46%)
+     6,948,756,626      L1-dcache-load-misses     #   10.84% of all L1-dcache hits    (38.46%)
+        42,100,435      LLC-loads                 # 917920.746 M/sec                  (30.77%)
+        21,549,397      LLC-load-misses           #   51.19% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        11,803,455      L1-icache-load-misses                                         (30.77%)
+    64,150,643,273      dTLB-loads                # 1398684035.168 M/sec              (30.77%)
+        18,153,513      dTLB-load-misses          #    0.03% of all dTLB cache hits   (30.77%)
+            56,438      iTLB-loads                # 1230.524 M/sec                    (30.77%)
+            33,801      iTLB-load-misses          #   59.89% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      45.865343867 seconds time elapsed
+
+      45.762230000 seconds user
+       0.103000000 seconds sys
+
+
+finished
+./linear-algebra/solvers/durbin/durbin_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+1.756400
+
+ Performance counter stats for './linear-algebra/solvers/durbin/durbin_time':
+
+          2,521.10 msec task-clock                #    1.000 CPUs utilized          
+                 6      context-switches          #    2.380 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           390,759      page-faults               # 155001.587 M/sec                
+     9,245,894,916      cycles                    # 3667550.542 GHz                   (30.75%)
+     2,572,227,411      instructions              #    0.28  insn per cycle           (38.44%)
+       382,856,702      branches                  # 151866998.017 M/sec               (38.44%)
+           813,870      branch-misses             #    0.21% of all branches          (38.44%)
+       695,497,688      L1-dcache-loads           # 275881669.179 M/sec               (38.44%)
+       440,369,147      L1-dcache-load-misses     #   63.32% of all L1-dcache hits    (38.47%)
+       157,497,941      LLC-loads                 # 62474391.511 M/sec                (30.78%)
+         2,592,748      LLC-load-misses           #    1.65% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         1,061,880      L1-icache-load-misses                                         (30.78%)
+       707,982,759      dTLB-loads                # 280834097.184 M/sec               (30.78%)
+       113,413,642      dTLB-load-misses          #   16.02% of all dTLB cache hits   (30.78%)
+               747      iTLB-loads                #  296.311 M/sec                    (30.78%)
+               910      iTLB-load-misses          #  121.82% of all iTLB cache hits   (30.78%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       2.521495729 seconds time elapsed
+
+       1.933479000 seconds user
+       0.587841000 seconds sys
+
+
+finished
+./linear-algebra/solvers/dynprog/dynprog_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 256000000
+[PolyBench] posix_memalign: request to allocate 640000
+[PolyBench] posix_memalign: request to allocate 640000
+12.104025
+
+ Performance counter stats for './linear-algebra/solvers/dynprog/dynprog_time':
+
+         12,110.44 msec task-clock                #    1.000 CPUs utilized          
+                 1      context-switches          #    0.083 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,903      page-faults               # 2634.434 M/sec                  
+    44,448,834,904      cycles                    # 3670424.022 GHz                   (30.76%)
+    76,109,262,090      instructions              #    1.71  insn per cycle           (38.45%)
+    10,843,296,109      branches                  # 895400174.154 M/sec               (38.46%)
+        73,559,420      branch-misses             #    0.68% of all branches          (38.47%)
+    32,256,533,986      L1-dcache-loads           # 2663627909.661 M/sec              (38.48%)
+     1,627,470,867      L1-dcache-load-misses     #    5.05% of all L1-dcache hits    (38.48%)
+        59,048,843      LLC-loads                 # 4876039.884 M/sec                 (30.78%)
+        24,552,990      LLC-load-misses           #   41.58% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         3,694,864      L1-icache-load-misses                                         (30.77%)
+    32,311,102,681      dTLB-loads                # 2668133995.128 M/sec              (30.77%)
+         1,836,747      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.76%)
+            12,049      iTLB-loads                #  994.963 M/sec                    (30.75%)
+             6,332      iTLB-load-misses          #   52.55% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      12.110893087 seconds time elapsed
+
+      12.062657000 seconds user
+       0.048002000 seconds sys
+
+
+finished
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+72.163645
+
+ Performance counter stats for './linear-algebra/solvers/gramschmidt/gramschmidt_time':
+
+         72,211.66 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.055 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,511      page-faults               #  325.588 M/sec                  
+   265,249,943,515      cycles                    # 3673262.294 GHz                   (30.77%)
+    52,422,794,856      instructions              #    0.20  insn per cycle           (38.46%)
+     6,072,207,851      branches                  # 84089790.351 M/sec                (38.46%)
+         5,441,960      branch-misses             #    0.09% of all branches          (38.46%)
+    16,109,994,395      L1-dcache-loads           # 223096126.560 M/sec               (38.46%)
+    23,848,709,272      L1-dcache-load-misses     #  148.04% of all L1-dcache hits    (38.46%)
+       680,889,074      LLC-loads                 # 9429160.017 M/sec                 (30.77%)
+       103,326,591      LLC-load-misses           #   15.18% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         8,909,842      L1-icache-load-misses                                         (30.77%)
+    16,127,796,353      dTLB-loads                # 223342653.515 M/sec               (30.77%)
+    14,682,283,416      dTLB-load-misses          #   91.04% of all dTLB cache hits   (30.77%)
+            13,696      iTLB-loads                #  189.666 M/sec                    (30.77%)
+            73,919      iTLB-load-misses          #  539.71% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      72.212004671 seconds time elapsed
+
+      72.173883000 seconds user
+       0.037999000 seconds sys
+
+
+finished
+./linear-algebra/solvers/lu/lu_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+17.385005
+
+ Performance counter stats for './linear-algebra/solvers/lu/lu_time':
+
+         17,447.58 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.172 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,308      page-faults               # 1794.463 M/sec                  
+    64,054,109,263      cycles                    # 3671353.772 GHz                   (30.77%)
+    85,367,719,094      instructions              #    1.33  insn per cycle           (38.47%)
+    10,685,824,946      branches                  # 612473488.050 M/sec               (38.47%)
+         8,765,375      branch-misses             #    0.08% of all branches          (38.47%)
+    21,369,080,613      L1-dcache-loads           # 1224799714.163 M/sec              (38.47%)
+     4,973,805,368      L1-dcache-load-misses     #   23.28% of all L1-dcache hits    (38.46%)
+       515,197,777      LLC-loads                 # 29529304.580 M/sec                (30.77%)
+       445,429,025      LLC-load-misses           #   86.46% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         5,817,478      L1-icache-load-misses                                         (30.77%)
+    21,471,103,280      dTLB-loads                # 1230647290.652 M/sec              (30.77%)
+         6,612,803      dTLB-load-misses          #    0.03% of all dTLB cache hits   (30.77%)
+             7,719      iTLB-loads                #  442.426 M/sec                    (30.77%)
+            13,190      iTLB-load-misses          #  170.88% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      17.447880601 seconds time elapsed
+
+      17.394789000 seconds user
+       0.053002000 seconds sys
+
+
+finished
+./linear-algebra/solvers/ludcmp/ludcmp_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512128008
+[PolyBench] posix_memalign: request to allocate 64008
+[PolyBench] posix_memalign: request to allocate 64008
+[PolyBench] posix_memalign: request to allocate 64008
+950.836451
+
+ Performance counter stats for './linear-algebra/solvers/ludcmp/ludcmp_time':
+
+        951,080.52 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.004 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           125,132      page-faults               #  131.568 M/sec                  
+ 3,491,847,452,054      cycles                    # 3671455.032 GHz                   (30.77%)
+   944,196,754,986      instructions              #    0.27  insn per cycle           (38.46%)
+    86,370,765,213      branches                  # 90813354.516 M/sec                (38.46%)
+        82,752,481      branch-misses             #    0.10% of all branches          (38.46%)
+   300,187,691,735      L1-dcache-loads           # 315628224.476 M/sec               (38.46%)
+   346,251,275,074      L1-dcache-load-misses     #  115.34% of all L1-dcache hits    (38.46%)
+    32,386,731,051      LLC-loads                 # 34052583.433 M/sec                (30.77%)
+     9,065,461,914      LLC-load-misses           #   27.99% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+       270,437,088      L1-icache-load-misses                                         (30.77%)
+   300,395,684,131      dTLB-loads                # 315846915.224 M/sec               (30.77%)
+   153,753,678,273      dTLB-load-misses          #   51.18% of all dTLB cache hits   (30.77%)
+           613,152      iTLB-loads                #  644.690 M/sec                    (30.77%)
+           904,563      iTLB-load-misses          #  147.53% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     951.080839235 seconds time elapsed
+
+     950.876721000 seconds user
+       0.203999000 seconds sys
+
+
+finished
+./datamining/correlation/correlation_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 24000
+[PolyBench] posix_memalign: request to allocate 24000
+110.265858
+
+ Performance counter stats for './datamining/correlation/correlation_time':
+
+        110,304.27 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.036 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            35,237      page-faults               #  319.454 M/sec                  
+   405,020,743,718      cycles                    # 3671859.078 GHz                   (30.77%)
+    95,282,836,336      instructions              #    0.24  insn per cycle           (38.46%)
+    13,636,155,231      branches                  # 123623397.438 M/sec               (38.46%)
+         6,634,751      branch-misses             #    0.05% of all branches          (38.46%)
+    27,194,727,618      L1-dcache-loads           # 246543440.111 M/sec               (38.46%)
+    36,953,337,345      L1-dcache-load-misses     #  135.88% of all L1-dcache hits    (38.46%)
+     1,933,289,334      LLC-loads                 # 17526919.550 M/sec                (30.77%)
+       548,787,277      LLC-load-misses           #   28.39% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        18,780,030      L1-icache-load-misses                                         (30.77%)
+    27,192,605,445      dTLB-loads                # 246524200.800 M/sec               (30.77%)
+    24,719,423,432      dTLB-load-misses          #   90.90% of all dTLB cache hits   (30.77%)
+             1,089      iTLB-loads                #    9.873 M/sec                    (30.77%)
+             2,564      iTLB-load-misses          #  235.45% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     110.304620006 seconds time elapsed
+
+     110.224495000 seconds user
+       0.080000000 seconds sys
+
+
+finished
+./datamining/covariance/covariance_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 25920000
+[PolyBench] posix_memalign: request to allocate 25920000
+[PolyBench] posix_memalign: request to allocate 14400
+20.672603
+
+ Performance counter stats for './datamining/covariance/covariance_time':
+
+         20,687.04 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.145 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            12,715      page-faults               #  614.637 M/sec                  
+    75,955,301,063      cycles                    # 3671644.079 GHz                   (30.76%)
+    20,649,213,008      instructions              #    0.27  insn per cycle           (38.46%)
+     2,948,200,645      branches                  # 142514653.889 M/sec               (38.46%)
+         2,040,942      branch-misses             #    0.07% of all branches          (38.47%)
+     5,870,673,784      L1-dcache-loads           # 283785652.052 M/sec               (38.47%)
+     7,102,478,163      L1-dcache-load-misses     #  120.98% of all L1-dcache hits    (38.47%)
+       367,785,974      LLC-loads                 # 17778603.664 M/sec                (30.77%)
+         4,479,784      LLC-load-misses           #    1.22% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         2,903,239      L1-icache-load-misses                                         (30.76%)
+     5,873,361,700      dTLB-loads                # 283915584.667 M/sec               (30.76%)
+     4,938,935,860      dTLB-load-misses          #   84.09% of all dTLB cache hits   (30.76%)
+               634      iTLB-loads                #   30.647 M/sec                    (30.76%)
+             1,219      iTLB-load-misses          #  192.27% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      20.687353111 seconds time elapsed
+
+      20.661257000 seconds user
+       0.025999000 seconds sys
+
+
+finished
+./medley/floyd-warshall/floyd-warshall_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+69.327970
+
+ Performance counter stats for './medley/floyd-warshall/floyd-warshall_time':
+
+         69,390.29 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.058 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,307      page-faults               #  451.175 M/sec                  
+   254,790,826,483      cycles                    # 3671866.645 GHz                   (30.77%)
+   448,509,395,251      instructions              #    1.76  insn per cycle           (38.46%)
+   128,080,170,304      branches                  # 1845801560.801 M/sec              (38.46%)
+        17,628,747      branch-misses             #    0.01% of all branches          (38.46%)
+   128,093,733,855      L1-dcache-loads           # 1845997029.183 M/sec              (38.46%)
+    16,105,118,070      L1-dcache-load-misses     #   12.57% of all L1-dcache hits    (38.46%)
+        63,150,938      LLC-loads                 # 910087.015 M/sec                  (30.77%)
+        45,978,161      LLC-load-misses           #   72.81% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        20,103,160      L1-icache-load-misses                                         (30.77%)
+   128,208,651,543      dTLB-loads                # 1847653142.283 M/sec              (30.77%)
+        16,717,662      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+            43,315      iTLB-loads                #  624.225 M/sec                    (30.77%)
+            68,898      iTLB-load-misses          #  159.06% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      69.390652595 seconds time elapsed
+
+      69.346523000 seconds user
+       0.043999000 seconds sys
+
+
+finished
+./medley/reg_detect/reg_detect_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 200000000
+[PolyBench] posix_memalign: request to allocate 200000000
+30.652152
+
+ Performance counter stats for './medley/reg_detect/reg_detect_time':
+
+         30,660.54 msec task-clock                #    1.000 CPUs utilized          
+                 1      context-switches          #    0.033 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            49,601      page-faults               # 1617.776 M/sec                  
+   112,549,469,374      cycles                    # 3670889.412 GHz                   (30.76%)
+   151,782,257,358      instructions              #    1.35  insn per cycle           (38.46%)
+    31,611,112,674      branches                  # 1031021287.476 M/sec              (38.46%)
+        11,020,565      branch-misses             #    0.03% of all branches          (38.46%)
+    25,348,283,308      L1-dcache-loads           # 826754184.866 M/sec               (38.47%)
+     4,759,692,898      L1-dcache-load-misses     #   18.78% of all L1-dcache hits    (38.47%)
+        44,368,450      LLC-loads                 # 1447111.872 M/sec                 (30.78%)
+        36,616,238      LLC-load-misses           #   82.53% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         8,660,043      L1-icache-load-misses                                         (30.77%)
+    25,357,011,860      dTLB-loads                # 827038873.451 M/sec               (30.77%)
+           812,571      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+             3,231      iTLB-loads                #  105.382 M/sec                    (30.76%)
+            31,520      iTLB-load-misses          #  975.55% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      30.660992984 seconds time elapsed
+
+      30.577760000 seconds user
+       0.082999000 seconds sys
+
+
+finished
+./stencils/adi/adi_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+46.394846
+
+ Performance counter stats for './stencils/adi/adi_time':
+
+         47,141.47 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    0.106 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           375,057      page-faults               # 7956.068 M/sec                  
+   173,092,338,728      cycles                    # 3671800.317 GHz                   (30.77%)
+   123,711,923,017      instructions              #    0.71  insn per cycle           (38.46%)
+     8,299,339,789      branches                  # 176053537.027 M/sec               (38.46%)
+         3,322,711      branch-misses             #    0.04% of all branches          (38.47%)
+    46,781,004,262      L1-dcache-loads           # 992363425.935 M/sec               (38.47%)
+     6,189,033,113      L1-dcache-load-misses     #   13.23% of all L1-dcache hits    (38.47%)
+       162,352,551      LLC-loads                 # 3443977.663 M/sec                 (30.77%)
+       153,057,708      LLC-load-misses           #   94.27% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         9,343,471      L1-icache-load-misses                                         (30.77%)
+    46,810,281,033      dTLB-loads                # 992984472.816 M/sec               (30.77%)
+        33,744,905      dTLB-load-misses          #    0.07% of all dTLB cache hits   (30.77%)
+            63,738      iTLB-loads                # 1352.071 M/sec                    (30.77%)
+            20,145      iTLB-load-misses          #   31.61% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      47.141810586 seconds time elapsed
+
+      46.580691000 seconds user
+       0.560996000 seconds sys
+
+
+finished
+./stencils/fdtd-2d/fdtd-2d_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 800
+33.437634
+
+ Performance counter stats for './stencils/fdtd-2d/fdtd-2d_time':
+
+         34,178.63 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.088 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           375,057      page-faults               # 10973.638 M/sec                 
+   125,501,241,533      cycles                    # 3671989.044 GHz                   (30.77%)
+   110,795,692,118      instructions              #    0.88  insn per cycle           (38.46%)
+     9,893,473,302      branches                  # 289469053.251 M/sec               (38.46%)
+         3,807,581      branch-misses             #    0.04% of all branches          (38.46%)
+    35,571,913,994      L1-dcache-loads           # 1040783954.415 M/sec              (38.46%)
+     7,381,626,662      L1-dcache-load-misses     #   20.75% of all L1-dcache hits    (38.46%)
+       353,731,101      LLC-loads                 # 10349672.333 M/sec                (30.77%)
+       344,653,002      LLC-load-misses           #   97.43% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         9,666,873      L1-icache-load-misses                                         (30.77%)
+    35,582,847,584      dTLB-loads                # 1041103855.814 M/sec              (30.77%)
+         7,787,101      dTLB-load-misses          #    0.02% of all dTLB cache hits   (30.77%)
+            15,182      iTLB-loads                #  444.204 M/sec                    (30.77%)
+            29,060      iTLB-load-misses          #  191.41% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      34.178950880 seconds time elapsed
+
+      33.599834000 seconds user
+       0.578997000 seconds sys
+
+
+finished
+./stencils/fdtd-apml/fdtd-apml_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+0.264849
+
+ Performance counter stats for './stencils/fdtd-apml/fdtd-apml_time':
+
+            466.69 msec task-clock                #    1.000 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           166,085      page-faults               # 356405.579 M/sec                
+     1,713,496,642      cycles                    # 3677031.421 GHz                   (30.58%)
+     1,915,062,624      instructions              #    1.12  insn per cycle           (38.29%)
+       126,291,561      branches                  # 271011933.476 M/sec               (38.29%)
+           489,068      branch-misses             #    0.39% of all branches          (38.35%)
+       786,284,344      L1-dcache-loads           # 1687305459.227 M/sec              (38.57%)
+        37,397,998      L1-dcache-load-misses     #    4.76% of all L1-dcache hits    (38.57%)
+           511,087      LLC-loads                 # 1096753.219 M/sec                 (30.86%)
+           160,758      LLC-load-misses           #   31.45% of all LL-cache hits     (30.85%)
+   <not supported>      L1-icache-loads                                             
+           589,640      L1-icache-load-misses                                         (30.85%)
+       784,006,105      dTLB-loads                # 1682416534.335 M/sec              (30.85%)
+           237,723      dTLB-load-misses          #    0.03% of all dTLB cache hits   (30.86%)
+           172,908      iTLB-loads                # 371047.210 M/sec                  (30.80%)
+               458      iTLB-load-misses          #    0.26% of all iTLB cache hits   (30.58%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.466903103 seconds time elapsed
+
+       0.244943000 seconds user
+       0.221949000 seconds sys
+
+
+finished
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 80000000
+[PolyBench] posix_memalign: request to allocate 80000000
+27.742967
+
+ Performance counter stats for './stencils/jacobi-1d-imper/jacobi-1d-imper_time':
+
+         27,821.73 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.108 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            39,118      page-faults               # 1406.060 M/sec                  
+   102,144,724,515      cycles                    # 3671497.233 GHz                   (30.77%)
+    75,286,767,016      instructions              #    0.74  insn per cycle           (38.46%)
+    10,050,134,530      branches                  # 361242749.362 M/sec               (38.47%)
+           717,554      branch-misses             #    0.01% of all branches          (38.47%)
+    20,066,523,540      L1-dcache-loads           # 721272547.356 M/sec               (38.47%)
+     5,024,837,520      L1-dcache-load-misses     #   25.04% of all L1-dcache hits    (38.46%)
+       409,046,235      LLC-loads                 # 14702786.924 M/sec                (30.77%)
+       377,102,102      LLC-load-misses           #   92.19% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         7,440,592      L1-icache-load-misses                                         (30.77%)
+    20,074,113,973      dTLB-loads                # 721545378.419 M/sec               (30.77%)
+         2,636,088      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+            16,453      iTLB-loads                #  591.388 M/sec                    (30.77%)
+            21,611      iTLB-load-misses          #  131.35% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      27.822038491 seconds time elapsed
+
+      27.758938000 seconds user
+       0.062999000 seconds sys
+
+
+finished
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+19.524607
+
+ Performance counter stats for './stencils/jacobi-2d-imper/jacobi-2d-imper_time':
+
+         20,012.38 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.150 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           250,055      page-faults               # 12495.253 M/sec                 
+    73,475,084,462      cycles                    # 3671551.292 GHz                   (30.76%)
+    62,144,044,143      instructions              #    0.85  insn per cycle           (38.46%)
+     6,601,863,505      branches                  # 329895238.107 M/sec               (38.46%)
+         2,467,556      branch-misses             #    0.04% of all branches          (38.47%)
+    19,392,529,731      L1-dcache-loads           # 969045059.514 M/sec               (38.47%)
+     4,826,904,107      L1-dcache-load-misses     #   24.89% of all L1-dcache hits    (38.47%)
+       252,226,166      LLC-loads                 # 12603746.052 M/sec                (30.77%)
+       245,035,992      LLC-load-misses           #   97.15% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         5,225,571      L1-icache-load-misses                                         (30.76%)
+    19,518,033,253      dTLB-loads                # 975316472.766 M/sec               (30.76%)
+         1,156,924      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.76%)
+             9,298      iTLB-loads                #  464.621 M/sec                    (30.76%)
+            19,349      iTLB-load-misses          #  208.10% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      20.012699666 seconds time elapsed
+
+      19.626587000 seconds user
+       0.386011000 seconds sys
+
+
+finished
+./stencils/seidel-2d/seidel-2d_time
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 200000000
+26.451911
+
+ Performance counter stats for './stencils/seidel-2d/seidel-2d_time':
+
+         26,548.28 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.151 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            48,884      page-faults               # 1841.344 M/sec                  
+    97,498,757,061      cycles                    # 3672546.220 GHz                   (30.77%)
+    40,356,027,063      instructions              #    0.41  insn per cycle           (38.46%)
+     1,314,726,076      branches                  # 49522603.435 M/sec                (38.47%)
+         1,130,059      branch-misses             #    0.09% of all branches          (38.47%)
+     7,580,505,367      L1-dcache-loads           # 285539602.494 M/sec               (38.47%)
+       946,911,877      L1-dcache-load-misses     #   12.49% of all L1-dcache hits    (38.47%)
+         1,476,491      LLC-loads                 # 55615.903 M/sec                   (30.77%)
+           291,815      LLC-load-misses           #   19.76% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         3,464,788      L1-icache-load-misses                                         (30.77%)
+     7,575,006,643      dTLB-loads                # 285332478.642 M/sec               (30.77%)
+            24,069      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            52,385      iTLB-loads                # 1973.218 M/sec                    (30.77%)
+               192      iTLB-load-misses          #    0.37% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      26.548592854 seconds time elapsed
+
+      26.473480000 seconds user
+       0.074998000 seconds sys
+
+
+finished
