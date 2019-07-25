@@ -28,4 +28,4 @@ stencils/fdtd-apml/fdtd-apml_time
 stencils/jacobi-1d-imper/jacobi-1d-imper_time
 stencils/jacobi-2d-imper/jacobi-2d-imper_time
 stencils/seidel-2d/seidel-2d_time
-
+.ipynb_checkpoints/
