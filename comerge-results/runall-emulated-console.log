@@ -1,0 +1,135 @@
+intelsdp1044@~/projects/tony/CoMerge-extended/polybench-c-3.2 ∴ ./run_all_throttle.sh
+setpci: Warning: No devices selected for "0x84.L=0x3f70f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x3f70f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x3f70f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+Node 1 with maxspeed 14952.9554 throttled to speed =  745654.0444 with scale : 1
+/root/projects/tony/CoMerge-extended/polybench-c-3.2
+13.420587
+18.330426
+0.454736
+0.433766
+12.158057
+18.810393
+30.197059
+3.363401
+0.257629
+3.347130
+51.550232
+18.427533
+9.318528
+0.187359
+42.881737
+1.657911
+11.530738
+70.378386
+17.309363
+1631.822926
+107.297396
+20.443325
+66.821609
+29.269508
+52.900653
+44.780746
+0.258885
+26.706284
+19.733962
+25.801085
+setpci: Warning: No devices selected for "0x84.L=0x3f70f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x3f70f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x3f70f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+Node 1 with maxspeed 14952.9554 throttled to speed =  725501.2324 with scale : 1
+/root/projects/tony/CoMerge-extended/polybench-c-3.2
+13.682502
+0.472101
+0.442563
+18.784695
+0.186644
+50.057891
+1605.586623
+20.542585
+52.971426
+44.920305
+19.650161
+setpci: Warning: No devices selected for "0x84.L=0x740f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x740f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x740f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+Node 1 with maxspeed 14952.9554 throttled to speed =  1333.7878 with scale : 3
+/root/projects/tony/CoMerge-extended/polybench-c-3.2
+13.561611
+0.462308
+0.441867
+18.806428
+0.184742
+50.197719
+1659.624673
+20.575693
+53.076316
+44.827345
+19.772092
+setpci: Warning: No devices selected for "0x84.L=0x3a0f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x3a0f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x3a0f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+Node 1 with maxspeed 14952.9554 throttled to speed =  725501.2324 with scale : 5
+/root/projects/tony/CoMerge-extended/polybench-c-3.2
+13.899813
+0.465453
+0.442130
+18.742918
+0.181503
+50.192004
+1634.359080
+20.562814
+53.069441
+44.930362
+19.773117
+setpci: Warning: No devices selected for "0x84.L=0x2a0f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x2a0f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x2a0f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+Node 1 with maxspeed 14952.9554 throttled to speed =  695428.6425 with scale : 7
+/root/projects/tony/CoMerge-extended/polybench-c-3.2
+13.609436
+0.459719
+0.442825
+18.711938
+0.185080
+49.926988
+1632.442591
+20.538077
+52.998014
+44.901936
+19.648976
+setpci: Warning: No devices selected for "0x84.L=0x200f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x200f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+setpci: Warning: No devices selected for "0x84.L=0x200f".
+setpci: Warning: No devices selected for "0x48.L=0x2".
+Node 1 with maxspeed 14952.9554 throttled to speed =  695428.6425 with scale : 9
+/root/projects/tony/CoMerge-extended/polybench-c-3.2
+13.891051
+0.458936
+0.442016
+18.733977
+0.184226
+49.995010
+1667.809601
+20.576275
+53.039682
+44.826652
+19.658216
+

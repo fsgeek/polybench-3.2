@@ -1,0 +1,950 @@
+diff -r ./datamining/correlation/correlation.h /home/tony/projects/polybench-3.2/datamining/correlation/correlation.h
+40,41c40,41
+< #   define N 3000
+< #   define M 3000
+---
+> #   define N 4000
+> #   define M 4000
+
+diff -r ./datamining/covariance/covariance.c /home/tony/projects/polybench-3.2/datamining/covariance/covariance.c
+19c19
+< #include "my_malloc.h"
+---
+> 
+25,26c25
+< 		 //DATA_TYPE POLYBENCH_2D(data,M,N,m,n))
+< 		 DATA_TYPE **data)
+---
+> 		 DATA_TYPE POLYBENCH_2D(data,M,N,m,n))
+42,43c41
+< 		 //DATA_TYPE POLYBENCH_2D(symmat,M,M,m,m))
+< 		 DATA_TYPE **symmat)
+---
+> 		 DATA_TYPE POLYBENCH_2D(symmat,M,M,m,m))
+60c58
+< /*void kernel_covariance(int m, int n,
+---
+> void kernel_covariance(int m, int n,
+64,67c62
+< 		       DATA_TYPE POLYBENCH_1D(mean,M,m))*/
+< 
+< void kernel_covariance(int m, int n,
+< 		       DATA_TYPE float_n, DATA_TYPE **data, DATA_TYPE **symmat, DATA_TYPE *mean)
+---
+> 		       DATA_TYPE POLYBENCH_1D(mean,M,m))
+108c103
+< /*  POLYBENCH_2D_ARRAY_DECL(data,DATA_TYPE,M,N,m,n);
+---
+>   POLYBENCH_2D_ARRAY_DECL(data,DATA_TYPE,M,N,m,n);
+111,115d105
+< */
+<   DATA_TYPE **data = (DATA_TYPE **) my_malloc2D (M, sizeof(DATA_TYPE *), N, sizeof(DATA_TYPE), -1, 0, "data");
+<   DATA_TYPE **symmat = (DATA_TYPE **) my_malloc2D (M, sizeof(DATA_TYPE *), M, sizeof(DATA_TYPE), -1, 0, "symmat");
+<   DATA_TYPE *mean = (DATA_TYPE *) my_malloc (M * sizeof(DATA_TYPE), -1, 0, "mean");
+< 
+119,120c109
+<   //init_array (m, n, &float_n, POLYBENCH_ARRAY(data));
+<   init_array (m, n, &float_n, data);
+---
+>   init_array (m, n, &float_n, POLYBENCH_ARRAY(data));
+126c115
+< /*  kernel_covariance (m, n, float_n,
+---
+>   kernel_covariance (m, n, float_n,
+129,130c118
+< 		     POLYBENCH_ARRAY(mean));*/
+<   kernel_covariance (m, n, float_n, data, symmat, mean);
+---
+> 		     POLYBENCH_ARRAY(mean));
+138c126
+< //  polybench_prevent_dce(print_array(m, POLYBENCH_ARRAY(symmat)));
+---
+>   polybench_prevent_dce(print_array(m, POLYBENCH_ARRAY(symmat)));
+141,143c129,131
+<   //POLYBENCH_FREE_ARRAY(data);
+<   //POLYBENCH_FREE_ARRAY(symmat);
+<   //POLYBENCH_FREE_ARRAY(mean);
+---
+>   POLYBENCH_FREE_ARRAY(data);
+>   POLYBENCH_FREE_ARRAY(symmat);
+>   POLYBENCH_FREE_ARRAY(mean);
+
+diff -r ./datamining/covariance/covariance.h /home/tony/projects/polybench-3.2/datamining/covariance/covariance.h
+30,31c30,31
+< #   define N 1800
+< #   define M 1800
+---
+> #   define N 1000
+> #   define M 1000
+40,41c40,41
+< #   define N 3000
+< #   define M 3000
+---
+> #   define N 4000
+> #   define M 4000
+
+diff -r ./linear-algebra/kernels/2mm/2mm.c /home/tony/projects/polybench-3.2/linear-algebra/kernels/2mm/2mm.c
+19c19
+< #include "my_malloc.h"
+---
+> 
+23c23
+< /*void init_array(int ni, int nj, int nk, int nl,
+---
+> void init_array(int ni, int nj, int nk, int nl,
+28,36c28,29
+< 		DATA_TYPE POLYBENCH_2D(C,NL,NJ,nl,nj),*/
+< 
+< void init_array(int ni, int nj, int nk, int nl,
+<     DATA_TYPE *alpha,
+<     DATA_TYPE *beta,
+<     DATA_TYPE **A,
+<     DATA_TYPE **B,
+<     DATA_TYPE **C,
+<     DATA_TYPE **D)
+---
+> 		DATA_TYPE POLYBENCH_2D(C,NL,NJ,nl,nj),
+> 		DATA_TYPE POLYBENCH_2D(D,NI,NL,ni,nl))
+80,85c73
+<         DATA_TYPE **tmp,
+<         DATA_TYPE **A,
+<         DATA_TYPE **B,
+<         DATA_TYPE **C,
+<         DATA_TYPE **D)
+< 		/*DATA_TYPE POLYBENCH_2D(tmp,NI,NJ,ni,nj),
+---
+> 		DATA_TYPE POLYBENCH_2D(tmp,NI,NJ,ni,nj),
+89c77
+< 		DATA_TYPE POLYBENCH_2D(D,NI,NL,ni,nl))*/
+---
+> 		DATA_TYPE POLYBENCH_2D(D,NI,NL,ni,nl))
+125c113
+< /*  POLYBENCH_2D_ARRAY_DECL(tmp,DATA_TYPE,NI,NJ,ni,nj);
+---
+>   POLYBENCH_2D_ARRAY_DECL(tmp,DATA_TYPE,NI,NJ,ni,nj);
+129,138c117
+<   POLYBENCH_2D_ARRAY_DECL(D,DATA_TYPE,NI,NL,ni,nl);*/
+< 
+< 
+<   DATA_TYPE **tmp = (DATA_TYPE **) my_malloc2D(NI, sizeof(DATA_TYPE *), NJ, sizeof(DATA_TYPE), -1, 0, "tmp"); 
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D(NI, sizeof(DATA_TYPE *), NK, sizeof(DATA_TYPE), -1, 0, "A"); 
+<   DATA_TYPE **B = (DATA_TYPE **) my_malloc2D(NK, sizeof(DATA_TYPE *), NJ, sizeof(DATA_TYPE), -1, 0, "B"); 
+<   DATA_TYPE **C = (DATA_TYPE **) my_malloc2D(NL, sizeof(DATA_TYPE *), NJ, sizeof(DATA_TYPE), -1, 0, "C"); 
+<   DATA_TYPE **D = (DATA_TYPE **) my_malloc2D(NI, sizeof(DATA_TYPE *), NL, sizeof(DATA_TYPE), -1, 0, "D"); 
+< 
+< 
+---
+>   POLYBENCH_2D_ARRAY_DECL(D,DATA_TYPE,NI,NL,ni,nl);
+141,142c120,121
+<   init_array (ni, nj, nk, nl, &alpha, &beta, A, B, C, D);
+< /*	      POLYBENCH_ARRAY(A),
+---
+>   init_array (ni, nj, nk, nl, &alpha, &beta,
+> 	      POLYBENCH_ARRAY(A),
+146c125
+< */
+---
+> 
+151c130
+< /*  kernel_2mm (ni, nj, nk, nl,
+---
+>   kernel_2mm (ni, nj, nk, nl,
+157c136
+< 	      POLYBENCH_ARRAY(D));*/
+---
+> 	      POLYBENCH_ARRAY(D));
+159d137
+<   kernel_2mm (ni, nj, nk, nl, alpha, beta, tmp, A, B, C, D);
+166c144
+<   //polybench_prevent_dce(print_array(ni, nl,  POLYBENCH_ARRAY(D)));
+---
+>   polybench_prevent_dce(print_array(ni, nl,  POLYBENCH_ARRAY(D)));
+169c147
+< /*  POLYBENCH_FREE_ARRAY(tmp);
+---
+>   POLYBENCH_FREE_ARRAY(tmp);
+174c152
+< */
+---
+> 
+
+diff -r ./linear-algebra/kernels/2mm/2mm.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/2mm/2mm.h
+34,37c34,37
+< #   define NI 512
+< #   define NJ 512
+< #   define NK 512
+< #   define NL 512
+---
+> #   define NI 1024
+> #   define NJ 1024
+> #   define NK 1024
+> #   define NL 1024
+41,44c41,44
+< #   define NI 1500
+< #   define NJ 1500
+< #   define NK 1500
+< #   define NL 1500
+---
+> #   define NI 2000
+> #   define NJ 2000
+> #   define NK 2000
+> #   define NL 2000
+
+diff -r ./linear-algebra/kernels/3mm/3mm.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/3mm/3mm.h
+44,48c44,48
+< #   define NI 1500
+< #   define NJ 1500
+< #   define NK 1500
+< #   define NL 1500
+< #   define NM 1500
+---
+> #   define NI 2000
+> #   define NJ 2000
+> #   define NK 2000
+> #   define NL 2000
+> #   define NM 2000
+
+diff -r ./linear-algebra/kernels/atax/atax.c /home/tony/projects/polybench-3.2/linear-algebra/kernels/atax/atax.c
+19d18
+< #include "my_malloc.h"
+25,28c24,25
+< 	//	 DATA_TYPE POLYBENCH_2D(A,NX,NY,nx,ny),
+< 	//	 DATA_TYPE POLYBENCH_1D(x,NY,ny))
+<         DATA_TYPE **A,
+<         DATA_TYPE *x)
+---
+> 		 DATA_TYPE POLYBENCH_2D(A,NX,NY,nx,ny),
+> 		 DATA_TYPE POLYBENCH_1D(x,NY,ny))
+61c58
+< /*		 DATA_TYPE POLYBENCH_2D(A,NX,NY,nx,ny),
+---
+> 		 DATA_TYPE POLYBENCH_2D(A,NX,NY,nx,ny),
+64,68c61
+< 		 DATA_TYPE POLYBENCH_1D(tmp,NX,nx))*/
+<         DATA_TYPE **A,
+<         DATA_TYPE *x,
+<         DATA_TYPE *y,
+<         DATA_TYPE *tmp)
+---
+> 		 DATA_TYPE POLYBENCH_1D(tmp,NX,nx))
+95c88
+< /*  POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, NX, NY, nx, ny);
+---
+>   POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, NX, NY, nx, ny);
+99,103d91
+< */
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D (NX, sizeof(DATA_TYPE *), NY, sizeof(DATA_TYPE), 1, 1, "A");  
+<   DATA_TYPE *x = (DATA_TYPE *) my_malloc (NY*sizeof(DATA_TYPE), 1, 1, "x");
+<   DATA_TYPE *y = (DATA_TYPE *) my_malloc (NY*sizeof(DATA_TYPE), 1, 1, "y");
+<   DATA_TYPE *tmp = (DATA_TYPE *) my_malloc (NX*sizeof(DATA_TYPE), 0, 1, "tmp");
+106,107c94
+<  // init_array (nx, ny, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(x));
+<   init_array (nx, ny, A, x);
+---
+>   init_array (nx, ny, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(x));
+113,114c100,101
+<   kernel_atax (nx, ny, A, x, y, tmp);
+< /*	       POLYBENCH_ARRAY(A),
+---
+>   kernel_atax (nx, ny,
+> 	       POLYBENCH_ARRAY(A),
+118c105
+< */
+---
+> 
+125c112
+<   //polybench_prevent_dce(print_array(nx, POLYBENCH_ARRAY(y)));
+---
+>   polybench_prevent_dce(print_array(nx, POLYBENCH_ARRAY(y)));
+128c115
+<  /* POLYBENCH_FREE_ARRAY(A);
+---
+>   POLYBENCH_FREE_ARRAY(A);
+132c119
+< */
+---
+> 
+
+diff -r ./linear-algebra/kernels/atax/atax.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/atax/atax.h
+35,36c35,36
+< #   define NX 20000
+< #   define NY 20000
+---
+> #   define NX 8000
+> #   define NY 8000
+40,41c40,41
+< #   define NX 15000
+< #   define NY 15000
+---
+> #   define NX 100000
+> #   define NY 100000
+
+diff -r ./linear-algebra/kernels/bicg/bicg.c /home/tony/projects/polybench-3.2/linear-algebra/kernels/bicg/bicg.c
+19d18
+< #include "my_malloc.h"
+24c23
+< /*void init_array (int nx, int ny,
+---
+> void init_array (int nx, int ny,
+27,28c26
+< 		 DATA_TYPE POLYBENCH_1D(p,NY,ny))*/
+< void init_array (int nx, int ny, DATA_TYPE **A, DATA_TYPE *r, DATA_TYPE *p)
+---
+> 		 DATA_TYPE POLYBENCH_1D(p,NY,ny))
+67c65
+< /*void kernel_bicg(int nx, int ny,
+---
+> void kernel_bicg(int nx, int ny,
+72,73c70
+< 		 DATA_TYPE POLYBENCH_1D(r,NX,nx))*/
+< void kernel_bicg(int nx, int ny, DATA_TYPE **A, DATA_TYPE *s, DATA_TYPE *q, DATA_TYPE *p, DATA_TYPE *r)
+---
+> 		 DATA_TYPE POLYBENCH_1D(r,NX,nx))
+101c98
+< /*  POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, NX, NY, nx, ny);
+---
+>   POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, NX, NY, nx, ny);
+105,112c102
+<   POLYBENCH_1D_ARRAY_DECL(r, DATA_TYPE, NX, nx);*/
+< 
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D(NX, sizeof(DATA_TYPE *), NY, sizeof(DATA_TYPE), -1, 0, "A");
+<   DATA_TYPE *s  = (DATA_TYPE *) my_malloc(NY * sizeof(DATA_TYPE), -1, 0, "s");
+<   DATA_TYPE *q  = (DATA_TYPE *) my_malloc(NX * sizeof(DATA_TYPE), -1, 0, "q");
+<   DATA_TYPE *p  = (DATA_TYPE *) my_malloc(NY * sizeof(DATA_TYPE), -1, 0, "p");
+<   DATA_TYPE *r  = (DATA_TYPE *) my_malloc(NX * sizeof(DATA_TYPE), -1, 0, "r");
+< 
+---
+>   POLYBENCH_1D_ARRAY_DECL(r, DATA_TYPE, NX, nx);
+115c105
+<   /*init_array (nx, ny,
+---
+>   init_array (nx, ny,
+118,119c108
+< 	      POLYBENCH_ARRAY(p));a*/
+<   init_array (nx, ny, A, r, p);
+---
+> 	      POLYBENCH_ARRAY(p));
+125c114
+<   /*kernel_bicg (nx, ny,
+---
+>   kernel_bicg (nx, ny,
+130,131c119
+< 	       POLYBENCH_ARRAY(r));*/
+<   kernel_bicg (nx, ny, A, s, q, p, r);
+---
+> 	       POLYBENCH_ARRAY(r));
+139c127
+< //  polybench_prevent_dce(print_array(nx, ny, POLYBENCH_ARRAY(s), POLYBENCH_ARRAY(q)));
+---
+>   polybench_prevent_dce(print_array(nx, ny, POLYBENCH_ARRAY(s), POLYBENCH_ARRAY(q)));
+142c130
+<   /*POLYBENCH_FREE_ARRAY(A);
+---
+>   POLYBENCH_FREE_ARRAY(A);
+146c134
+<   POLYBENCH_FREE_ARRAY(r);*/
+---
+>   POLYBENCH_FREE_ARRAY(r);
+
+diff -r ./linear-algebra/kernels/bicg/bicg.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/bicg/bicg.h
+35,36c35,36
+< #   define NX 13000
+< #   define NY 13000
+---
+> #   define NX 8000
+> #   define NY 8000
+
+diff -r ./linear-algebra/kernels/doitgen/doitgen.c /home/tony/projects/polybench-3.2/linear-algebra/kernels/doitgen/doitgen.c
+19c19
+< #include "my_malloc.h"
+---
+> 
+23,26c23,25
+< //void init_array(int nr, int nq, int np,
+< //		DATA_TYPE POLYBENCH_3D(A,NR,NQ,NP,nr,nq,np),
+< //		DATA_TYPE POLYBENCH_2D(C4,NP,NP,np,np))
+< void init_array(int nr, int nq, int np, DATA_TYPE ***A, DATA_TYPE **C4)
+---
+> void init_array(int nr, int nq, int np,
+> 		DATA_TYPE POLYBENCH_3D(A,NR,NQ,NP,nr,nq,np),
+> 		DATA_TYPE POLYBENCH_2D(C4,NP,NP,np,np))
+43,46c42,43
+< //void print_array(int nr, int nq, int np,
+< //		 DATA_TYPE POLYBENCH_3D(A,NR,NQ,NP,nr,nq,np))
+< void print_array(int nr, int nq, int np, DATA_TYPE ***A)
+< 
+---
+> void print_array(int nr, int nq, int np,
+> 		 DATA_TYPE POLYBENCH_3D(A,NR,NQ,NP,nr,nq,np))
+63,67c60,63
+< //void kernel_doitgen(int nr, int nq, int np,
+< //		    DATA_TYPE POLYBENCH_3D(A,NR,NQ,NP,nr,nq,np),
+< //		    DATA_TYPE POLYBENCH_2D(C4,NP,NP,np,np),
+< //		    DATA_TYPE POLYBENCH_3D(sum,NR,NQ,NP,nr,nq,np))
+< void kernel_doitgen(int nr, int nq, int np, DATA_TYPE ***A, DATA_TYPE **C4, DATA_TYPE ***sum)
+---
+> void kernel_doitgen(int nr, int nq, int np,
+> 		    DATA_TYPE POLYBENCH_3D(A,NR,NQ,NP,nr,nq,np),
+> 		    DATA_TYPE POLYBENCH_2D(C4,NP,NP,np,np),
+> 		    DATA_TYPE POLYBENCH_3D(sum,NR,NQ,NP,nr,nq,np))
+94,95c90,91
+<   /*  Variable declaration/allocation. */
+< /*  POLYBENCH_3D_ARRAY_DECL(A,DATA_TYPE,NR,NQ,NP,nr,nq,np);
+---
+>   /* Variable declaration/allocation. */
+>   POLYBENCH_3D_ARRAY_DECL(A,DATA_TYPE,NR,NQ,NP,nr,nq,np);
+98,106d93
+< */
+< 
+<   DATA_TYPE **C4 = (DATA_TYPE **) my_malloc2D(NP, sizeof(DATA_TYPE *), 
+<                     NP, sizeof(DATA_TYPE), 1, 1, "C4"); 
+<   DATA_TYPE ***A = (DATA_TYPE ***) my_malloc3D(NR, sizeof(DATA_TYPE **), NQ, sizeof(DATA_TYPE *),
+<                     NP, sizeof(DATA_TYPE), 1, 1, "A");
+<   DATA_TYPE ***sum = (DATA_TYPE ***) my_malloc3D(NR, sizeof(DATA_TYPE **), NQ, sizeof(DATA_TYPE *),
+<                     NP, sizeof(DATA_TYPE), 1, 1, "sum");
+< 
+109,112c96,98
+<   //init_array (nr, nq, np,
+< 	     // POLYBENCH_ARRAY(A),
+< 	     // POLYBENCH_ARRAY(C4));
+<   init_array (nr, nq, np, A, C4);
+---
+>   init_array (nr, nq, np,
+> 	      POLYBENCH_ARRAY(A),
+> 	      POLYBENCH_ARRAY(C4));
+118,122c104,107
+<   //kernel_doitgen (nr, nq, np,
+< 	//	  POLYBENCH_ARRAY(A),
+< 	//	  POLYBENCH_ARRAY(C4),
+< 	//	  POLYBENCH_ARRAY(sum));
+<   kernel_doitgen (nr, nq, np, A, C4, sum);
+---
+>   kernel_doitgen (nr, nq, np,
+> 		  POLYBENCH_ARRAY(A),
+> 		  POLYBENCH_ARRAY(C4),
+> 		  POLYBENCH_ARRAY(sum));
+130c115
+<   //polybench_prevent_dce(print_array(nr, nq, np,  POLYBENCH_ARRAY(A)));
+---
+>   polybench_prevent_dce(print_array(nr, nq, np,  POLYBENCH_ARRAY(A)));
+133c118
+< /*  POLYBENCH_FREE_ARRAY(A);
+---
+>   POLYBENCH_FREE_ARRAY(A);
+136c121
+< */
+---
+> 
+
+diff -r ./linear-algebra/kernels/doitgen/doitgen.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/doitgen/doitgen.h
+38c38
+< #   define NQ 512
+---
+> #   define NQ 256
+
+diff -r ./linear-algebra/kernels/gemver/gemver.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/gemver/gemver.h
+36c36
+< #   define N 15000
+---
+> #   define N 100000
+
+diff -r ./linear-algebra/kernels/gesummv/gesummv.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/gesummv/gesummv.h
+36c36
+< #   define N 10000
+---
+> #   define N 100000
+
+diff -r ./linear-algebra/kernels/mvt/mvt.c /home/tony/projects/polybench-3.2/linear-algebra/kernels/mvt/mvt.c
+19d18
+< #include "my_malloc.h"
+diff -r ./linear-algebra/kernels/mvt/mvt.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/mvt/mvt.h
+36c36
+< #   define N 15000
+---
+> #   define N 100000
+
+diff -r ./linear-algebra/kernels/trisolv/trisolv.c /home/tony/projects/polybench-3.2/linear-algebra/kernels/trisolv/trisolv.c
+19d18
+< #include "my_malloc.h"
+25c24
+< /*		DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+---
+> 		DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+27,30c26
+< 		DATA_TYPE POLYBENCH_1D(c,N,n))*/
+<             DATA_TYPE **A,
+<             DATA_TYPE *x,
+<             DATA_TYPE *c)
+---
+> 		DATA_TYPE POLYBENCH_1D(c,N,n))
+63,66c59
+<             DATA_TYPE **A,
+<             DATA_TYPE *x,
+<             DATA_TYPE *c)
+< 	/*	    DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+---
+> 		    DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+68c61
+< 		    DATA_TYPE POLYBENCH_1D(c,N,n))*/
+---
+> 		    DATA_TYPE POLYBENCH_1D(c,N,n))
+91c84
+<   /*POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N, N, n, n);
+---
+>   POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N, N, n, n);
+94,97c87
+< */
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D (N, sizeof(DATA_TYPE *), N, sizeof(DATA_TYPE), 1, 1, "A");
+<   DATA_TYPE *x = (DATA_TYPE *) my_malloc (N*sizeof(DATA_TYPE), 1, 1, "x");
+<   DATA_TYPE *c = (DATA_TYPE *) my_malloc (N*sizeof(DATA_TYPE), 0, 1, "c");
+---
+> 
+100,101c90
+<   //init_array (n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(x), POLYBENCH_ARRAY(c));
+<   init_array (n, A, x, c);
+---
+>   init_array (n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(x), POLYBENCH_ARRAY(c));
+107,108c96
+<   //kernel_trisolv (n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(x), POLYBENCH_ARRAY(c));
+<   kernel_trisolv (n, A, x, c);
+---
+>   kernel_trisolv (n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(x), POLYBENCH_ARRAY(c));
+116c104
+< //  polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(x)));
+---
+>   polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(x)));
+119,121c107,109
+<  // POLYBENCH_FREE_ARRAY(A);
+<  // POLYBENCH_FREE_ARRAY(x);
+<  // POLYBENCH_FREE_ARRAY(c);
+---
+>   POLYBENCH_FREE_ARRAY(A);
+>   POLYBENCH_FREE_ARRAY(x);
+>   POLYBENCH_FREE_ARRAY(c);
+
+diff -r ./linear-algebra/kernels/trisolv/trisolv.h /home/tony/projects/polybench-3.2/linear-algebra/kernels/trisolv/trisolv.h
+36c36
+< #   define N 15000
+---
+> #   define N 100000
+
+diff -r ./linear-algebra/kernels/trmm/trmm.c /home/tony/projects/polybench-3.2/linear-algebra/kernels/trmm/trmm.c
+19c19
+< #include "my_malloc.h"
+---
+> 
+23c23
+< /*void init_array(int ni,
+---
+> void init_array(int ni,
+26,27c26
+< 		DATA_TYPE POLYBENCH_2D(B,NI,NI,ni,ni))*/
+< void init_array(int ni, DATA_TYPE *alpha, DATA_TYPE **A, DATA_TYPE **B)    
+---
+> 		DATA_TYPE POLYBENCH_2D(B,NI,NI,ni,ni))
+60c59
+< /*void kernel_trmm(int ni,
+---
+> void kernel_trmm(int ni,
+63,64c62
+< 		 DATA_TYPE POLYBENCH_2D(B,NI,NI,ni,ni))*/
+< void kernel_trmm(int ni, DATA_TYPE alpha, DATA_TYPE **A, DATA_TYPE **B)
+---
+> 		 DATA_TYPE POLYBENCH_2D(B,NI,NI,ni,ni))
+86,91c84,85
+<   //POLYBENCH_2D_ARRAY_DECL(A,DATA_TYPE,NI,NI,ni,ni);
+<   //POLYBENCH_2D_ARRAY_DECL(B,DATA_TYPE,NI,NI,ni,ni);
+< 
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D(NI, sizeof(DATA_TYPE *), NI, sizeof(DATA_TYPE), -1, 0, "A");
+<   DATA_TYPE **B = (DATA_TYPE **) my_malloc2D(NI, sizeof(DATA_TYPE *), NI, sizeof(DATA_TYPE), -1, 0, "B");
+< 
+---
+>   POLYBENCH_2D_ARRAY_DECL(A,DATA_TYPE,NI,NI,ni,ni);
+>   POLYBENCH_2D_ARRAY_DECL(B,DATA_TYPE,NI,NI,ni,ni);
+94c88
+<   init_array (ni, &alpha, A, B);
+---
+>   init_array (ni, &alpha, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+100,101c94
+<   //kernel_trmm (ni, alpha, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+<   kernel_trmm (ni, alpha, A, B);
+---
+>   kernel_trmm (ni, alpha, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+109c102
+<   //polybench_prevent_dce(print_array(ni, POLYBENCH_ARRAY(B)));
+---
+>   polybench_prevent_dce(print_array(ni, POLYBENCH_ARRAY(B)));
+112,113c105,106
+<   //POLYBENCH_FREE_ARRAY(A);
+<   //POLYBENCH_FREE_ARRAY(B);
+---
+>   POLYBENCH_FREE_ARRAY(A);
+>   POLYBENCH_FREE_ARRAY(B);
+
+diff -r ./linear-algebra/solvers/durbin/durbin.h /home/tony/projects/polybench-3.2/linear-algebra/solvers/durbin/durbin.h
+36c36
+< #   define N 10000
+---
+> #   define N 100000
+
+diff -r ./linear-algebra/solvers/dynprog/dynprog.h /home/tony/projects/polybench-3.2/linear-algebra/solvers/dynprog/dynprog.h
+36c36
+< #   define LENGTH 400
+---
+> #   define LENGTH 500
+
+diff -r ./linear-algebra/solvers/lu/lu.h /home/tony/projects/polybench-3.2/linear-algebra/solvers/lu/lu.h
+32c32
+< #   define N 4000
+---
+> #   define N 2000
+36c36
+< #   define N 8000
+---
+> #   define N 4000
+
+diff -r ./linear-algebra/solvers/ludcmp/ludcmp.c /home/tony/projects/polybench-3.2/linear-algebra/solvers/ludcmp/ludcmp.c
+19c19
+< #include "my_malloc.h"
+---
+> 
+23c23
+< /*void init_array (int n,
+---
+> void init_array (int n,
+27,28c27
+< 		 DATA_TYPE POLYBENCH_1D(y,N+1,n+1))*/
+< void init_array (int n, DATA_TYPE **A, DATA_TYPE *b, DATA_TYPE *x, DATA_TYPE *y)
+---
+> 		 DATA_TYPE POLYBENCH_1D(y,N+1,n+1))
+63c62
+< /*void kernel_ludcmp(int n,
+---
+> void kernel_ludcmp(int n,
+67,68c66
+< 		   DATA_TYPE POLYBENCH_1D(y,N+1,n+1))*/
+< void kernel_ludcmp(int n, DATA_TYPE **A, DATA_TYPE *b, DATA_TYPE *x, DATA_TYPE *y)
+---
+> 		   DATA_TYPE POLYBENCH_1D(y,N+1,n+1))
+120c118
+< /*  POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N+1, N+1, n+1, n+1);
+---
+>   POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N+1, N+1, n+1, n+1);
+123,129c121
+<   POLYBENCH_1D_ARRAY_DECL(y, DATA_TYPE, N+1, n+1);*/
+< 
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D (N+1, sizeof(DATA_TYPE *), N+1, sizeof(DATA_TYPE), 0, 1, "A");
+<   DATA_TYPE *b  = (DATA_TYPE *) my_malloc ((N+1) * sizeof(DATA_TYPE), 0, 1, "b");
+<   DATA_TYPE *x  = (DATA_TYPE *) my_malloc ((N+1) * sizeof(DATA_TYPE), 0, 1, "x");
+<   DATA_TYPE *y  = (DATA_TYPE *) my_malloc ((N+1) * sizeof(DATA_TYPE), 0, 1, "y");
+< 
+---
+>   POLYBENCH_1D_ARRAY_DECL(y, DATA_TYPE, N+1, n+1);
+133c125
+< /*  init_array (n,
+---
+>   init_array (n,
+137c129
+< 	      POLYBENCH_ARRAY(y));*/
+---
+> 	      POLYBENCH_ARRAY(y));
+139d130
+<   init_array (n, A, b, x, y);
+144c135
+< /*  kernel_ludcmp (n,
+---
+>   kernel_ludcmp (n,
+148,149c139
+< 		 POLYBENCH_ARRAY(y));*/
+<   kernel_ludcmp (n, A, b, x, y);
+---
+> 		 POLYBENCH_ARRAY(y));
+157c147
+<   //polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(x)));
+---
+>   polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(x)));
+160c150
+< /*  POLYBENCH_FREE_ARRAY(A);
+---
+>   POLYBENCH_FREE_ARRAY(A);
+163c153
+<   POLYBENCH_FREE_ARRAY(y);*/
+---
+>   POLYBENCH_FREE_ARRAY(y);
+
+diff -r ./linear-algebra/solvers/ludcmp/ludcmp.h /home/tony/projects/polybench-3.2/linear-algebra/solvers/ludcmp/ludcmp.h
+32c32
+< #   define N 8000
+---
+> #   define N 2000
+
+
+diff -r ./medley/reg_detect/reg_detect.h /home/tony/projects/polybench-3.2/medley/reg_detect/reg_detect.h
+39,40c39,40
+< #   define LENGTH 5000
+< #   define MAXGRID 100
+---
+> #   define LENGTH 500
+> #   define MAXGRID 12
+45,46c45,46
+< #   define LENGTH 10000
+< #   define MAXGRID 100
+---
+> #   define LENGTH 500
+> #   define MAXGRID 12
+
+diff -r ./stencils/adi/adi.c /home/tony/projects/polybench-3.2/stencils/adi/adi.c
+19d18
+< #include "my_malloc.h"
+24,25c23,24
+< void init_array (int n, DATA_TYPE ** X, DATA_TYPE **A, DATA_TYPE **B)
+< /*		 DATA_TYPE POLYBENCH_2D(X,N,N,n,n),
+---
+> void init_array (int n,
+> 		 DATA_TYPE POLYBENCH_2D(X,N,N,n,n),
+27c26
+< 		 DATA_TYPE POLYBENCH_2D(B,N,N,n,n))*/
+---
+> 		 DATA_TYPE POLYBENCH_2D(B,N,N,n,n))
+63,64c62,63
+< 		int n, DATA_TYPE **X, DATA_TYPE **A, DATA_TYPE **B)
+< /*		DATA_TYPE POLYBENCH_2D(X,N,N,n,n),
+---
+> 		int n,
+> 		DATA_TYPE POLYBENCH_2D(X,N,N,n,n),
+66c65
+< 		DATA_TYPE POLYBENCH_2D(B,N,N,n,n))*/
+---
+> 		DATA_TYPE POLYBENCH_2D(B,N,N,n,n))
+112,118c111,113
+< //  POLYBENCH_2D_ARRAY_DECL(X, DATA_TYPE, N, N, n, n);
+<   //POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N, N, n, n);
+<  // POLYBENCH_2D_ARRAY_DECL(B, DATA_TYPE, N, N, n, n);
+< 
+<   DATA_TYPE **X = (DATA_TYPE **) my_malloc2D (N, sizeof(DATA_TYPE *), N, sizeof(DATA_TYPE), 1, 1, "X");
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D (N, sizeof(DATA_TYPE *), N, sizeof(DATA_TYPE), 1, 1, "A");
+<   DATA_TYPE **B = (DATA_TYPE **) my_malloc2D (N, sizeof(DATA_TYPE *), N, sizeof(DATA_TYPE), 1, 1, "B");
+---
+>   POLYBENCH_2D_ARRAY_DECL(X, DATA_TYPE, N, N, n, n);
+>   POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N, N, n, n);
+>   POLYBENCH_2D_ARRAY_DECL(B, DATA_TYPE, N, N, n, n);
+122,123c117
+<   //init_array (n, POLYBENCH_ARRAY(X), POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+<   init_array (n, X, A, B);
+---
+>   init_array (n, POLYBENCH_ARRAY(X), POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+129,131c123,124
+<   //kernel_adi (tsteps, n, POLYBENCH_ARRAY(X),
+< 	//      POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+<   kernel_adi (tsteps, n, X, A, B);
+---
+>   kernel_adi (tsteps, n, POLYBENCH_ARRAY(X),
+> 	      POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+139c132
+<  // polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(X)));
+---
+>   polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(X)));
+142,144c135,137
+<   //POLYBENCH_FREE_ARRAY(X);
+<   //POLYBENCH_FREE_ARRAY(A);
+<   //POLYBENCH_FREE_ARRAY(B);
+---
+>   POLYBENCH_FREE_ARRAY(X);
+>   POLYBENCH_FREE_ARRAY(A);
+>   POLYBENCH_FREE_ARRAY(B);
+
+diff -r ./stencils/adi/adi.h /home/tony/projects/polybench-3.2/stencils/adi/adi.h
+40,41c40,41
+< #   define TSTEPS 50
+< #   define N 8000
+---
+> #   define TSTEPS 100
+> #   define N 4000
+
+diff -r ./stencils/fdtd-2d/fdtd-2d.c /home/tony/projects/polybench-3.2/stencils/fdtd-2d/fdtd-2d.c
+19d18
+< #include "my_malloc.h"
+27,34c26,29
+< 		 //DATA_TYPE POLYBENCH_2D(ex,NX,NY,nx,ny),
+< 		 //DATA_TYPE POLYBENCH_2D(ey,NX,NY,nx,ny),
+< 		 //DATA_TYPE POLYBENCH_2D(hz,NX,NY,nx,ny),
+< 		 //DATA_TYPE POLYBENCH_1D(_fict_,TMAX,tmax))
+<          DATA_TYPE **ex,
+<          DATA_TYPE **ey,
+<          DATA_TYPE **hz,
+<          DATA_TYPE *_fict_)
+---
+> 		 DATA_TYPE POLYBENCH_2D(ex,NX,NY,nx,ny),
+> 		 DATA_TYPE POLYBENCH_2D(ey,NX,NY,nx,ny),
+> 		 DATA_TYPE POLYBENCH_2D(hz,NX,NY,nx,ny),
+> 		 DATA_TYPE POLYBENCH_1D(_fict_,TMAX,tmax))
+78,81c73,76
+<          DATA_TYPE **ex,
+<          DATA_TYPE **ey,
+<          DATA_TYPE **hz,
+<          DATA_TYPE *_fict_)
+---
+> 		    DATA_TYPE POLYBENCH_2D(ex,NX,NY,nx,ny),
+> 		    DATA_TYPE POLYBENCH_2D(ey,NX,NY,nx,ny),
+> 		    DATA_TYPE POLYBENCH_2D(hz,NX,NY,nx,ny),
+> 		    DATA_TYPE POLYBENCH_1D(_fict_,TMAX,tmax))
+115c110
+< /*  POLYBENCH_2D_ARRAY_DECL(ex,DATA_TYPE,NX,NY,nx,ny);
+---
+>   POLYBENCH_2D_ARRAY_DECL(ex,DATA_TYPE,NX,NY,nx,ny);
+118,124c113
+<   POLYBENCH_1D_ARRAY_DECL(_fict_,DATA_TYPE,TMAX,tmax);*/
+< 
+<   DATA_TYPE **ex = (DATA_TYPE **) my_malloc2D (NX, sizeof(DATA_TYPE *), NY, sizeof(DATA_TYPE), 1, 1, "ex");
+<   DATA_TYPE **ey = (DATA_TYPE **) my_malloc2D (NX, sizeof(DATA_TYPE *), NY, sizeof(DATA_TYPE), 1, 1, "ey");
+<   DATA_TYPE **hz = (DATA_TYPE **) my_malloc2D (NX, sizeof(DATA_TYPE *), NY, sizeof(DATA_TYPE), 1, 1, "hz");
+<   DATA_TYPE *_fict_ = (DATA_TYPE *) my_malloc (TMAX*sizeof(DATA_TYPE), -1, 0, "_fict_");
+< 
+---
+>   POLYBENCH_1D_ARRAY_DECL(_fict_,DATA_TYPE,TMAX,tmax);
+127,128c116,117
+<   init_array (tmax, nx, ny, ex, ey, hz, _fict_);
+< /*	      POLYBENCH_ARRAY(ex),
+---
+>   init_array (tmax, nx, ny,
+> 	      POLYBENCH_ARRAY(ex),
+131c120
+< 	      POLYBENCH_ARRAY(_fict_));*/
+---
+> 	      POLYBENCH_ARRAY(_fict_));
+137,138c126,127
+<   kernel_fdtd_2d (tmax, nx, ny, ex, ey, hz, _fict_);
+< /*		  POLYBENCH_ARRAY(ex),
+---
+>   kernel_fdtd_2d (tmax, nx, ny,
+> 		  POLYBENCH_ARRAY(ex),
+141c130
+< 		  POLYBENCH_ARRAY(_fict_));*/
+---
+> 		  POLYBENCH_ARRAY(_fict_));
+150c139
+< /*  polybench_prevent_dce(print_array(nx, ny, POLYBENCH_ARRAY(ex),
+---
+>   polybench_prevent_dce(print_array(nx, ny, POLYBENCH_ARRAY(ex),
+153c142
+< */
+---
+> 
+155c144
+<  /* POLYBENCH_FREE_ARRAY(ex);
+---
+>   POLYBENCH_FREE_ARRAY(ex);
+159c148
+< */
+---
+> 
+
+diff -r ./stencils/fdtd-2d/fdtd-2d.h /home/tony/projects/polybench-3.2/stencils/fdtd-2d/fdtd-2d.h
+45,46c45,46
+< #   define NX 8000
+< #   define NY 8000
+---
+> #   define NX 4000
+> #   define NY 4000
+
+diff -r ./stencils/fdtd-apml/fdtd-apml.h /home/tony/projects/polybench-3.2/stencils/fdtd-apml/fdtd-apml.h
+38,40c38,40
+< #   define CZ 256
+< #   define CYM 256
+< #   define CXM 256
+---
+> #   define CZ 512
+> #   define CYM 512
+> #   define CXM 512
+
+diff -r ./stencils/jacobi-1d-imper/jacobi-1d-imper.h /home/tony/projects/polybench-3.2/stencils/jacobi-1d-imper/jacobi-1d-imper.h
+41c41
+< #   define N 10000000
+---
+> #   define N 1000000
+
+diff -r ./stencils/jacobi-2d-imper/jacobi-2d-imper.c /home/tony/projects/polybench-3.2/stencils/jacobi-2d-imper/jacobi-2d-imper.c
+19c19
+< #include "my_malloc.h"
+---
+> 
+24,27c24,25
+< 	//	 DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+< 	//	 DATA_TYPE POLYBENCH_2D(B,N,N,n,n))
+< 		 DATA_TYPE **A,
+< 		 DATA_TYPE **B)
+---
+> 		 DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+> 		 DATA_TYPE POLYBENCH_2D(B,N,N,n,n))
+63,66c61,62
+< 			  //  DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+< 			//    DATA_TYPE POLYBENCH_2D(B,N,N,n,n))
+< 		 DATA_TYPE **A,
+< 		 DATA_TYPE **B)
+---
+> 			    DATA_TYPE POLYBENCH_2D(A,N,N,n,n),
+> 			    DATA_TYPE POLYBENCH_2D(B,N,N,n,n))
+92,93c88,89
+< //  POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N, N, n, n);
+<  // POLYBENCH_2D_ARRAY_DECL(B, DATA_TYPE, N, N, n, n);
+---
+>   POLYBENCH_2D_ARRAY_DECL(A, DATA_TYPE, N, N, n, n);
+>   POLYBENCH_2D_ARRAY_DECL(B, DATA_TYPE, N, N, n, n);
+95,96d90
+<   DATA_TYPE **A = (DATA_TYPE **) my_malloc2D (N, sizeof(DATA_TYPE *), N, sizeof(DATA_TYPE), 0, 1, "A");
+<   DATA_TYPE **B = (DATA_TYPE **) my_malloc2D (N, sizeof(DATA_TYPE *), N, sizeof(DATA_TYPE), 0, 1, "B");
+99,100c93
+<   //init_array (n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+<   init_array (n, A, B);
+---
+>   init_array (n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+106,107c99
+<   //kernel_jacobi_2d_imper (tsteps, n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+<   kernel_jacobi_2d_imper (tsteps, n, A, B);
+---
+>   kernel_jacobi_2d_imper (tsteps, n, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
+115c107
+<  // polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(A)));
+---
+>   polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(A)));
+118,119c110,111
+<   //POLYBENCH_FREE_ARRAY(A);
+<   //POLYBENCH_FREE_ARRAY(B);
+---
+>   POLYBENCH_FREE_ARRAY(A);
+>   POLYBENCH_FREE_ARRAY(B);
+
+diff -r ./stencils/jacobi-2d-imper/jacobi-2d-imper.h /home/tony/projects/polybench-3.2/stencils/jacobi-2d-imper/jacobi-2d-imper.h
+41c41
+< #   define N 8000
+---
+> #   define N 4000
+
+diff -r ./stencils/seidel-2d/seidel-2d.h /home/tony/projects/polybench-3.2/stencils/seidel-2d/seidel-2d.h
+41c41
+< #   define N 5000
+---
+> #   define N 4000
+
+diff -r ./utilities/polybench.c /home/tony/projects/polybench-3.2/utilities/polybench.c
+96c96
+<   assert (tmp <= 10.0);
+---
+>   //assert (tmp <= 10.0);
+383a384,385
+>   
+>   fprintf(stderr, "[PolyBench] posix_memalign: request to allocate %zu\n", num);
+387c389
+<       fprintf (stderr, "[PolyBench] posix_memalign: cannot allocate memory");
+---
+>       fprintf (stderr, "[PolyBench] posix_memalign: cannot allocate memory %zu\n", num);
+
+diff -r ./utilities/polybench.h /home/tony/projects/polybench-3.2/utilities/polybench.h
+85c85
+<   (type(*)[n1 + POLYBENCH_PADDING_FACTOR][n2 + POLYBENCH_PADDING_FACTOR])polybench_alloc_data ((n1 + POLYBENCH_PADDING_FACTOR) * (n2 + POLYBENCH_PADDING_FACTOR), sizeof(type))
+---
+>   (type(*)[n1 + POLYBENCH_PADDING_FACTOR][(size_t)n2 + POLYBENCH_PADDING_FACTOR])polybench_alloc_data (((size_t)n1 + POLYBENCH_PADDING_FACTOR) * (n2 + POLYBENCH_PADDING_FACTOR), sizeof(type))
+diff -r ./utilities/time_benchmark.sh /home/tony/projects/polybench-3.2/utilities/time_benchmark.sh
+78d77
+< >&2 echo "$PROCESSED_TIME";
+

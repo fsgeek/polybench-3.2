@@ -1,0 +1,867 @@
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/2mm/2mm_time
+tmp, 0x7f88e540e000, 18000000
+A, 0x7f88e65c2000, 18000000
+B, 0x7f88e7775000, 18000000
+C, 0x7f88e892f000, 18000000
+D, 0x7f88e9ae2000, 18000000
+45.238901
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/2mm/2mm_time':
+
+   135,391,121,124      ref-cycles                                                    (50.00%)
+    24,635,093,588      L1-dcache-loads                                               (50.00%)
+     9,904,544,134      L1-dcache-load-misses     #   40.21% of all L1-dcache hits    (50.00%)
+     6,805,432,963      LLC-loads                                                     (50.00%)
+         1,554,026      LLC-load-misses           #    0.02% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        13,245,967      L1-icache-load-misses                                         (40.00%)
+    24,667,459,803      dTLB-loads                                                    (40.00%)
+     2,834,358,006      dTLB-load-misses          #   11.49% of all dTLB cache hits   (40.00%)
+           132,244      iTLB-loads                                                    (40.00%)
+            19,058      iTLB-load-misses          #   14.41% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      62.051299748 seconds time elapsed
+
+      45.225930000 seconds user
+      16.821858000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/3mm/3mm_time
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+41.528987
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/3mm/3mm_time':
+
+   118,305,078,984      ref-cycles                                                    (50.00%)
+    24,633,805,808      L1-dcache-loads                                               (49.99%)
+    13,672,315,118      L1-dcache-load-misses     #   55.50% of all L1-dcache hits    (50.00%)
+     1,280,696,283      LLC-loads                                                     (50.00%)
+         1,218,122      LLC-load-misses           #    0.10% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        17,158,893      L1-icache-load-misses                                         (40.00%)
+    24,655,691,348      dTLB-loads                                                    (40.00%)
+     3,494,326,425      dTLB-load-misses          #   14.17% of all dTLB cache hits   (40.00%)
+            68,816      iTLB-loads                                                    (40.00%)
+            28,199      iTLB-load-misses          #   40.98% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      54.190804088 seconds time elapsed
+
+      41.472559000 seconds user
+      12.715558000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/atax/atax_time
+A, 0x7f2ff74b4000, 1800000000
+x, 0x7f1f88448000, 120000
+y, 0x7f1f8842a000, 120000
+tmp, 0x7f1f8840c000, 120000
+0.409671
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/atax/atax_time':
+
+    31,855,861,536      ref-cycles                                                    (50.00%)
+     5,411,879,967      L1-dcache-loads                                               (49.99%)
+       165,004,959      L1-dcache-load-misses     #    3.05% of all L1-dcache hits    (50.01%)
+         2,012,823      LLC-loads                                                     (50.00%)
+         1,457,445      LLC-load-misses           #   72.41% of all LL-cache hits     (50.02%)
+   <not supported>      L1-icache-loads                                             
+         4,954,520      L1-icache-load-misses                                         (40.01%)
+     5,398,172,676      dTLB-loads                                                    (40.00%)
+            86,914      dTLB-load-misses          #    0.00% of all dTLB cache hits   (39.99%)
+           131,688      iTLB-loads                                                    (39.99%)
+             1,713      iTLB-load-misses          #    1.30% of all iTLB cache hits   (39.99%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      14.635035859 seconds time elapsed
+
+       0.586918000 seconds user
+      14.045050000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/bicg/bicg_time
+A, 0x7f2330c06000, 1352000000
+s, 0x7f2384172000, 104000
+q, 0x7f238418c000, 104000
+p, 0x7f23841a6000, 104000
+r, 0x7f23841c0000, 104000
+0.565245
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/bicg/bicg_time':
+
+    32,876,595,883      ref-cycles                                                    (50.00%)
+     5,720,495,670      L1-dcache-loads                                               (49.99%)
+       106,691,199      L1-dcache-load-misses     #    1.87% of all L1-dcache hits    (49.99%)
+         2,124,863      LLC-loads                                                     (49.99%)
+         1,050,441      LLC-load-misses           #   49.44% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        11,111,772      L1-icache-load-misses                                         (40.00%)
+     5,721,320,532      dTLB-loads                                                    (40.01%)
+            38,518      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.01%)
+            89,141      iTLB-loads                                                    (40.01%)
+             1,870      iTLB-load-misses          #    2.10% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      15.100172336 seconds time elapsed
+
+       0.992822000 seconds user
+      14.103479000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/cholesky/cholesky_time
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 32000
+18.443115
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/cholesky/cholesky_time':
+
+    70,923,858,878      ref-cycles                                                    (50.00%)
+    15,055,812,767      L1-dcache-loads                                               (49.99%)
+     1,992,621,066      L1-dcache-load-misses     #   13.23% of all L1-dcache hits    (50.01%)
+        24,553,889      LLC-loads                                                     (50.00%)
+         1,386,416      LLC-load-misses           #    5.65% of all LL-cache hits     (50.01%)
+   <not supported>      L1-icache-loads                                             
+         8,025,150      L1-icache-load-misses                                         (40.00%)
+    15,031,283,828      dTLB-loads                                                    (40.00%)
+         9,258,405      dTLB-load-misses          #    0.06% of all dTLB cache hits   (40.00%)
+           128,109      iTLB-loads                                                    (40.00%)
+             4,313      iTLB-load-misses          #    3.37% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      32.563146896 seconds time elapsed
+
+      18.490144000 seconds user
+      14.070348000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/doitgen/doitgen_time
+C4, 0x7fa4ccadb000, 524288
+A, 0x7fa4cc9d6000, 269486080
+sum, 0x7f94ab67b000, 269486080
+19.283327
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/doitgen/doitgen_time':
+
+    78,635,238,919      ref-cycles                                                    (50.00%)
+    30,955,661,101      L1-dcache-loads                                               (50.01%)
+    11,856,780,351      L1-dcache-load-misses     #   38.30% of all L1-dcache hits    (50.00%)
+       564,829,725      LLC-loads                                                     (50.00%)
+         4,652,367      LLC-load-misses           #    0.82% of all LL-cache hits     (49.99%)
+   <not supported>      L1-icache-loads                                             
+        42,670,686      L1-icache-load-misses                                         (40.00%)
+    30,959,745,065      dTLB-loads                                                    (40.00%)
+           197,981      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+           179,433      iTLB-loads                                                    (40.00%)
+               507      iTLB-load-misses          #    0.28% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      36.070829376 seconds time elapsed
+
+      19.085334000 seconds user
+      16.983407000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gemm/gemm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+43.395734
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gemm/gemm_time':
+
+   110,096,851,901      ref-cycles                                                    (50.00%)
+    20,381,782,430      L1-dcache-loads                                               (50.00%)
+    12,668,297,491      L1-dcache-load-misses     #   62.16% of all L1-dcache hits    (50.00%)
+     1,021,442,599      LLC-loads                                                     (50.00%)
+         1,382,567      LLC-load-misses           #    0.14% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        10,845,547      L1-icache-load-misses                                         (40.00%)
+    20,389,198,045      dTLB-loads                                                    (40.00%)
+     7,058,761,308      dTLB-load-misses          #   34.62% of all dTLB cache hits   (40.00%)
+            86,180      iTLB-loads                                                    (40.00%)
+            66,611      iTLB-load-misses          #   77.29% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      50.418311806 seconds time elapsed
+
+      43.417780000 seconds user
+       6.997803000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gemver/gemver_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+6.201617
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gemver/gemver_time':
+
+    47,881,671,938      ref-cycles                                                    (50.00%)
+     6,060,779,920      L1-dcache-loads                                               (50.00%)
+       673,380,053      L1-dcache-load-misses     #   11.11% of all L1-dcache hits    (50.00%)
+       450,588,329      LLC-loads                                                     (50.00%)
+         1,166,197      LLC-load-misses           #    0.26% of all LL-cache hits     (49.99%)
+   <not supported>      L1-icache-loads                                             
+        16,582,766      L1-icache-load-misses                                         (40.00%)
+     6,075,099,254      dTLB-loads                                                    (40.00%)
+       225,162,873      dTLB-load-misses          #    3.71% of all dTLB cache hits   (40.00%)
+           107,524      iTLB-loads                                                    (40.00%)
+             3,717      iTLB-load-misses          #    3.46% of all iTLB cache hits   (40.01%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      21.970765998 seconds time elapsed
+
+       6.814304000 seconds user
+      15.154454000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+0.388568
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gesummv/gesummv_time':
+
+    28,439,270,095      ref-cycles                                                    (50.00%)
+     5,356,913,248      L1-dcache-loads                                               (50.00%)
+        92,956,321      L1-dcache-load-misses     #    1.74% of all L1-dcache hits    (49.99%)
+         3,342,984      LLC-loads                                                     (50.00%)
+         1,167,908      LLC-load-misses           #   34.94% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        13,178,585      L1-icache-load-misses                                         (40.00%)
+     5,379,498,847      dTLB-loads                                                    (40.00%)
+            37,751      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+            77,246      iTLB-loads                                                    (40.00%)
+             1,283      iTLB-load-misses          #    1.66% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      13.069094002 seconds time elapsed
+
+       1.030544000 seconds user
+      12.032683000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/mvt/mvt_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+4.436295
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/mvt/mvt_time':
+
+    37,317,154,610      ref-cycles                                                    (49.99%)
+     5,731,740,805      L1-dcache-loads                                               (49.98%)
+       592,292,407      L1-dcache-load-misses     #   10.33% of all L1-dcache hits    (50.00%)
+       447,513,809      LLC-loads                                                     (49.99%)
+         1,153,034      LLC-load-misses           #    0.26% of all LL-cache hits     (50.01%)
+   <not supported>      L1-icache-loads                                             
+        15,783,224      L1-icache-load-misses                                         (40.01%)
+     5,729,780,336      dTLB-loads                                                    (40.01%)
+       225,602,919      dTLB-load-misses          #    3.94% of all dTLB cache hits   (40.00%)
+            78,684      iTLB-loads                                                    (40.00%)
+             1,408      iTLB-load-misses          #    1.79% of all iTLB cache hits   (39.99%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      17.156961422 seconds time elapsed
+
+       4.975970000 seconds user
+      12.177480000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/symm/symm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+69.732197
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/symm/symm_time':
+
+   180,403,669,565      ref-cycles                                                    (50.00%)
+    20,440,475,771      L1-dcache-loads                                               (50.00%)
+    17,862,652,990      L1-dcache-load-misses     #   87.39% of all L1-dcache hits    (50.00%)
+     1,126,221,867      LLC-loads                                                     (50.00%)
+         1,688,759      LLC-load-misses           #    0.15% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        15,080,228      L1-icache-load-misses                                         (40.00%)
+    20,468,960,949      dTLB-loads                                                    (40.00%)
+    10,024,620,339      dTLB-load-misses          #   48.97% of all dTLB cache hits   (40.00%)
+           112,346      iTLB-loads                                                    (40.00%)
+            47,022      iTLB-load-misses          #   41.85% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      82.640156355 seconds time elapsed
+
+      69.769028000 seconds user
+      12.867820000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/syr2k/syr2k_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+37.898623
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/syr2k/syr2k_time':
+
+   120,649,745,708      ref-cycles                                                    (49.99%)
+    36,383,773,630      L1-dcache-loads                                               (50.00%)
+     4,040,704,166      L1-dcache-load-misses     #   11.11% of all L1-dcache hits    (49.99%)
+       142,440,230      LLC-loads                                                     (50.01%)
+         2,097,376      LLC-load-misses           #    1.47% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+         9,733,283      L1-icache-load-misses                                         (40.00%)
+    36,395,546,912      dTLB-loads                                                    (40.00%)
+           460,469      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+           170,417      iTLB-loads                                                    (40.00%)
+             1,985      iTLB-load-misses          #    1.16% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      55.306126134 seconds time elapsed
+
+      37.948211000 seconds user
+      17.355639000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/syrk/syrk_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+17.120542
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/syrk/syrk_time':
+
+    67,085,024,140      ref-cycles                                                    (49.99%)
+    20,351,412,500      L1-dcache-loads                                               (50.00%)
+     1,060,355,510      L1-dcache-load-misses     #    5.21% of all L1-dcache hits    (50.00%)
+         9,470,911      LLC-loads                                                     (50.00%)
+         1,409,976      LLC-load-misses           #   14.89% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+         6,064,417      L1-icache-load-misses                                         (40.00%)
+    20,368,769,331      dTLB-loads                                                    (40.00%)
+            43,542      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+           116,265      iTLB-loads                                                    (40.00%)
+             2,118      iTLB-load-misses          #    1.82% of all iTLB cache hits   (39.99%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      30.797005573 seconds time elapsed
+
+      17.138957000 seconds user
+      13.654372000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/trisolv/trisolv_time
+A, 0x7fcbae5f1000, 1800000000
+x, 0x7fbb3f574000, 120000
+c, 0x7fbb3f556000, 120000
+0.162965
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/trisolv/trisolv_time':
+
+    31,974,775,410      ref-cycles                                                    (49.99%)
+     4,955,992,039      L1-dcache-loads                                               (49.99%)
+        80,211,458      L1-dcache-load-misses     #    1.62% of all L1-dcache hits    (50.01%)
+         2,057,148      LLC-loads                                                     (50.01%)
+         1,528,150      LLC-load-misses           #   74.28% of all LL-cache hits     (50.02%)
+   <not supported>      L1-icache-loads                                             
+         4,217,487      L1-icache-load-misses                                         (40.01%)
+     4,974,602,715      dTLB-loads                                                    (40.00%)
+            89,797      dTLB-load-misses          #    0.00% of all dTLB cache hits   (39.99%)
+            93,060      iTLB-loads                                                    (39.99%)
+             1,620      iTLB-load-misses          #    1.74% of all iTLB cache hits   (39.99%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      14.654340193 seconds time elapsed
+
+       0.349913000 seconds user
+      14.300444000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/trmm/trmm_time
+A, 0x7ef87240e000, 128000000
+B, 0x7ef87a20e000, 128000000
+85.706502
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/trmm/trmm_time':
+
+   217,069,388,063      ref-cycles                                                    (49.99%)
+    68,501,711,705      L1-dcache-loads                                               (50.01%)
+     6,885,964,803      L1-dcache-load-misses     #   10.05% of all L1-dcache hits    (49.99%)
+       884,706,716      LLC-loads                                                     (50.01%)
+         3,513,006      LLC-load-misses           #    0.40% of all LL-cache hits     (49.99%)
+   <not supported>      L1-icache-loads                                             
+        17,281,729      L1-icache-load-misses                                         (40.00%)
+    68,539,290,066      dTLB-loads                                                    (40.00%)
+        16,215,385      dTLB-load-misses          #    0.02% of all dTLB cache hits   (40.00%)
+            82,243      iTLB-loads                                                    (40.00%)
+             2,225      iTLB-load-misses          #    2.71% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      99.410587053 seconds time elapsed
+
+      85.803976000 seconds user
+      13.601362000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+2.684532
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/durbin/durbin_time':
+
+    38,157,098,241      ref-cycles                                                    (49.99%)
+     5,114,798,052      L1-dcache-loads                                               (49.98%)
+       442,732,901      L1-dcache-load-misses     #    8.66% of all L1-dcache hits    (50.00%)
+       167,452,615      LLC-loads                                                     (50.00%)
+         1,148,717      LLC-load-misses           #    0.69% of all LL-cache hits     (50.01%)
+   <not supported>      L1-icache-loads                                             
+        16,395,515      L1-icache-load-misses                                         (40.01%)
+     5,115,485,075      dTLB-loads                                                    (40.01%)
+       113,265,944      dTLB-load-misses          #    2.21% of all dTLB cache hits   (40.00%)
+            91,406      iTLB-loads                                                    (39.99%)
+             2,526      iTLB-load-misses          #    2.76% of all iTLB cache hits   (39.99%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      17.516948479 seconds time elapsed
+
+       3.338672000 seconds user
+      14.175611000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/dynprog/dynprog_time
+[PolyBench] posix_memalign: request to allocate 256000000
+[PolyBench] posix_memalign: request to allocate 640000
+[PolyBench] posix_memalign: request to allocate 640000
+32.976661
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/dynprog/dynprog_time':
+
+   101,490,041,405      ref-cycles                                                    (50.00%)
+    36,624,131,253      L1-dcache-loads                                               (50.00%)
+     1,650,801,138      L1-dcache-load-misses     #    4.51% of all L1-dcache hits    (50.00%)
+        50,747,664      LLC-loads                                                     (50.00%)
+         2,677,172      LLC-load-misses           #    5.28% of all LL-cache hits     (50.01%)
+   <not supported>      L1-icache-loads                                             
+        11,081,316      L1-icache-load-misses                                         (40.00%)
+    36,624,202,908      dTLB-loads                                                    (40.00%)
+         1,062,309      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+           142,536      iTLB-loads                                                    (40.00%)
+             6,130      iTLB-load-misses          #    4.30% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      46.526196144 seconds time elapsed
+
+      32.939860000 seconds user
+      13.583117000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+81.704152
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/gramschmidt/gramschmidt_time':
+
+   208,285,702,125      ref-cycles                                                    (50.00%)
+    20,446,461,117      L1-dcache-loads                                               (50.00%)
+    23,887,299,111      L1-dcache-load-misses     #  116.83% of all L1-dcache hits    (50.00%)
+       518,283,866      LLC-loads                                                     (50.00%)
+         1,655,927      LLC-load-misses           #    0.32% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        13,365,972      L1-icache-load-misses                                         (40.00%)
+    20,449,412,311      dTLB-loads                                                    (40.00%)
+    14,752,446,377      dTLB-load-misses          #   72.14% of all dTLB cache hits   (40.00%)
+           140,036      iTLB-loads                                                    (40.00%)
+            60,986      iTLB-load-misses          #   43.55% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      95.401900636 seconds time elapsed
+
+      81.738643000 seconds user
+      13.660773000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/lu/lu_time
+[PolyBench] posix_memalign: request to allocate 128000000
+57.062825
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/lu/lu_time':
+
+   154,200,456,370      ref-cycles                                                    (49.99%)
+    25,767,309,285      L1-dcache-loads                                               (50.00%)
+     4,995,085,333      L1-dcache-load-misses     #   19.39% of all L1-dcache hits    (49.99%)
+       592,692,880      LLC-loads                                                     (50.00%)
+         2,688,318      LLC-load-misses           #    0.45% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        11,916,391      L1-icache-load-misses                                         (40.00%)
+    25,796,072,457      dTLB-loads                                                    (40.00%)
+         6,866,801      dTLB-load-misses          #    0.03% of all dTLB cache hits   (40.00%)
+           210,197      iTLB-loads                                                    (40.00%)
+             4,063      iTLB-load-misses          #    1.93% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      70.697751691 seconds time elapsed
+
+      57.104665000 seconds user
+      13.590682000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/ludcmp/ludcmp_time
+A, 0x7f9c8f6c3000, 512128008
+b, 0x7f8c6f020000, 64008
+x, 0x7f8c6f010000, 64008
+y, 0x7f8c6f000000, 64008
+2060.947827
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/solvers/ludcmp/ludcmp_time':
+
+ 4,530,579,406,859      ref-cycles                                                    (50.00%)
+   519,688,606,331      L1-dcache-loads                                               (50.00%)
+   365,678,267,780      L1-dcache-load-misses     #   70.36% of all L1-dcache hits    (50.00%)
+   183,141,012,671      LLC-loads                                                     (50.00%)
+    79,529,842,797      LLC-load-misses           #   43.43% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+       347,653,059      L1-icache-load-misses                                         (40.00%)
+   519,969,079,381      dTLB-loads                                                    (40.00%)
+   153,512,909,465      dTLB-load-misses          #   29.52% of all dTLB cache hits   (40.00%)
+           403,660      iTLB-loads                                                    (40.00%)
+           412,193      iTLB-load-misses          #  102.11% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+    2073.872123031 seconds time elapsed
+
+    2060.992833000 seconds user
+      12.865961000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./datamining/correlation/correlation_time
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 24000
+[PolyBench] posix_memalign: request to allocate 24000
+120.672409
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./datamining/correlation/correlation_time':
+
+   293,194,090,232      ref-cycles                                                    (50.00%)
+    31,546,612,726      L1-dcache-loads                                               (50.00%)
+    36,969,347,910      L1-dcache-load-misses     #  117.19% of all L1-dcache hits    (50.00%)
+     1,724,089,693      LLC-loads                                                     (50.00%)
+         1,912,537      LLC-load-misses           #    0.11% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        31,712,294      L1-icache-load-misses                                         (40.00%)
+    31,554,642,542      dTLB-loads                                                    (40.00%)
+    24,716,943,571      dTLB-load-misses          #   78.33% of all dTLB cache hits   (40.00%)
+            82,824      iTLB-loads                                                    (40.00%)
+             3,682      iTLB-load-misses          #    4.45% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     134.327259672 seconds time elapsed
+
+     120.595911000 seconds user
+      13.728445000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./datamining/covariance/covariance_time
+data, 0x7f3488c0e000, 25920000
+symmat, 0x7f348a86a000, 25920000
+mean, 0x7f348c4c6000, 14400
+50.814900
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./datamining/covariance/covariance_time':
+
+   140,615,133,036      ref-cycles                                                    (50.00%)
+    13,159,412,051      L1-dcache-loads                                               (50.00%)
+     7,820,548,385      L1-dcache-load-misses     #   59.43% of all L1-dcache hits    (50.00%)
+     5,839,726,830      LLC-loads                                                     (50.00%)
+         2,939,602      LLC-load-misses           #    0.05% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        13,093,385      L1-icache-load-misses                                         (40.00%)
+    13,154,621,580      dTLB-loads                                                    (40.00%)
+     5,068,136,251      dTLB-load-misses          #   38.53% of all dTLB cache hits   (40.00%)
+            82,235      iTLB-loads                                                    (40.00%)
+            88,508      iTLB-load-misses          #  107.63% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      64.392150596 seconds time elapsed
+
+      50.802664000 seconds user
+      13.587642000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./medley/floyd-warshall/floyd-warshall_time
+[PolyBench] posix_memalign: request to allocate 128000000
+157.377429
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./medley/floyd-warshall/floyd-warshall_time':
+
+   373,439,026,146      ref-cycles                                                    (50.00%)
+   132,565,833,815      L1-dcache-loads                                               (50.00%)
+    16,122,311,569      L1-dcache-load-misses     #   12.16% of all L1-dcache hits    (50.00%)
+        82,126,710      LLC-loads                                                     (50.00%)
+         2,840,161      LLC-load-misses           #    3.46% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        48,638,699      L1-icache-load-misses                                         (40.00%)
+   132,647,635,324      dTLB-loads                                                    (40.00%)
+        15,072,470      dTLB-load-misses          #    0.01% of all dTLB cache hits   (40.00%)
+           167,882      iTLB-loads                                                    (40.00%)
+             1,247      iTLB-load-misses          #    0.74% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     171.053268283 seconds time elapsed
+
+     157.416480000 seconds user
+      13.634041000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./medley/reg_detect/reg_detect_time
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 200000000
+[PolyBench] posix_memalign: request to allocate 200000000
+92.194167
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./medley/reg_detect/reg_detect_time':
+
+   231,157,206,167      ref-cycles                                                    (50.00%)
+    29,751,359,463      L1-dcache-loads                                               (50.00%)
+     4,787,422,566      L1-dcache-load-misses     #   16.09% of all L1-dcache hits    (50.00%)
+       133,838,753      LLC-loads                                                     (50.00%)
+         2,679,864      LLC-load-misses           #    2.00% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        23,185,045      L1-icache-load-misses                                         (40.00%)
+    29,774,354,184      dTLB-loads                                                    (40.00%)
+           326,735      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+           134,921      iTLB-loads                                                    (40.00%)
+             2,555      iTLB-load-misses          #    1.89% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     105.904296656 seconds time elapsed
+
+      92.143392000 seconds user
+      13.757909000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./stencils/adi/adi_time
+X, 0x7f87acbe0000, 512000000
+A, 0x7f778c550000, 512000000
+B, 0x7f776d140000, 512000000
+47.242610
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./stencils/adi/adi_time':
+
+   134,368,831,547      ref-cycles                                                    (50.00%)
+    51,131,159,596      L1-dcache-loads                                               (50.00%)
+     6,269,441,611      L1-dcache-load-misses     #   12.26% of all L1-dcache hits    (50.00%)
+       213,730,254      LLC-loads                                                     (50.00%)
+       203,879,392      LLC-load-misses           #   95.39% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        19,088,372      L1-icache-load-misses                                         (40.00%)
+    51,191,972,920      dTLB-loads                                                    (40.00%)
+        35,842,247      dTLB-load-misses          #    0.07% of all dTLB cache hits   (40.00%)
+            97,873      iTLB-loads                                                    (40.00%)
+             5,703      iTLB-load-misses          #    5.83% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      61.586081395 seconds time elapsed
+
+      47.409425000 seconds user
+      14.173529000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./stencils/fdtd-2d/fdtd-2d_time
+ex, 0x7efcb658a000, 512000000
+ey, 0x7eec95f00000, 512000000
+hz, 0x7eec76af0000, 512000000
+_fict_, 0x7eecb501ac80, 800
+34.785330
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./stencils/fdtd-2d/fdtd-2d_time':
+
+   107,255,387,819      ref-cycles                                                    (50.00%)
+    39,932,198,691      L1-dcache-loads                                               (50.00%)
+     7,485,331,303      L1-dcache-load-misses     #   18.75% of all L1-dcache hits    (50.00%)
+       451,509,079      LLC-loads                                                     (50.00%)
+       440,001,061      LLC-load-misses           #   97.45% of all LL-cache hits     (50.01%)
+   <not supported>      L1-icache-loads                                             
+        17,554,609      L1-icache-load-misses                                         (40.00%)
+    39,971,666,084      dTLB-loads                                                    (40.00%)
+        21,732,636      dTLB-load-misses          #    0.05% of all dTLB cache hits   (40.00%)
+            99,354      iTLB-loads                                                    (40.00%)
+            36,378      iTLB-load-misses          #   36.61% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      49.204849172 seconds time elapsed
+
+      34.947255000 seconds user
+      14.254696000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./stencils/fdtd-apml/fdtd-apml_time
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+0.316569
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./stencils/fdtd-apml/fdtd-apml_time':
+
+    30,902,657,052      ref-cycles                                                    (50.00%)
+     5,132,447,206      L1-dcache-loads                                               (50.00%)
+        52,276,042      L1-dcache-load-misses     #    1.02% of all L1-dcache hits    (50.01%)
+         1,714,007      LLC-loads                                                     (50.01%)
+           948,637      LLC-load-misses           #   55.35% of all LL-cache hits     (50.01%)
+   <not supported>      L1-icache-loads                                             
+         8,154,783      L1-icache-load-misses                                         (40.00%)
+     5,139,655,317      dTLB-loads                                                    (39.99%)
+           255,428      dTLB-load-misses          #    0.00% of all dTLB cache hits   (39.99%)
+            85,343      iTLB-loads                                                    (39.99%)
+             1,403      iTLB-load-misses          #    1.64% of all iTLB cache hits   (39.99%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      14.153088839 seconds time elapsed
+
+       0.402918000 seconds user
+      13.747214000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+[PolyBench] posix_memalign: request to allocate 80000000
+[PolyBench] posix_memalign: request to allocate 80000000
+95.434595
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time':
+
+   238,239,350,770      ref-cycles                                                    (50.00%)
+    24,489,989,011      L1-dcache-loads                                               (50.00%)
+     5,049,234,536      L1-dcache-load-misses     #   20.62% of all L1-dcache hits    (50.00%)
+       516,085,516      LLC-loads                                                     (50.00%)
+         1,995,453      LLC-load-misses           #    0.39% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        25,752,320      L1-icache-load-misses                                         (40.00%)
+    24,496,316,927      dTLB-loads                                                    (40.00%)
+           287,558      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+           117,233      iTLB-loads                                                    (40.00%)
+             2,265      iTLB-load-misses          #    1.93% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     109.145818999 seconds time elapsed
+
+      95.487128000 seconds user
+      13.656018000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+A, 0x7f2467363000, 512000000
+B, 0x7f1446cd0000, 512000000
+27.040408
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time':
+
+    90,412,787,085      ref-cycles                                                    (50.00%)
+    23,797,140,250      L1-dcache-loads                                               (50.00%)
+     4,907,025,064      L1-dcache-load-misses     #   20.62% of all L1-dcache hits    (50.00%)
+       414,631,488      LLC-loads                                                     (50.00%)
+       403,560,901      LLC-load-misses           #   97.33% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+        12,198,058      L1-icache-load-misses                                         (40.00%)
+    23,804,817,178      dTLB-loads                                                    (40.00%)
+         9,754,412      dTLB-load-misses          #    0.04% of all dTLB cache hits   (40.00%)
+            92,933      iTLB-loads                                                    (40.00%)
+             9,286      iTLB-load-misses          #    9.99% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      41.446385266 seconds time elapsed
+
+      27.139511000 seconds user
+      14.305742000 seconds sys
+
+
+LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d -e ref-cycles numactl --cpunodebind=1 --membind=1 ./stencils/seidel-2d/seidel-2d_time
+[PolyBench] posix_memalign: request to allocate 200000000
+26.483656
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./stencils/seidel-2d/seidel-2d_time':
+
+    87,628,216,892      ref-cycles                                                    (50.00%)
+    11,897,492,143      L1-dcache-loads                                               (50.00%)
+       961,778,068      L1-dcache-load-misses     #    8.08% of all L1-dcache hits    (50.00%)
+         1,586,691      LLC-loads                                                     (50.00%)
+         1,008,807      LLC-load-misses           #   63.58% of all LL-cache hits     (50.00%)
+   <not supported>      L1-icache-loads                                             
+         8,699,728      L1-icache-load-misses                                         (40.00%)
+    11,898,904,579      dTLB-loads                                                    (40.00%)
+             7,028      dTLB-load-misses          #    0.00% of all dTLB cache hits   (40.00%)
+            94,419      iTLB-loads                                                    (40.00%)
+             1,090      iTLB-load-misses          #    1.15% of all iTLB cache hits   (40.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      40.173413629 seconds time elapsed
+
+      26.544118000 seconds user
+      13.627034000 seconds sys
+
+

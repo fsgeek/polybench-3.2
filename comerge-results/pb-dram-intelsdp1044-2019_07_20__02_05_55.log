@@ -1,0 +1,657 @@
+./linear-algebra/kernels/2mm/2mm_time
+tmp, 0x14081c0, 18000000
+A, 0x253b6f0, 18000000
+B, 0x366ec20, 18000000
+C, 0x47a2150, 18000000
+D, 0x58d5680, 18000000
+13.281526
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/2mm/2mm_time':
+
+    57,573,549,216      instructions              #    1.17  insn per cycle         
+    49,157,686,537      cycles                                                      
+         7,158,264      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    29,234,660,488      ref-cycles                                                  
+
+      13.322718045 seconds time elapsed
+
+      13.251036000 seconds user
+       0.042848000 seconds sys
+
+
+./linear-algebra/kernels/3mm/3mm_time
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+17.510889
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/3mm/3mm_time':
+
+    81,261,190,571      instructions              #    1.25  insn per cycle         
+    64,753,615,891      cycles                                                      
+        12,671,688      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    38,511,085,888      ref-cycles                                                  
+
+      17.549044762 seconds time elapsed
+
+      17.437219000 seconds user
+       0.071815000 seconds sys
+
+
+./linear-algebra/kernels/atax/atax_time
+A, 0x7f27e4577000, 1800000000
+x, 0x7f277617b000, 120000
+y, 0x7f277615d000, 120000
+tmp, 0x7f277613f000, 120000
+0.450894
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/atax/atax_time':
+
+     4,968,504,174      instructions              #    0.84  insn per cycle         
+     5,950,109,323      cycles                                                      
+        31,132,537      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     3,540,338,648      ref-cycles                                                  
+
+       1.613603796 seconds time elapsed
+
+       0.636053000 seconds user
+       0.974986000 seconds sys
+
+
+./linear-algebra/kernels/bicg/bicg_time
+A, 0x14141c0, 1352000000
+s, 0x51dbe690, 104000
+q, 0x51dd7ce0, 104000
+p, 0x51df1330, 104000
+r, 0x51e0a980, 104000
+0.433736
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/bicg/bicg_time':
+
+     3,625,286,187      instructions              #    0.93  insn per cycle         
+     3,910,928,064      cycles                                                      
+        23,785,352      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     2,326,272,168      ref-cycles                                                  
+
+       1.060377456 seconds time elapsed
+
+       0.573733000 seconds user
+       0.484323000 seconds sys
+
+
+./linear-algebra/kernels/cholesky/cholesky_time
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 32000
+12.019061
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/cholesky/cholesky_time':
+
+    48,320,396,946      instructions              #    1.08  insn per cycle         
+    44,566,605,239      cycles                                                      
+       154,874,855      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    26,501,501,488      ref-cycles                                                  
+
+      12.075409509 seconds time elapsed
+
+      11.995994000 seconds user
+       0.051888000 seconds sys
+
+
+./linear-algebra/kernels/doitgen/doitgen_time
+C4, 0x7fd0c10a4000, 524288
+A, 0x7fd0c0f9e000, 269486080
+sum, 0x7fd0a08ab000, 269486080
+19.183144
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/doitgen/doitgen_time':
+
+    72,070,431,632      instructions              #    0.99  insn per cycle         
+    73,008,067,605      cycles                                                      
+        10,883,188      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    43,418,816,408      ref-cycles                                                  
+
+      19.784310684 seconds time elapsed
+
+      18.870908000 seconds user
+       0.884860000 seconds sys
+
+
+./linear-algebra/kernels/gemm/gemm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+30.725181
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/gemm/gemm_time':
+
+    72,289,551,564      instructions              #    0.64  insn per cycle         
+   113,564,029,378      cycles                                                      
+       110,597,288      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    67,535,775,472      ref-cycles                                                  
+
+      30.772818521 seconds time elapsed
+
+      30.672662000 seconds user
+       0.038880000 seconds sys
+
+
+./linear-algebra/kernels/gemver/gemver_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+3.570311
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/gemver/gemver_time':
+
+     7,288,535,605      instructions              #    0.45  insn per cycle         
+    16,194,291,174      cycles                                                      
+       106,167,378      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     9,631,042,960      ref-cycles                                                  
+
+       4.388862464 seconds time elapsed
+
+       3.715845000 seconds user
+       0.662943000 seconds sys
+
+
+./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+0.259106
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/gesummv/gesummv_time':
+
+     2,792,109,563      instructions              #    0.80  insn per cycle         
+     3,496,209,833      cycles                                                      
+        27,692,387      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     2,080,047,464      ref-cycles                                                  
+
+       0.948333807 seconds time elapsed
+
+       0.364278000 seconds user
+       0.582092000 seconds sys
+
+
+./linear-algebra/kernels/mvt/mvt_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+3.517482
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/mvt/mvt_time':
+
+     5,602,999,164      instructions              #    0.35  insn per cycle         
+    15,999,115,032      cycles                                                      
+        73,042,218      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     9,515,025,608      ref-cycles                                                  
+
+       4.336014289 seconds time elapsed
+
+       3.680839000 seconds user
+       0.644998000 seconds sys
+
+
+./linear-algebra/kernels/symm/symm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+51.691438
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/symm/symm_time':
+
+    40,514,404,008      instructions              #    0.21  insn per cycle         
+   190,922,195,416      cycles                                                      
+       146,706,739      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+   113,546,743,464      ref-cycles                                                  
+
+      51.737617118 seconds time elapsed
+
+      51.584694000 seconds user
+       0.037899000 seconds sys
+
+
+./linear-algebra/kernels/syr2k/syr2k_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+18.491964
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/syr2k/syr2k_time':
+
+   104,229,104,639      instructions              #    1.52  insn per cycle         
+    68,411,053,356      cycles                                                      
+     1,176,041,014      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    40,684,851,944      ref-cycles                                                  
+
+      18.538449622 seconds time elapsed
+
+      18.457774000 seconds user
+       0.040889000 seconds sys
+
+
+./linear-algebra/kernels/syrk/syrk_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+9.059907
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/syrk/syrk_time':
+
+    64,154,925,365      instructions              #    1.91  insn per cycle         
+    33,548,637,485      cycles                                                      
+       102,071,336      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    19,953,202,720      ref-cycles                                                  
+
+       9.092491541 seconds time elapsed
+
+       9.045526000 seconds user
+       0.026923000 seconds sys
+
+
+./linear-algebra/kernels/trisolv/trisolv_time
+A, 0x7ff4d405c000, 1800000000
+x, 0x7ff465c60000, 120000
+c, 0x7ff465c42000, 120000
+0.182441
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/trisolv/trisolv_time':
+
+     3,154,232,306      instructions              #    0.63  insn per cycle         
+     5,014,557,451      cycles                                                      
+        16,931,574      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     2,982,319,032      ref-cycles                                                  
+
+       1.359374399 seconds time elapsed
+
+       0.364242000 seconds user
+       0.992838000 seconds sys
+
+
+./linear-algebra/kernels/trmm/trmm_time
+A, 0x11131c0, 128000000
+B, 0x8b3c8d0, 128000000
+42.723547
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/kernels/trmm/trmm_time':
+
+   256,496,153,509      instructions              #    1.62  insn per cycle         
+   158,117,966,819      cycles                                                      
+     3,125,006,573      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    94,029,817,816      ref-cycles                                                  
+
+      42.843967314 seconds time elapsed
+
+      42.654779000 seconds user
+       0.106726000 seconds sys
+
+
+./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+1.705986
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/solvers/durbin/durbin_time':
+
+     2,556,975,200      instructions              #    0.29  insn per cycle         
+     8,820,105,545      cycles                                                      
+        23,124,790      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     5,246,643,688      ref-cycles                                                  
+
+       2.391329658 seconds time elapsed
+
+       1.800346000 seconds user
+       0.585891000 seconds sys
+
+
+./linear-algebra/solvers/dynprog/dynprog_time
+[PolyBench] posix_memalign: request to allocate 256000000
+[PolyBench] posix_memalign: request to allocate 640000
+[PolyBench] posix_memalign: request to allocate 640000
+11.673351
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/solvers/dynprog/dynprog_time':
+
+    76,182,250,264      instructions              #    1.77  insn per cycle         
+    43,097,146,864      cycles                                                      
+       751,967,796      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    25,634,204,640      ref-cycles                                                  
+
+      11.681186866 seconds time elapsed
+
+      11.602490000 seconds user
+       0.052872000 seconds sys
+
+
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+70.634250
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/solvers/gramschmidt/gramschmidt_time':
+
+    52,493,019,132      instructions              #    0.20  insn per cycle         
+   260,845,948,673      cycles                                                      
+        72,595,426      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+   155,126,197,512      ref-cycles                                                  
+
+      70.682929175 seconds time elapsed
+
+      70.515657000 seconds user
+       0.042870000 seconds sys
+
+
+./linear-algebra/solvers/lu/lu_time
+[PolyBench] posix_memalign: request to allocate 128000000
+16.638885
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/solvers/lu/lu_time':
+
+    85,731,176,167      instructions              #    1.39  insn per cycle         
+    61,633,340,684      cycles                                                      
+     1,594,812,791      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    36,653,700,072      ref-cycles                                                  
+
+      16.701427193 seconds time elapsed
+
+      16.609193000 seconds user
+       0.052885000 seconds sys
+
+
+./linear-algebra/solvers/ludcmp/ludcmp_time
+A, 0x7fc406bf2000, 512128008
+b, 0x7fc3e71c1000, 64008
+x, 0x7fc3e71b1000, 64008
+y, 0x7fc3e71a1000, 64008
+1485.277466
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./linear-algebra/solvers/ludcmp/ludcmp_time':
+
+ 1,544,391,821,835      instructions              #    0.28  insn per cycle         
+ 5,482,336,874,991      cycles                                                      
+    57,878,314,288      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+ 3,260,326,349,632      ref-cycles                                                  
+
+    1485.529362509 seconds time elapsed
+
+    1482.458146000 seconds user
+       0.386198000 seconds sys
+
+
+./datamining/correlation/correlation_time
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 24000
+[PolyBench] posix_memalign: request to allocate 24000
+107.367345
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./datamining/correlation/correlation_time':
+
+    95,302,142,095      instructions              #    0.24  insn per cycle         
+   396,136,023,466      cycles                                                      
+       549,949,767      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+   235,619,004,456      ref-cycles                                                  
+
+     107.407109449 seconds time elapsed
+
+     107.077713000 seconds user
+       0.076823000 seconds sys
+
+
+./datamining/covariance/covariance_time
+data, 0xa9e1c0, 25920000
+symmat, 0x2360c90, 25920000
+mean, 0x3c23760, 14400
+20.471501
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./datamining/covariance/covariance_time':
+
+    23,535,811,956      instructions              #    0.31  insn per cycle         
+    75,619,703,620      cycles                                                      
+         5,865,449      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    44,969,399,904      ref-cycles                                                  
+
+      20.490577483 seconds time elapsed
+
+      20.421747000 seconds user
+       0.026933000 seconds sys
+
+
+./medley/floyd-warshall/floyd-warshall_time
+[PolyBench] posix_memalign: request to allocate 128000000
+64.740761
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./medley/floyd-warshall/floyd-warshall_time':
+
+   448,722,193,043      instructions              #    1.88  insn per cycle         
+   239,157,821,385      cycles                                                      
+     5,980,008,193      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+   142,223,986,080      ref-cycles                                                  
+
+      64.803479176 seconds time elapsed
+
+      64.601546000 seconds user
+       0.059810000 seconds sys
+
+
+./medley/reg_detect/reg_detect_time
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 200000000
+[PolyBench] posix_memalign: request to allocate 200000000
+29.642169
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./medley/reg_detect/reg_detect_time':
+
+   151,917,834,017      instructions              #    1.39  insn per cycle         
+   109,430,075,968      cycles                                                      
+     4,010,030,528      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    65,077,664,432      ref-cycles                                                  
+
+      29.652380164 seconds time elapsed
+
+      29.492392000 seconds user
+       0.085698000 seconds sys
+
+
+./stencils/adi/adi_time
+X, 0x7f74fbeab000, 512000000
+A, 0x7f74dc48a000, 512000000
+B, 0x7f74bd07a000, 512000000
+53.238167
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./stencils/adi/adi_time':
+
+   124,037,612,960      instructions              #    0.62  insn per cycle         
+   200,227,787,515      cycles                                                      
+     4,828,270,794      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+   119,075,917,312      ref-cycles                                                  
+
+      54.256656020 seconds time elapsed
+
+      53.289254000 seconds user
+       0.857796000 seconds sys
+
+
+./stencils/fdtd-2d/fdtd-2d_time
+ex, 0x7feb5ef27000, 512000000
+ey, 0x7feb3f506000, 512000000
+hz, 0x7feb200f6000, 512000000
+_fict_, 0x1b195d0, 800
+45.187215
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./stencils/fdtd-2d/fdtd-2d_time':
+
+   111,107,419,723      instructions              #    0.65  insn per cycle         
+   170,447,521,490      cycles                                                      
+     5,606,352,867      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+   101,367,539,592      ref-cycles                                                  
+
+      46.188246492 seconds time elapsed
+
+      45.251623000 seconds user
+       0.838008000 seconds sys
+
+
+./stencils/fdtd-apml/fdtd-apml_time
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+0.266940
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./stencils/fdtd-apml/fdtd-apml_time':
+
+     1,921,581,234      instructions              #    1.13  insn per cycle         
+     1,696,575,097      cycles                                                      
+         8,565,251      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+     1,009,572,256      ref-cycles                                                  
+
+       0.460443175 seconds time elapsed
+
+       0.228540000 seconds user
+       0.230489000 seconds sys
+
+
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+[PolyBench] posix_memalign: request to allocate 80000000
+[PolyBench] posix_memalign: request to allocate 80000000
+26.792807
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time':
+
+    75,300,949,973      instructions              #    0.76  insn per cycle         
+    99,164,812,233      cycles                                                      
+     3,983,629,098      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    58,974,804,680      ref-cycles                                                  
+
+      26.871952321 seconds time elapsed
+
+      26.746590000 seconds user
+       0.061875000 seconds sys
+
+
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+A, 0x7f7774e1b000, 512000000
+B, 0x7f77553fa000, 512000000
+19.904953
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time':
+
+    62,353,894,349      instructions              #    0.83  insn per cycle         
+    75,300,011,481      cycles                                                      
+     3,182,127,543      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    44,781,201,256      ref-cycles                                                  
+
+      20.404873367 seconds time elapsed
+
+      19.967962000 seconds user
+       0.392388000 seconds sys
+
+
+./stencils/seidel-2d/seidel-2d_time
+[PolyBench] posix_memalign: request to allocate 200000000
+25.772022
+
+ Performance counter stats for 'numactl --cpunodebind=0 --membind=0 ./stencils/seidel-2d/seidel-2d_time':
+
+    40,359,394,340      instructions              #    0.42  insn per cycle         
+    95,452,600,481      cycles                                                      
+       264,610,643      cache-misses                                                
+   <not supported>      stalled-cycles-backend                                      
+   <not supported>      stalled-cycles-frontend                                     
+    56,771,444,664      ref-cycles                                                  
+
+      25.868082005 seconds time elapsed
+
+      25.747647000 seconds user
+       0.085829000 seconds sys
+
+
