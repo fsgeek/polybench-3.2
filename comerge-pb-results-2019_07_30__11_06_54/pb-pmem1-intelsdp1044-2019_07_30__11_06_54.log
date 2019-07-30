@@ -1,0 +1,1200 @@
+./linear-algebra/kernels/2mm/2mm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/2mm/2mm_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12654 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/2mm/2mm_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.45 msec task-clock                #    0.022 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               280      page-faults               # 140000.000 M/sec                
+         8,253,665      cycles                    # 4126832.500 GHz                   (18.47%)
+         6,462,395      instructions              #    0.78  insn per cycle           (69.78%)
+         1,145,608      branches                  # 572804000.000 M/sec             
+            38,797      branch-misses             #    3.39% of all branches        
+         1,482,141      L1-dcache-loads           # 741070500.000 M/sec             
+            86,011      L1-dcache-load-misses     #    5.80% of all L1-dcache hits    (81.53%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.112002020 seconds time elapsed
+
+       0.000839000 seconds user
+       0.001844000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/3mm/3mm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/3mm/3mm_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12674 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/3mm/3mm_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.48 msec task-clock                #    0.022 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               283      page-faults               # 141500.000 M/sec                
+         8,676,663      cycles                    # 4338331.500 GHz                   (29.86%)
+         5,655,010      instructions              #    0.65  insn per cycle           (89.83%)
+         1,106,636      branches                  # 553318000.000 M/sec             
+            37,889      branch-misses             #    3.42% of all branches        
+         1,441,917      L1-dcache-loads           # 720958500.000 M/sec             
+            81,789      L1-dcache-load-misses     #    5.67% of all L1-dcache hits    (70.14%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.112248586 seconds time elapsed
+
+       0.001857000 seconds user
+       0.000882000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/atax/atax_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/atax/atax_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12700 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/atax/atax_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.57 msec task-clock                #    0.025 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               280      page-faults               # 140000.000 M/sec                
+         6,648,974      cycles                    # 3324487.000 GHz                   (61.49%)
+         5,510,940      instructions              #    0.83  insn per cycle         
+         1,132,603      branches                  # 566301500.000 M/sec             
+            38,523      branch-misses             #    3.40% of all branches        
+         1,468,796      L1-dcache-loads           # 734398000.000 M/sec             
+           101,753      L1-dcache-load-misses     #    6.93% of all L1-dcache hits    (38.51%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.102187819 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002902000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/bicg/bicg_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/bicg/bicg_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12725 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/bicg/bicg_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.49 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               281      page-faults               # 140500.000 M/sec                
+         5,779,537      cycles                    # 2889768.500 GHz                   (1.58%)
+         6,836,385      instructions              #    1.18  insn per cycle           (46.17%)
+         1,194,883      branches                  # 597441500.000 M/sec               (87.05%)
+            38,051      branch-misses             #    3.18% of all branches        
+         1,459,644      L1-dcache-loads           # 729822000.000 M/sec             
+            89,243      L1-dcache-load-misses     #    6.11% of all L1-dcache hits    (98.42%)
+            25,256      LLC-loads                 # 12628000.000 M/sec                (12.95%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.102776902 seconds time elapsed
+
+       0.000868000 seconds user
+       0.001838000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/cholesky/cholesky_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/cholesky/cholesky_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12742 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/cholesky/cholesky_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.58 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               293      page-faults               # 146500.000 M/sec                
+         1,882,234      cycles                    # 941117.000 GHz                    (0.45%)
+         5,725,192      instructions              #    3.04  insn per cycle           (62.34%)
+         1,226,118      branches                  # 613059000.000 M/sec               (90.73%)
+            38,452      branch-misses             #    3.14% of all branches        
+         1,513,002      L1-dcache-loads           # 756501000.000 M/sec             
+            92,181      L1-dcache-load-misses     #    6.09% of all L1-dcache hits    (99.55%)
+            13,823      LLC-loads                 # 6911500.000 M/sec                 (9.27%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.109134251 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002814000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/doitgen/doitgen_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/doitgen/doitgen_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12778 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/doitgen/doitgen_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.52 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               280      page-faults               # 140000.000 M/sec                
+         7,536,358      cycles                    # 3768179.000 GHz                   (11.17%)
+         6,314,284      instructions              #    0.84  insn per cycle           (67.55%)
+         1,109,584      branches                  # 554792000.000 M/sec             
+            37,460      branch-misses             #    3.38% of all branches        
+         1,442,024      L1-dcache-loads           # 721012000.000 M/sec             
+            84,525      L1-dcache-load-misses     #    5.86% of all L1-dcache hits    (88.83%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.105734924 seconds time elapsed
+
+       0.000594000 seconds user
+       0.002305000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/gemm/gemm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/gemm/gemm_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12850 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/gemm/gemm_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.51 msec task-clock                #    0.022 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               276      page-faults               # 138000.000 M/sec                
+         8,599,678      cycles                    # 4299839.000 GHz                   (29.12%)
+         5,835,331      instructions              #    0.68  insn per cycle           (84.52%)
+         1,097,548      branches                  # 548774000.000 M/sec             
+            37,420      branch-misses             #    3.41% of all branches        
+         1,429,956      L1-dcache-loads           # 714978000.000 M/sec             
+            81,842      L1-dcache-load-misses     #    5.72% of all L1-dcache hits    (70.88%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.112367785 seconds time elapsed
+
+       0.002754000 seconds user
+       0.000000000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/gemver/gemver_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/gemver/gemver_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12924 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/gemver/gemver_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.52 msec task-clock                #    0.023 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               284      page-faults               # 142000.000 M/sec                
+         8,440,105      cycles                    # 4220052.500 GHz                   (20.63%)
+         5,953,660      instructions              #    0.71  insn per cycle           (82.20%)
+         1,180,889      branches                  # 590444500.000 M/sec               (91.79%)
+            38,066      branch-misses             #    3.22% of all branches        
+         1,461,433      L1-dcache-loads           # 730716500.000 M/sec             
+            81,754      L1-dcache-load-misses     #    5.59% of all L1-dcache hits    (79.37%)
+            14,464      LLC-loads                 # 7232000.000 M/sec                 (8.21%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.109603009 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002742000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/gesummv/gesummv_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/gesummv/gesummv_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12941 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/gesummv/gesummv_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.54 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               284      page-faults               # 142000.000 M/sec                
+         8,562,709      cycles                    # 4281354.500 GHz                   (24.57%)
+         6,399,566      instructions              #    0.75  insn per cycle           (75.81%)
+         1,116,042      branches                  # 558021000.000 M/sec             
+            37,561      branch-misses             #    3.37% of all branches        
+         1,450,076      L1-dcache-loads           # 725038000.000 M/sec             
+            80,955      L1-dcache-load-misses     #    5.58% of all L1-dcache hits    (75.43%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.107491989 seconds time elapsed
+
+       0.001893000 seconds user
+       0.000883000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/mvt/mvt_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/mvt/mvt_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12965 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/mvt/mvt_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.54 msec task-clock                #    0.023 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               283      page-faults               # 141500.000 M/sec                
+         5,366,030      cycles                    # 2683015.000 GHz                   (1.22%)
+         5,582,383      instructions              #    1.04  insn per cycle           (61.36%)
+         1,127,284      branches                  # 563642000.000 M/sec             
+            37,901      branch-misses             #    3.36% of all branches        
+         1,462,034      L1-dcache-loads           # 731017000.000 M/sec             
+            89,297      L1-dcache-load-misses     #    6.11% of all L1-dcache hits    (98.78%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.109453299 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002831000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/symm/symm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/symm/symm_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 12984 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/symm/symm_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.47 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               278      page-faults               # 139000.000 M/sec                
+         7,952,754      cycles                    # 3976377.000 GHz                   (16.14%)
+         6,677,437      instructions              #    0.84  insn per cycle           (64.48%)
+         1,117,975      branches                  # 558987500.000 M/sec             
+            37,948      branch-misses             #    3.39% of all branches        
+         1,454,124      L1-dcache-loads           # 727062000.000 M/sec             
+            82,930      L1-dcache-load-misses     #    5.70% of all L1-dcache hits    (83.86%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.102053052 seconds time elapsed
+
+       0.001825000 seconds user
+       0.000864000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/syr2k/syr2k_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/syr2k/syr2k_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13032 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/syr2k/syr2k_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.47 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               280      page-faults               # 140000.000 M/sec                
+         8,411,950      cycles                    # 4205975.000 GHz                   (27.02%)
+         5,504,779      instructions              #    0.65  insn per cycle           (98.93%)
+         1,120,942      branches                  # 560471000.000 M/sec             
+            37,735      branch-misses             #    3.37% of all branches        
+         1,456,793      L1-dcache-loads           # 728396500.000 M/sec             
+            81,932      L1-dcache-load-misses     #    5.62% of all L1-dcache hits    (72.98%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.103944386 seconds time elapsed
+
+       0.001836000 seconds user
+       0.000874000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/syrk/syrk_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/syrk/syrk_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13052 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/syrk/syrk_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.49 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               288      page-faults               # 144000.000 M/sec                
+         7,676,656      cycles                    # 3838328.000 GHz                   (12.34%)
+         6,245,480      instructions              #    0.81  insn per cycle           (74.09%)
+         1,121,557      branches                  # 560778500.000 M/sec             
+            37,689      branch-misses             #    3.36% of all branches        
+         1,457,779      L1-dcache-loads           # 728889500.000 M/sec             
+            84,696      L1-dcache-load-misses     #    5.81% of all L1-dcache hits    (87.66%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.105634784 seconds time elapsed
+
+       0.001870000 seconds user
+       0.000868000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/trisolv/trisolv_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/trisolv/trisolv_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13078 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/trisolv/trisolv_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.47 msec task-clock                #    0.025 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               282      page-faults               # 141000.000 M/sec                
+         8,417,877      cycles                    # 4208938.500 GHz                   (19.57%)
+         5,880,612      instructions              #    0.70  insn per cycle           (84.49%)
+         1,122,940      branches                  # 561470000.000 M/sec             
+            37,221      branch-misses             #    3.31% of all branches        
+         1,457,489      L1-dcache-loads           # 728744500.000 M/sec             
+            81,462      L1-dcache-load-misses     #    5.59% of all L1-dcache hits    (80.43%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.099807827 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002746000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/kernels/trmm/trmm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/trmm/trmm_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13097 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/kernels/trmm/trmm_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.49 msec task-clock                #    0.025 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               281      page-faults               # 140500.000 M/sec                
+         6,598,921      cycles                    # 3299460.500 GHz                   (59.92%)
+         5,415,733      instructions              #    0.82  insn per cycle         
+         1,113,247      branches                  # 556623500.000 M/sec             
+            37,866      branch-misses             #    3.40% of all branches        
+         1,449,629      L1-dcache-loads           # 724814500.000 M/sec             
+            96,793      L1-dcache-load-misses     #    6.68% of all L1-dcache hits    (40.08%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.101338949 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002561000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/solvers/durbin/durbin_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/durbin/durbin_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13140 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/solvers/durbin/durbin_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.45 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               280      page-faults               # 140000.000 M/sec                
+         7,363,655      cycles                    # 3681827.500 GHz                   (48.92%)
+         5,431,226      instructions              #    0.74  insn per cycle         
+         1,116,484      branches                  # 558242000.000 M/sec             
+            37,369      branch-misses             #    3.35% of all branches        
+         1,449,875      L1-dcache-loads           # 724937500.000 M/sec             
+            84,609      L1-dcache-load-misses     #    5.84% of all L1-dcache hits    (51.08%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.101628979 seconds time elapsed
+
+       0.000881000 seconds user
+       0.001797000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/solvers/dynprog/dynprog_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/dynprog/dynprog_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13160 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/solvers/dynprog/dynprog_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.53 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               285      page-faults               # 142500.000 M/sec                
+         6,422,524      cycles                    # 3211262.000 GHz                   (61.46%)
+         5,705,245      instructions              #    0.89  insn per cycle           (93.69%)
+         1,131,892      branches                  # 565946000.000 M/sec             
+            37,731      branch-misses             #    3.33% of all branches        
+         1,471,551      L1-dcache-loads           # 735775500.000 M/sec             
+           101,398      L1-dcache-load-misses     #    6.89% of all L1-dcache hits    (38.54%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.105997650 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002769000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13180 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/solvers/gramschmidt/gramschmidt_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.55 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               294      page-faults               # 147000.000 M/sec                
+         6,867,260      cycles                    # 3433630.000 GHz                   (4.12%)
+         5,917,954      instructions              #    0.86  insn per cycle           (66.37%)
+         1,232,075      branches                  # 616037500.000 M/sec               (88.98%)
+            38,344      branch-misses             #    3.11% of all branches        
+         1,504,580      L1-dcache-loads           # 752290000.000 M/sec             
+            90,720      L1-dcache-load-misses     #    6.03% of all L1-dcache hits    (95.88%)
+            13,461      LLC-loads                 # 6730500.000 M/sec                 (11.02%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.108255965 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002798000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/solvers/lu/lu_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/lu/lu_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13253 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/solvers/lu/lu_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.60 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               278      page-faults               # 139000.000 M/sec                
+         8,516,768      cycles                    # 4258384.000 GHz                   (18.68%)
+         5,871,102      instructions              #    0.69  insn per cycle           (82.01%)
+         1,118,652      branches                  # 559326000.000 M/sec             
+            38,318      branch-misses             #    3.43% of all branches        
+         1,453,088      L1-dcache-loads           # 726544000.000 M/sec             
+            82,069      L1-dcache-load-misses     #    5.65% of all L1-dcache hits    (81.32%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.108826218 seconds time elapsed
+
+       0.001894000 seconds user
+       0.000929000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./linear-algebra/solvers/ludcmp/ludcmp_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/ludcmp/ludcmp_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13394 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./linear-algebra/solvers/ludcmp/ludcmp_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.49 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               285      page-faults               # 142500.000 M/sec                
+         8,585,003      cycles                    # 4292501.500 GHz                   (40.27%)
+         5,503,927      instructions              #    0.64  insn per cycle         
+         1,132,144      branches                  # 566072000.000 M/sec             
+            37,641      branch-misses             #    3.32% of all branches        
+         1,470,463      L1-dcache-loads           # 735231500.000 M/sec             
+            76,638      L1-dcache-load-misses     #    5.21% of all L1-dcache hits    (59.73%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.102844256 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002740000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./datamining/correlation/correlation_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./datamining/correlation/correlation_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13603 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./datamining/correlation/correlation_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.60 msec task-clock                #    0.023 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               288      page-faults               # 144000.000 M/sec                
+         6,994,323      cycles                    # 3497161.500 GHz                   (3.87%)
+         6,148,873      instructions              #    0.88  insn per cycle           (61.91%)
+         1,167,314      branches                  # 583657000.000 M/sec             
+            39,254      branch-misses             #    3.36% of all branches        
+         1,513,408      L1-dcache-loads           # 756704000.000 M/sec             
+            94,353      L1-dcache-load-misses     #    6.23% of all L1-dcache hits    (96.13%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.114418121 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002808000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./datamining/covariance/covariance_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./datamining/covariance/covariance_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13636 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./datamining/covariance/covariance_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.63 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               279      page-faults               # 139500.000 M/sec                
+         7,161,737      cycles                    # 3580868.500 GHz                   (4.61%)
+         7,804,200      instructions              #    1.09  insn per cycle           (44.42%)
+         1,143,202      branches                  # 571601000.000 M/sec             
+            39,224      branch-misses             #    3.43% of all branches        
+         1,480,338      L1-dcache-loads           # 740169000.000 M/sec             
+            92,173      L1-dcache-load-misses     #    6.23% of all L1-dcache hits    (95.39%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.110031756 seconds time elapsed
+
+       0.001950000 seconds user
+       0.000918000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./medley/floyd-warshall/floyd-warshall_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./medley/floyd-warshall/floyd-warshall_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13662 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./medley/floyd-warshall/floyd-warshall_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.44 msec task-clock                #    0.023 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               287      page-faults               # 143500.000 M/sec                
+         8,825,752      cycles                    # 4412876.000 GHz                   (24.01%)
+         5,437,033      instructions              #    0.62  insn per cycle         
+         1,119,407      branches                  # 559703500.000 M/sec             
+            37,641      branch-misses             #    3.36% of all branches        
+         1,457,037      L1-dcache-loads           # 728518500.000 M/sec             
+            81,583      L1-dcache-load-misses     #    5.60% of all L1-dcache hits    (75.99%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.107952215 seconds time elapsed
+
+       0.001925000 seconds user
+       0.000948000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./medley/reg_detect/reg_detect_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./medley/reg_detect/reg_detect_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13841 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./medley/reg_detect/reg_detect_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.73 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               279      page-faults               # 139500.000 M/sec                
+         9,352,039      cycles                    # 4676019.500 GHz                   (27.95%)
+         6,809,599      instructions              #    0.73  insn per cycle           (73.00%)
+         1,170,277      branches                  # 585138500.000 M/sec             
+            39,868      branch-misses             #    3.41% of all branches        
+         1,505,287      L1-dcache-loads           # 752643500.000 M/sec             
+            88,142      L1-dcache-load-misses     #    5.86% of all L1-dcache hits    (72.05%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.112744802 seconds time elapsed
+
+       0.001981000 seconds user
+       0.000992000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./stencils/adi/adi_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/adi/adi_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 13924 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./stencils/adi/adi_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.57 msec task-clock                #    0.023 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               285      page-faults               # 142500.000 M/sec                
+         7,502,619      cycles                    # 3751309.500 GHz                   (8.10%)
+         5,983,342      instructions              #    0.80  insn per cycle           (71.27%)
+         1,128,153      branches                  # 564076500.000 M/sec             
+            38,315      branch-misses             #    3.40% of all branches        
+         1,465,006      L1-dcache-loads           # 732503000.000 M/sec             
+            90,027      L1-dcache-load-misses     #    6.15% of all L1-dcache hits    (91.90%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.110489457 seconds time elapsed
+
+       0.000906000 seconds user
+       0.001956000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./stencils/fdtd-2d/fdtd-2d_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/fdtd-2d/fdtd-2d_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 14112 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./stencils/fdtd-2d/fdtd-2d_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              5.28 msec task-clock                #    0.048 CPUs utilized          
+                 3      context-switches          #  600.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               278      page-faults               # 55600.000 M/sec                 
+         3,865,463      cycles                    # 773092.600 GHz                    (1.46%)
+         5,687,619      instructions              #    1.47  insn per cycle           (20.25%)
+         1,210,564      branches                  # 242112800.000 M/sec               (39.05%)
+            42,239      branch-misses             #    3.49% of all branches          (61.09%)
+         1,465,412      L1-dcache-loads           # 293082400.000 M/sec               (89.76%)
+            87,733      L1-dcache-load-misses     #    5.99% of all L1-dcache hits    (98.54%)
+            19,084      LLC-loads                 # 3816800.000 M/sec                 (60.95%)
+             7,227      LLC-load-misses           #   37.87% of all LL-cache hits     (38.91%)
+   <not supported>      L1-icache-loads                                             
+           141,262      L1-icache-load-misses                                         (10.24%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.109143885 seconds time elapsed
+
+       0.000917000 seconds user
+       0.004802000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./stencils/fdtd-apml/fdtd-apml_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/fdtd-apml/fdtd-apml_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 14139 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./stencils/fdtd-apml/fdtd-apml_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.51 msec task-clock                #    0.024 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               284      page-faults               # 142000.000 M/sec                
+         6,139,168      cycles                    # 3069584.000 GHz                   (59.09%)
+         5,436,281      instructions              #    0.89  insn per cycle         
+         1,117,235      branches                  # 558617500.000 M/sec             
+            37,869      branch-misses             #    3.39% of all branches        
+         1,446,881      L1-dcache-loads           # 723440500.000 M/sec             
+           104,285      L1-dcache-load-misses     #    7.21% of all L1-dcache hits    (40.91%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.106165655 seconds time elapsed
+
+       0.000975000 seconds user
+       0.001782000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 14158 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.44 msec task-clock                #    0.022 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               285      page-faults               # 142500.000 M/sec                
+         7,283,020      cycles                    # 3641510.000 GHz                   (12.61%)
+         6,173,671      instructions              #    0.85  insn per cycle           (73.06%)
+         1,114,959      branches                  # 557479500.000 M/sec             
+            37,189      branch-misses             #    3.34% of all branches        
+         1,448,733      L1-dcache-loads           # 724366500.000 M/sec             
+            84,303      L1-dcache-load-misses     #    5.82% of all L1-dcache hits    (87.39%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.110673560 seconds time elapsed
+
+       0.000857000 seconds user
+       0.001735000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 14276 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.69 msec task-clock                #    0.024 CPUs utilized          
+                 4      context-switches          # 2000.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               281      page-faults               # 140500.000 M/sec                
+         6,608,170      cycles                    # 3304085.000 GHz                   (4.00%)
+         5,689,427      instructions              #    0.86  insn per cycle           (55.76%)
+         1,114,941      branches                  # 557470500.000 M/sec             
+            37,828      branch-misses             #    3.39% of all branches        
+         1,452,963      L1-dcache-loads           # 726481500.000 M/sec             
+            88,868      L1-dcache-load-misses     #    6.12% of all L1-dcache hits    (96.00%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.110594869 seconds time elapsed
+
+       0.000954000 seconds user
+       0.001964000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
+./stencils/seidel-2d/seidel-2d_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem1/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/seidel-2d/seidel-2d_time
+Error (libvmmalloc): vmem pool creation failed: No space left on device
+./wrapper-comerge.sh: line 4: 14347 Aborted                 (core dumped) VMMALLOC_POOL_DIR=$1 VMMALLOC_POOL_SIZE=$2 LD_PRELOAD=libvmmalloc.so.1 $3 >> $4 2>&1
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem1/fsgeek 5368709120 ./stencils/seidel-2d/seidel-2d_time ./comerge-pb-results-2019_07_30__11_06_54/pb-pmem1-intelsdp1044-2019_07_30__11_06_54.log':
+
+              2.52 msec task-clock                #    0.023 CPUs utilized          
+                 3      context-switches          # 1500.000 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               284      page-faults               # 142000.000 M/sec                
+         7,771,484      cycles                    # 3885742.000 GHz                   (12.24%)
+         7,553,081      instructions              #    0.97  insn per cycle           (54.11%)
+         1,110,300      branches                  # 555150000.000 M/sec             
+            37,831      branch-misses             #    3.41% of all branches        
+         1,442,474      L1-dcache-loads           # 721237000.000 M/sec             
+            83,747      L1-dcache-load-misses     #    5.81% of all L1-dcache hits    (87.76%)
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.110130818 seconds time elapsed
+
+       0.000875000 seconds user
+       0.001894000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+finished
