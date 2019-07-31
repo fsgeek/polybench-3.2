@@ -1,0 +1,90 @@
+./linear-algebra/kernels/2mm/2mm_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/2mm/2mm_time
+finished
+./linear-algebra/kernels/3mm/3mm_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/3mm/3mm_time
+finished
+./linear-algebra/kernels/atax/atax_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/atax/atax_time
+finished
+./linear-algebra/kernels/bicg/bicg_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/bicg/bicg_time
+finished
+./linear-algebra/kernels/cholesky/cholesky_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/cholesky/cholesky_time
+finished
+./linear-algebra/kernels/doitgen/doitgen_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/doitgen/doitgen_time
+finished
+./linear-algebra/kernels/gemm/gemm_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/gemm/gemm_time
+finished
+./linear-algebra/kernels/gemver/gemver_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/gemver/gemver_time
+finished
+./linear-algebra/kernels/gesummv/gesummv_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/gesummv/gesummv_time
+finished
+./linear-algebra/kernels/mvt/mvt_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/mvt/mvt_time
+finished
+./linear-algebra/kernels/symm/symm_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/symm/symm_time
+finished
+./linear-algebra/kernels/syr2k/syr2k_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/syr2k/syr2k_time
+finished
+./linear-algebra/kernels/syrk/syrk_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/syrk/syrk_time
+finished
+./linear-algebra/kernels/trisolv/trisolv_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/trisolv/trisolv_time
+finished
+./linear-algebra/kernels/trmm/trmm_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/kernels/trmm/trmm_time
+finished
+./linear-algebra/solvers/durbin/durbin_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/solvers/durbin/durbin_time
+finished
+./linear-algebra/solvers/dynprog/dynprog_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/solvers/dynprog/dynprog_time
+finished
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+finished
+./linear-algebra/solvers/lu/lu_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/solvers/lu/lu_time
+finished
+./linear-algebra/solvers/ludcmp/ludcmp_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./linear-algebra/solvers/ludcmp/ludcmp_time
+finished
+./datamining/correlation/correlation_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./datamining/correlation/correlation_time
+finished
+./datamining/covariance/covariance_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./datamining/covariance/covariance_time
+finished
+./medley/floyd-warshall/floyd-warshall_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./medley/floyd-warshall/floyd-warshall_time
+finished
+./medley/reg_detect/reg_detect_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./medley/reg_detect/reg_detect_time
+finished
+./stencils/adi/adi_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./stencils/adi/adi_time
+finished
+./stencils/fdtd-2d/fdtd-2d_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./stencils/fdtd-2d/fdtd-2d_time
+finished
+./stencils/fdtd-apml/fdtd-apml_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./stencils/fdtd-apml/fdtd-apml_time
+finished
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+finished
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+finished
+./stencils/seidel-2d/seidel-2d_time
+perf stat -B -d -d -d numactl --cpunodebind=1 --physcpubind=+1 --membind=1 ./stencils/seidel-2d/seidel-2d_time
+finished

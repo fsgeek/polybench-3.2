@@ -1,0 +1,4 @@
+mkdir ./comerge-pb-results-2019_07_31__01_56_37
+Start ./linear-algebra/kernels/2mm/2mm_time
+./run-comerge-aep.sh: line 67: 1: command not found
+Error: provide an output file name.

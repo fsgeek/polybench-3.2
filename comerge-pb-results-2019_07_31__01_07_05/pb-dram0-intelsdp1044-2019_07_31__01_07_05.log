@@ -1,0 +1,1137 @@
+./linear-algebra/kernels/2mm/2mm_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/2mm/2mm_time
+tmp, 0x215b1c0, 18000000
+A, 0x328e6f0, 18000000
+B, 0x43c1c20, 18000000
+C, 0x54f5150, 18000000
+D, 0x6628680, 18000000
+50.544762
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/2mm/2mm_time':
+
+         50,662.18 msec task-clock                #    1.000 CPUs utilized          
+                43      context-switches          #    0.849 M/sec                  
+                 2      cpu-migrations            #    0.039 M/sec                  
+            30,328      page-faults               #  598.634 M/sec                  
+   185,799,020,852      cycles                    # 3667423.727 GHz                   (30.77%)
+   344,860,395,889      instructions              #    1.86  insn per cycle           (38.46%)
+     6,846,538,042      branches                  # 135141487.545 M/sec               (38.46%)
+         5,710,431      branch-misses             #    0.08% of all branches          (38.46%)
+   152,116,015,229      L1-dcache-loads           # 3002566326.418 M/sec              (38.46%)
+    10,192,455,316      L1-dcache-load-misses     #    6.70% of all L1-dcache hits    (38.46%)
+       855,826,125      LLC-loads                 # 16892861.020 M/sec                (30.77%)
+        11,937,195      LLC-load-misses           #    1.39% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         9,752,525      L1-icache-load-misses                                         (30.77%)
+   152,201,168,129      dTLB-loads                # 3004247130.571 M/sec              (30.77%)
+     2,839,275,655      dTLB-load-misses          #    1.87% of all dTLB cache hits   (30.77%)
+             2,808      iTLB-loads                #   55.426 M/sec                    (30.77%)
+            11,756      iTLB-load-misses          #  418.66% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      50.663365792 seconds time elapsed
+
+      50.261748000 seconds user
+       0.052372000 seconds sys
+
+
+finished
+./linear-algebra/kernels/3mm/3mm_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/3mm/3mm_time
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+52.281996
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/3mm/3mm_time':
+
+         52,410.64 msec task-clock                #    1.000 CPUs utilized          
+                70      context-switches          #    1.336 M/sec                  
+                 2      cpu-migrations            #    0.038 M/sec                  
+            39,078      page-faults               #  745.621 M/sec                  
+   192,232,226,135      cycles                    # 3667853.962 GHz                   (30.76%)
+   385,367,164,062      instructions              #    2.00  insn per cycle           (38.46%)
+    10,225,599,362      branches                  # 195107791.681 M/sec               (38.46%)
+         7,883,993      branch-misses             #    0.08% of all branches          (38.46%)
+   182,485,667,942      L1-dcache-loads           # 3481886432.780 M/sec              (38.46%)
+    13,633,464,130      L1-dcache-load-misses     #    7.47% of all L1-dcache hits    (38.46%)
+     1,278,189,293      LLC-loads                 # 24388271.189 M/sec                (30.77%)
+        13,371,130      LLC-load-misses           #    1.05% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        11,910,713      L1-icache-load-misses                                         (30.77%)
+   182,595,630,188      dTLB-loads                # 3483984548.521 M/sec              (30.77%)
+     3,484,275,887      dTLB-load-misses          #    1.91% of all dTLB cache hits   (30.77%)
+             4,944      iTLB-loads                #   94.333 M/sec                    (30.77%)
+            13,603      iTLB-load-misses          #  275.14% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      52.412026866 seconds time elapsed
+
+      51.972257000 seconds user
+       0.079418000 seconds sys
+
+
+finished
+./linear-algebra/kernels/atax/atax_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/atax/atax_time
+A, 0x7f4d36a80000, 1800000000
+x, 0x7f4cc8684000, 120000
+y, 0x7f4cc8666000, 120000
+tmp, 0x7f4cc8648000, 120000
+1.360714
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/atax/atax_time':
+
+          3,775.16 msec task-clock                #    1.000 CPUs utilized          
+                 7      context-switches          #    1.854 M/sec                  
+                 2      cpu-migrations            #    0.530 M/sec                  
+           458,439      page-faults               # 121440.795 M/sec                
+    13,755,179,357      cycles                    # 3643756.121 GHz                   (30.75%)
+    22,440,874,171      instructions              #    1.63  insn per cycle           (38.46%)
+     1,023,501,031      branches                  # 271126100.927 M/sec               (38.48%)
+         1,342,461      branch-misses             #    0.13% of all branches          (38.51%)
+     9,932,732,449      L1-dcache-loads           # 2631187403.709 M/sec              (38.54%)
+       149,717,216      L1-dcache-load-misses     #    1.51% of all L1-dcache hits    (38.52%)
+           577,801      LLC-loads                 # 153059.868 M/sec                  (30.79%)
+           288,013      LLC-load-misses           #   49.85% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         5,389,080      L1-icache-load-misses                                         (30.74%)
+     9,944,807,366      dTLB-loads                # 2634386057.219 M/sec              (30.73%)
+            73,986      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.73%)
+             1,357      iTLB-loads                #  359.470 M/sec                    (30.73%)
+               732      iTLB-load-misses          #   53.94% of all iTLB cache hits   (30.73%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       3.776036844 seconds time elapsed
+
+       2.773368000 seconds user
+       0.980466000 seconds sys
+
+
+finished
+./linear-algebra/kernels/bicg/bicg_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/bicg/bicg_time
+A, 0xec11c0, 1352000000
+s, 0x5186b690, 104000
+q, 0x51884ce0, 104000
+p, 0x5189e330, 104000
+r, 0x518b7980, 104000
+0.827163
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/bicg/bicg_time':
+
+          2,402.77 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    2.082 M/sec                  
+                 2      cpu-migrations            #    0.833 M/sec                  
+           338,574      page-faults               # 140955.037 M/sec                
+     8,724,672,295      cycles                    # 3632253.245 GHz                   (30.71%)
+    16,114,842,106      instructions              #    1.85  insn per cycle           (38.41%)
+       567,593,722      branches                  # 236300467.111 M/sec               (38.41%)
+           907,834      branch-misses             #    0.16% of all branches          (38.44%)
+     6,942,643,041      L1-dcache-loads           # 2890359300.999 M/sec              (38.48%)
+        90,056,138      L1-dcache-load-misses     #    1.30% of all L1-dcache hits    (38.49%)
+           343,373      LLC-loads                 # 142952.956 M/sec                  (30.80%)
+           208,497      LLC-load-misses           #   60.72% of all LL-cache hits     (30.80%)
+   <not supported>      L1-icache-loads                                             
+         3,224,865      L1-icache-load-misses                                         (30.80%)
+     6,907,106,328      dTLB-loads                # 2875564666.112 M/sec              (30.80%)
+            72,232      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.80%)
+               481      iTLB-loads                #  200.250 M/sec                    (30.76%)
+               391      iTLB-load-misses          #   81.29% of all iTLB cache hits   (30.72%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       2.403682878 seconds time elapsed
+
+       1.888067000 seconds user
+       0.498865000 seconds sys
+
+
+finished
+./linear-algebra/kernels/cholesky/cholesky_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/cholesky/cholesky_time
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 32000
+27.207968
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/cholesky/cholesky_time':
+
+         27,329.42 msec task-clock                #    1.000 CPUs utilized          
+                11      context-switches          #    0.403 M/sec                  
+                 2      cpu-migrations            #    0.073 M/sec                  
+            39,584      page-faults               # 1448.425 M/sec                  
+   100,146,092,385      cycles                    # 3664462.380 GHz                   (30.77%)
+   256,781,352,926      instructions              #    2.56  insn per cycle           (38.46%)
+    10,767,870,005      branches                  # 394008928.428 M/sec               (38.47%)
+         8,600,642      branch-misses             #    0.08% of all branches          (38.47%)
+   128,306,766,993      L1-dcache-loads           # 4694894324.454 M/sec              (38.47%)
+     1,978,012,415      L1-dcache-load-misses     #    1.54% of all L1-dcache hits    (38.47%)
+        15,201,874      LLC-loads                 # 556254.309 M/sec                  (30.77%)
+         1,014,885      LLC-load-misses           #    6.68% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         6,075,678      L1-icache-load-misses                                         (30.77%)
+   128,413,252,503      dTLB-loads                # 4698790753.522 M/sec              (30.77%)
+         9,419,409      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+             3,059      iTLB-loads                #  111.932 M/sec                    (30.77%)
+             4,099      iTLB-load-misses          #  134.00% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      27.330398959 seconds time elapsed
+
+      27.072052000 seconds user
+       0.070383000 seconds sys
+
+
+finished
+./linear-algebra/kernels/doitgen/doitgen_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/doitgen/doitgen_time
+C4, 0x7ff36d6fb000, 524288
+A, 0x7ff36d5f5000, 269486080
+sum, 0x7ff34cf02000, 269486080
+63.260891
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/doitgen/doitgen_time':
+
+         64,104.29 msec task-clock                #    1.000 CPUs utilized          
+                82      context-switches          #    1.279 M/sec                  
+                 2      cpu-migrations            #    0.031 M/sec                  
+           271,236      page-faults               # 4231.187 M/sec                  
+   235,159,015,693      cycles                    # 3668398.473 GHz                   (30.77%)
+   564,309,351,290      instructions              #    2.40  insn per cycle           (38.46%)
+     9,468,443,234      branches                  # 147704405.872 M/sec               (38.46%)
+        40,256,345      branch-misses             #    0.43% of all branches          (38.46%)
+   242,727,902,805      L1-dcache-loads           # 3786470466.820 M/sec              (38.46%)
+     8,739,842,334      L1-dcache-load-misses     #    3.60% of all L1-dcache hits    (38.46%)
+       503,403,844      LLC-loads                 # 7852924.061 M/sec                 (30.77%)
+         1,074,175      LLC-load-misses           #    0.21% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        76,944,819      L1-icache-load-misses                                         (30.77%)
+   242,922,783,347      dTLB-loads                # 3789510535.177 M/sec              (30.77%)
+           211,770      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            20,703      iTLB-loads                #  322.960 M/sec                    (30.77%)
+             1,950      iTLB-load-misses          #    9.42% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      64.105578626 seconds time elapsed
+
+      62.854513000 seconds user
+       0.855821000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gemm/gemm_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/gemm/gemm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+47.316059
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/gemm/gemm_time':
+
+         47,472.81 msec task-clock                #    1.000 CPUs utilized          
+                16      context-switches          #    0.337 M/sec                  
+                 2      cpu-migrations            #    0.042 M/sec                  
+            31,747      page-faults               #  668.752 M/sec                  
+   174,083,285,800      cycles                    # 3667072.923 GHz                   (30.77%)
+   320,590,432,731      instructions              #    1.84  insn per cycle           (38.46%)
+     8,089,398,951      branches                  # 170403584.239 M/sec               (38.46%)
+         5,018,180      branch-misses             #    0.06% of all branches          (38.46%)
+   152,256,974,414      L1-dcache-loads           # 3207300606.968 M/sec              (38.46%)
+    12,619,836,482      L1-dcache-load-misses     #    8.29% of all L1-dcache hits    (38.46%)
+     1,019,614,888      LLC-loads                 # 21478237.445 M/sec                (30.77%)
+        80,171,986      LLC-load-misses           #    7.86% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        10,427,125      L1-icache-load-misses                                         (30.77%)
+   152,349,586,042      dTLB-loads                # 3209251475.438 M/sec              (30.77%)
+     7,030,034,759      dTLB-load-misses          #    4.61% of all dTLB cache hits   (30.77%)
+               514      iTLB-loads                #   10.827 M/sec                    (30.77%)
+             7,232      iTLB-load-misses          # 1407.00% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      47.473811949 seconds time elapsed
+
+      47.087515000 seconds user
+       0.055624000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gemver/gemver_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/gemver/gemver_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+5.256754
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/gemver/gemver_time':
+
+          7,350.50 msec task-clock                #    1.000 CPUs utilized          
+                 9      context-switches          #    1.224 M/sec                  
+                 2      cpu-migrations            #    0.272 M/sec                  
+           447,998      page-faults               # 60952.109 M/sec                 
+    26,891,017,448      cycles                    # 3658641.830 GHz                   (30.75%)
+    31,576,162,232      instructions              #    1.17  insn per cycle           (38.45%)
+     1,218,200,292      branches                  # 165741536.327 M/sec               (38.46%)
+         1,169,060      branch-misses             #    0.10% of all branches          (38.48%)
+    14,654,076,930      L1-dcache-loads           # 1993751963.265 M/sec              (38.49%)
+       657,814,955      L1-dcache-load-misses     #    4.49% of all L1-dcache hits    (38.50%)
+       407,395,508      LLC-loads                 # 55427960.272 M/sec                (30.79%)
+        47,249,378      LLC-load-misses           #   11.60% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         3,181,938      L1-icache-load-misses                                         (30.76%)
+    14,596,285,364      dTLB-loads                # 1985889165.170 M/sec              (30.75%)
+       225,893,714      dTLB-load-misses          #    1.55% of all dTLB cache hits   (30.75%)
+             2,000      iTLB-loads                #  272.109 M/sec                    (30.75%)
+               891      iTLB-load-misses          #   44.55% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       7.351402187 seconds time elapsed
+
+       6.639127000 seconds user
+       0.663456000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gesummv/gesummv_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+0.471071
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/gesummv/gesummv_time':
+
+          2,330.51 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    1.717 M/sec                  
+                 2      cpu-migrations            #    0.858 M/sec                  
+           398,991      page-faults               # 171240.773 M/sec                
+     8,471,989,018      cycles                    # 3636046.789 GHz                   (30.76%)
+    10,497,474,459      instructions              #    1.24  insn per cycle           (38.48%)
+       481,538,082      branches                  # 206668704.721 M/sec               (38.52%)
+           918,222      branch-misses             #    0.19% of all branches          (38.56%)
+     4,597,428,691      L1-dcache-loads           # 1973145360.944 M/sec              (38.56%)
+        77,474,795      L1-dcache-load-misses     #    1.69% of all L1-dcache hits    (38.52%)
+           489,299      LLC-loads                 # 209999.571 M/sec                  (30.76%)
+           233,436      LLC-load-misses           #   47.71% of all LL-cache hits     (30.72%)
+   <not supported>      L1-icache-loads                                             
+         1,498,150      L1-icache-load-misses                                         (30.72%)
+     4,586,986,764      dTLB-loads                # 1968663847.210 M/sec              (30.72%)
+            27,287      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.72%)
+               592      iTLB-loads                #  254.077 M/sec                    (30.72%)
+               547      iTLB-load-misses          #   92.40% of all iTLB cache hits   (30.72%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       2.331432674 seconds time elapsed
+
+       1.721798000 seconds user
+       0.595257000 seconds sys
+
+
+finished
+./linear-algebra/kernels/mvt/mvt_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/mvt/mvt_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+4.501249
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/mvt/mvt_time':
+
+          6,592.71 msec task-clock                #    1.000 CPUs utilized          
+                 9      context-switches          #    1.365 M/sec                  
+                 2      cpu-migrations            #    0.303 M/sec                  
+           447,881      page-faults               # 67943.113 M/sec                 
+    24,114,142,767      cycles                    # 3658092.046 GHz                   (30.76%)
+    19,921,433,843      instructions              #    0.83  insn per cycle           (38.47%)
+       998,676,660      branches                  # 151498279.733 M/sec               (38.48%)
+         1,161,576      branch-misses             #    0.12% of all branches          (38.48%)
+     9,254,895,907      L1-dcache-loads           # 1403958723.756 M/sec              (38.48%)
+       572,043,699      L1-dcache-load-misses     #    6.18% of all L1-dcache hits    (38.48%)
+       449,148,968      LLC-loads                 # 68135462.379 M/sec                (30.76%)
+        41,945,304      LLC-load-misses           #    9.34% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+         2,660,835      L1-icache-load-misses                                         (30.76%)
+     9,192,859,407      dTLB-loads                # 1394547846.936 M/sec              (30.76%)
+       225,873,369      dTLB-load-misses          #    2.46% of all dTLB cache hits   (30.76%)
+               962      iTLB-loads                #  145.934 M/sec                    (30.76%)
+             1,131      iTLB-load-misses          #  117.57% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       6.593670278 seconds time elapsed
+
+       5.892263000 seconds user
+       0.658511000 seconds sys
+
+
+finished
+./linear-algebra/kernels/symm/symm_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/symm/symm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+55.302791
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/symm/symm_time':
+
+         55,460.61 msec task-clock                #    1.000 CPUs utilized          
+                18      context-switches          #    0.325 M/sec                  
+                 2      cpu-migrations            #    0.036 M/sec                  
+            31,747      page-faults               #  572.431 M/sec                  
+   203,510,401,779      cycles                    # 3669498.770 GHz                   (30.77%)
+   244,416,025,449      instructions              #    1.20  insn per cycle           (38.46%)
+     4,099,237,076      branches                  # 73913398.413 M/sec                (38.46%)
+         5,360,385      branch-misses             #    0.13% of all branches          (38.46%)
+   112,129,030,760      L1-dcache-loads           # 2021800049.766 M/sec              (38.46%)
+    17,583,903,841      L1-dcache-load-misses     #   15.68% of all L1-dcache hits    (38.46%)
+     1,285,876,962      LLC-loads                 # 23185664.659 M/sec                (30.77%)
+       110,017,817      LLC-load-misses           #    8.56% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        16,262,809      L1-icache-load-misses                                         (30.77%)
+   112,221,720,194      dTLB-loads                # 2023471334.187 M/sec              (30.77%)
+    10,411,003,758      dTLB-load-misses          #    9.28% of all dTLB cache hits   (30.77%)
+               328      iTLB-loads                #    5.914 M/sec                    (30.77%)
+             3,140      iTLB-load-misses          #  957.32% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      55.461621994 seconds time elapsed
+
+      55.004944000 seconds user
+       0.057568000 seconds sys
+
+
+finished
+./linear-algebra/kernels/syr2k/syr2k_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/syr2k/syr2k_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+46.530861
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/syr2k/syr2k_time':
+
+         46,684.10 msec task-clock                #    1.000 CPUs utilized          
+                17      context-switches          #    0.364 M/sec                  
+                 2      cpu-migrations            #    0.043 M/sec                  
+            31,748      page-faults               #  680.062 M/sec                  
+   171,113,328,747      cycles                    # 3665352.771 GHz                   (30.77%)
+   608,460,130,388      instructions              #    3.56  insn per cycle           (38.46%)
+     8,099,460,265      branches                  # 173495421.665 M/sec               (38.46%)
+         5,171,281      branch-misses             #    0.06% of all branches          (38.46%)
+   280,223,059,676      L1-dcache-loads           # 6002550331.505 M/sec              (38.46%)
+     4,035,043,438      L1-dcache-load-misses     #    1.44% of all L1-dcache hits    (38.46%)
+         9,323,239      LLC-loads                 # 199709.515 M/sec                  (30.77%)
+         1,263,596      LLC-load-misses           #   13.55% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        14,737,886      L1-icache-load-misses                                         (30.77%)
+   280,416,200,032      dTLB-loads                # 6006687516.751 M/sec              (30.77%)
+         1,014,902      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             5,047      iTLB-loads                #  108.110 M/sec                    (30.77%)
+             4,966      iTLB-load-misses          #   98.40% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      46.685127506 seconds time elapsed
+
+      46.294873000 seconds user
+       0.050671000 seconds sys
+
+
+finished
+./linear-algebra/kernels/syrk/syrk_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/syrk/syrk_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+25.264420
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/syrk/syrk_time':
+
+         25,385.16 msec task-clock                #    1.000 CPUs utilized          
+                10      context-switches          #    0.394 M/sec                  
+                 2      cpu-migrations            #    0.079 M/sec                  
+            23,938      page-faults               #  942.998 M/sec                  
+    93,066,982,896      cycles                    # 3666219.535 GHz                   (30.76%)
+   320,457,640,695      instructions              #    3.44  insn per cycle           (38.45%)
+     8,066,667,171      branches                  # 317772982.903 M/sec               (38.46%)
+         4,634,623      branch-misses             #    0.06% of all branches          (38.46%)
+   152,202,565,812      L1-dcache-loads           # 5995767808.233 M/sec              (38.46%)
+     1,056,525,732      L1-dcache-load-misses     #    0.69% of all L1-dcache hits    (38.47%)
+         5,463,959      LLC-loads                 # 215243.608 M/sec                  (30.77%)
+           254,574      LLC-load-misses           #    4.66% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         7,747,894      L1-icache-load-misses                                         (30.77%)
+   152,253,636,446      dTLB-loads                # 5997779651.211 M/sec              (30.77%)
+           180,532      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             2,005      iTLB-loads                #   78.984 M/sec                    (30.77%)
+             1,846      iTLB-load-misses          #   92.07% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      25.386111733 seconds time elapsed
+
+      25.164781000 seconds user
+       0.046628000 seconds sys
+
+
+finished
+./linear-algebra/kernels/trisolv/trisolv_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/trisolv/trisolv_time
+A, 0x7f9a1f84c000, 1800000000
+x, 0x7f99b1450000, 120000
+c, 0x7f99b1432000, 120000
+0.397735
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/trisolv/trisolv_time':
+
+          2,828.49 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    1.768 M/sec                  
+                 2      cpu-migrations            #    0.707 M/sec                  
+           458,412      page-faults               # 162097.595 M/sec                
+    10,298,176,867      cycles                    # 3641505.257 GHz                   (30.71%)
+    10,147,447,618      instructions              #    0.99  insn per cycle           (38.41%)
+       681,720,625      branches                  # 241061041.372 M/sec               (38.45%)
+         1,316,315      branch-misses             #    0.19% of all branches          (38.48%)
+     4,530,409,019      L1-dcache-loads           # 1601983387.199 M/sec              (38.52%)
+        62,831,986      L1-dcache-load-misses     #    1.39% of all L1-dcache hits    (38.53%)
+           434,427      LLC-loads                 # 153616.337 M/sec                  (30.83%)
+           291,938      LLC-load-misses           #   67.20% of all LL-cache hits     (30.83%)
+   <not supported>      L1-icache-loads                                             
+         5,066,532      L1-icache-load-misses                                         (30.79%)
+     4,541,802,091      dTLB-loads                # 1606012054.809 M/sec              (30.76%)
+            72,717      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.72%)
+               870      iTLB-loads                #  307.638 M/sec                    (30.69%)
+               766      iTLB-load-misses          #   88.05% of all iTLB cache hits   (30.69%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       2.829386096 seconds time elapsed
+
+       1.793133000 seconds user
+       1.019207000 seconds sys
+
+
+finished
+./linear-algebra/kernels/trmm/trmm_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/trmm/trmm_time
+A, 0x1cff1c0, 128000000
+B, 0x97288d0, 128000000
+129.423458
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/kernels/trmm/trmm_time':
+
+        129,747.32 msec task-clock                #    1.000 CPUs utilized          
+                41      context-switches          #    0.316 M/sec                  
+                 2      cpu-migrations            #    0.015 M/sec                  
+            70,863      page-faults               #  546.163 M/sec                  
+   476,508,772,442      cycles                    # 3672599.539 GHz                   (30.77%)
+ 1,664,564,969,935      instructions              #    3.49  insn per cycle           (38.46%)
+    32,213,440,709      branches                  # 248278886.672 M/sec               (38.46%)
+        18,979,028      branch-misses             #    0.06% of all branches          (38.46%)
+   736,365,787,811      L1-dcache-loads           # 5675397410.430 M/sec              (38.46%)
+     6,931,384,975      L1-dcache-load-misses     #    0.94% of all L1-dcache hits    (38.46%)
+        36,532,082      LLC-loads                 # 281563.982 M/sec                  (30.77%)
+        10,765,045      LLC-load-misses           #   29.47% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        35,782,561      L1-icache-load-misses                                         (30.77%)
+   736,733,470,847      dTLB-loads                # 5678231256.576 M/sec              (30.77%)
+        18,052,028      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             5,044      iTLB-loads                #   38.876 M/sec                    (30.77%)
+             4,970      iTLB-load-misses          #   98.53% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     129.748548071 seconds time elapsed
+
+     128.842493000 seconds user
+       0.123904000 seconds sys
+
+
+finished
+./linear-algebra/solvers/durbin/durbin_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+1.796148
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/durbin/durbin_time':
+
+          3,659.55 msec task-clock                #    1.000 CPUs utilized          
+                 6      context-switches          #    1.640 M/sec                  
+                 2      cpu-migrations            #    0.547 M/sec                  
+           399,014      page-faults               # 109050.014 M/sec                
+    13,337,743,935      cycles                    # 3645188.285 GHz                   (30.74%)
+     8,435,448,401      instructions              #    0.63  insn per cycle           (38.44%)
+       478,695,092      branches                  # 130826753.758 M/sec               (38.47%)
+           952,863      branch-misses             #    0.20% of all branches          (38.49%)
+     3,695,343,216      L1-dcache-loads           # 1009932554.250 M/sec              (38.52%)
+       429,753,453      L1-dcache-load-misses     #   11.63% of all L1-dcache hits    (38.52%)
+       179,597,267      LLC-loads                 # 49083702.378 M/sec                (30.82%)
+         4,861,317      LLC-load-misses           #    2.71% of all LL-cache hits     (30.79%)
+   <not supported>      L1-icache-loads                                             
+         2,021,746      L1-icache-load-misses                                         (30.77%)
+     3,714,028,351      dTLB-loads                # 1015039177.644 M/sec              (30.74%)
+       127,319,658      dTLB-load-misses          #    3.43% of all dTLB cache hits   (30.71%)
+               501      iTLB-loads                #  136.923 M/sec                    (30.71%)
+               895      iTLB-load-misses          #  178.64% of all iTLB cache hits   (30.71%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       3.660512872 seconds time elapsed
+
+       3.050442000 seconds user
+       0.585355000 seconds sys
+
+
+finished
+./linear-algebra/solvers/dynprog/dynprog_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/dynprog/dynprog_time
+[PolyBench] posix_memalign: request to allocate 256000000
+[PolyBench] posix_memalign: request to allocate 640000
+[PolyBench] posix_memalign: request to allocate 640000
+55.437489
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/dynprog/dynprog_time':
+
+         55,487.87 msec task-clock                #    1.000 CPUs utilized          
+                18      context-switches          #    0.324 M/sec                  
+                 2      cpu-migrations            #    0.036 M/sec                  
+            40,157      page-faults               #  723.719 M/sec                  
+   203,633,325,238      cycles                    # 3669928.546 GHz                   (30.77%)
+   739,542,162,463      instructions              #    3.63  insn per cycle           (38.46%)
+    11,073,954,366      branches                  # 199577457.170 M/sec               (38.46%)
+        70,431,702      branch-misses             #    0.64% of all branches          (38.47%)
+   214,551,207,481      L1-dcache-loads           # 3866693234.109 M/sec              (38.47%)
+     3,466,849,662      L1-dcache-load-misses     #    1.62% of all L1-dcache hits    (38.46%)
+        80,750,124      LLC-loads                 # 1455298.070 M/sec                 (30.77%)
+        17,540,896      LLC-load-misses           #   21.72% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        16,750,226      L1-icache-load-misses                                         (30.77%)
+   214,707,560,729      dTLB-loads                # 3869511069.782 M/sec              (30.77%)
+           776,655      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             1,778      iTLB-loads                #   32.044 M/sec                    (30.77%)
+             2,675      iTLB-load-misses          #  150.45% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      55.488899328 seconds time elapsed
+
+      55.020210000 seconds user
+       0.076283000 seconds sys
+
+
+finished
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+71.136443
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/gramschmidt/gramschmidt_time':
+
+         71,200.45 msec task-clock                #    1.000 CPUs utilized          
+                21      context-switches          #    0.295 M/sec                  
+                 2      cpu-migrations            #    0.028 M/sec                  
+            23,564      page-faults               #  330.955 M/sec                  
+   261,490,137,726      cycles                    # 3672614.294 GHz                   (30.77%)
+    52,552,816,301      instructions              #    0.20  insn per cycle           (38.46%)
+     6,094,095,047      branches                  # 85591222.570 M/sec                (38.46%)
+         5,477,264      branch-misses             #    0.09% of all branches          (38.46%)
+    16,128,040,597      L1-dcache-loads           # 226517424.115 M/sec               (38.46%)
+    23,864,643,342      L1-dcache-load-misses     #  147.97% of all L1-dcache hits    (38.46%)
+       605,349,820      LLC-loads                 # 8502104.213 M/sec                 (30.77%)
+       136,664,711      LLC-load-misses           #   22.58% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        12,858,010      L1-icache-load-misses                                         (30.77%)
+    16,134,101,167      dTLB-loads                # 226602544.480 M/sec               (30.77%)
+    14,736,831,613      dTLB-load-misses          #   91.34% of all dTLB cache hits   (30.77%)
+             1,365      iTLB-loads                #   19.171 M/sec                    (30.77%)
+             5,531      iTLB-load-misses          #  405.20% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      71.201448319 seconds time elapsed
+
+      70.720895000 seconds user
+       0.041570000 seconds sys
+
+
+finished
+./linear-algebra/solvers/lu/lu_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/lu/lu_time
+[PolyBench] posix_memalign: request to allocate 128000000
+62.057107
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/lu/lu_time':
+
+         62,247.31 msec task-clock                #    1.000 CPUs utilized          
+                24      context-switches          #    0.386 M/sec                  
+                 2      cpu-migrations            #    0.032 M/sec                  
+            39,560      page-faults               #  635.533 M/sec                  
+   228,408,990,031      cycles                    # 3669397.562 GHz                   (30.77%)
+   811,328,102,265      instructions              #    3.55  insn per cycle           (38.46%)
+    21,463,705,638      branches                  # 344815101.740 M/sec               (38.46%)
+         9,416,357      branch-misses             #    0.04% of all branches          (38.47%)
+   384,208,285,165      L1-dcache-loads           # 6172318106.334 M/sec              (38.47%)
+     4,954,773,583      L1-dcache-load-misses     #    1.29% of all L1-dcache hits    (38.46%)
+        24,081,260      LLC-loads                 # 386866.194 M/sec                  (30.77%)
+         8,754,147      LLC-load-misses           #   36.35% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        14,547,937      L1-icache-load-misses                                         (30.77%)
+   384,462,246,345      dTLB-loads                # 6176398000.627 M/sec              (30.77%)
+         7,856,834      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             2,012      iTLB-loads                #   32.323 M/sec                    (30.77%)
+            93,274      iTLB-load-misses          # 4635.88% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      62.248431366 seconds time elapsed
+
+      61.751324000 seconds user
+       0.069550000 seconds sys
+
+
+finished
+./linear-algebra/solvers/ludcmp/ludcmp_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/ludcmp/ludcmp_time
+A, 0x7f13df7c3000, 512128008
+b, 0x7f13bfd92000, 64008
+x, 0x7f13bfd82000, 64008
+y, 0x7f13bfd72000, 64008
+2876.176153
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./linear-algebra/solvers/ludcmp/ludcmp_time':
+
+      2,876,805.91 msec task-clock                #    1.000 CPUs utilized          
+               729      context-switches          #    0.253 M/sec                  
+                 2      cpu-migrations            #    0.695 K/sec                  
+           136,396      page-faults               #   47.412 M/sec                  
+10,560,965,388,961      cycles                    # 3671074.469 GHz                   (30.77%)
+ 5,224,748,969,939      instructions              #    0.49  insn per cycle           (38.46%)
+   173,784,267,424      branches                  # 60408775.508 M/sec                (38.46%)
+       115,236,730      branch-misses             #    0.07% of all branches          (38.46%)
+ 2,396,461,910,323      L1-dcache-loads           # 833028971.489 M/sec               (38.46%)
+   366,048,000,772      L1-dcache-load-misses     #   15.27% of all L1-dcache hits    (38.46%)
+   175,399,376,083      LLC-loads                 # 60970199.956 M/sec                (30.77%)
+    83,117,808,795      LLC-load-misses           #   47.39% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+       557,320,549      L1-icache-load-misses                                         (30.77%)
+ 2,397,615,356,295      dTLB-loads                # 833429918.363 M/sec               (30.77%)
+   153,286,922,386      dTLB-load-misses          #    6.39% of all dTLB cache hits   (30.77%)
+             7,306      iTLB-loads                #    2.540 M/sec                    (30.77%)
+           147,248      iTLB-load-misses          # 2015.44% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+    2876.813010142 seconds time elapsed
+
+    2857.395906000 seconds user
+       0.212486000 seconds sys
+
+
+finished
+./datamining/correlation/correlation_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./datamining/correlation/correlation_time
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 24000
+[PolyBench] posix_memalign: request to allocate 24000
+124.930685
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./datamining/correlation/correlation_time':
+
+        125,059.46 msec task-clock                #    1.000 CPUs utilized          
+               157      context-switches          #    1.255 M/sec                  
+                 2      cpu-migrations            #    0.016 M/sec                  
+            43,486      page-faults               #  347.724 M/sec                  
+   459,083,373,915      cycles                    # 3670934.310 GHz                   (30.77%)
+   514,932,132,512      instructions              #    1.12  insn per cycle           (38.46%)
+    13,737,567,057      branches                  # 109848687.875 M/sec               (38.46%)
+         6,989,877      branch-misses             #    0.05% of all branches          (38.46%)
+   243,701,411,356      L1-dcache-loads           # 1948691508.456 M/sec              (38.46%)
+    36,943,130,631      L1-dcache-load-misses     #   15.16% of all L1-dcache hits    (38.46%)
+     2,016,162,770      LLC-loads                 # 16121692.721 M/sec                (30.77%)
+       572,414,699      LLC-load-misses           #   28.39% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        25,888,431      L1-icache-load-misses                                         (30.77%)
+   244,120,484,511      dTLB-loads                # 1952042512.022 M/sec              (30.77%)
+    24,696,369,689      dTLB-load-misses          #   10.12% of all dTLB cache hits   (30.77%)
+             6,666      iTLB-loads                #   53.303 M/sec                    (30.77%)
+            15,392      iTLB-load-misses          #  230.90% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     125.062853462 seconds time elapsed
+
+     124.066651000 seconds user
+       0.086322000 seconds sys
+
+
+finished
+./datamining/covariance/covariance_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./datamining/covariance/covariance_time
+data, 0x8011c0, 25920000
+symmat, 0x20c3c90, 25920000
+mean, 0x3986760, 14400
+24.985939
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./datamining/covariance/covariance_time':
+
+         25,054.74 msec task-clock                #    1.000 CPUs utilized          
+                33      context-switches          #    1.317 M/sec                  
+                 2      cpu-migrations            #    0.080 M/sec                  
+            20,994      page-faults               #  837.950 M/sec                  
+    91,925,175,070      cycles                    # 3669081.786 GHz                   (30.77%)
+   146,530,414,321      instructions              #    1.59  insn per cycle           (38.46%)
+     2,972,020,546      branches                  # 118624592.720 M/sec               (38.47%)
+         2,208,708      branch-misses             #    0.07% of all branches          (38.47%)
+    64,388,135,547      L1-dcache-loads           # 2569974277.441 M/sec              (38.47%)
+     7,569,832,352      L1-dcache-load-misses     #   11.76% of all L1-dcache hits    (38.47%)
+       338,588,653      LLC-loads                 # 13514355.113 M/sec                (30.77%)
+         6,073,208      LLC-load-misses           #    1.79% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         5,610,203      L1-icache-load-misses                                         (30.76%)
+    64,431,178,952      dTLB-loads                # 2571692302.706 M/sec              (30.76%)
+     4,988,248,978      dTLB-load-misses          #    7.74% of all dTLB cache hits   (30.76%)
+             2,493      iTLB-loads                #   99.505 M/sec                    (30.76%)
+             3,897      iTLB-load-misses          #  156.32% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      25.055870761 seconds time elapsed
+
+      24.847177000 seconds user
+       0.038553000 seconds sys
+
+
+finished
+./medley/floyd-warshall/floyd-warshall_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./medley/floyd-warshall/floyd-warshall_time
+[PolyBench] posix_memalign: request to allocate 128000000
+221.632764
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./medley/floyd-warshall/floyd-warshall_time':
+
+        221,823.74 msec task-clock                #    1.000 CPUs utilized          
+                59      context-switches          #    0.266 M/sec                  
+                 2      cpu-migrations            #    0.009 M/sec                  
+            39,563      page-faults               #  178.354 M/sec                  
+   814,528,986,940      cycles                    # 3671977.148 GHz                   (30.77%)
+ 3,073,811,525,500      instructions              #    3.77  insn per cycle           (38.46%)
+   192,268,002,593      branches                  # 866763151.670 M/sec               (38.46%)
+        20,928,610      branch-misses             #    0.01% of all branches          (38.46%)
+ 1,408,480,489,434      L1-dcache-loads           # 6349569203.527 M/sec              (38.46%)
+    16,104,913,387      L1-dcache-load-misses     #    1.14% of all L1-dcache hits    (38.46%)
+        51,220,578      LLC-loads                 # 230907.426 M/sec                  (30.77%)
+        15,315,341      LLC-load-misses           #   29.90% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        63,020,804      L1-icache-load-misses                                         (30.77%)
+ 1,408,956,913,936      dTLB-loads                # 6351716972.253 M/sec              (30.77%)
+        15,555,072      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             6,962      iTLB-loads                #   31.385 M/sec                    (30.77%)
+             6,058      iTLB-load-misses          #   87.02% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     221.825097226 seconds time elapsed
+
+     220.238570000 seconds user
+       0.062614000 seconds sys
+
+
+finished
+./medley/reg_detect/reg_detect_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./medley/reg_detect/reg_detect_time
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 200000000
+[PolyBench] posix_memalign: request to allocate 200000000
+136.300947
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./medley/reg_detect/reg_detect_time':
+
+        136,350.44 msec task-clock                #    1.000 CPUs utilized          
+                38      context-switches          #    0.279 M/sec                  
+                 2      cpu-migrations            #    0.015 M/sec                  
+            57,850      page-faults               #  424.276 M/sec                  
+   500,571,883,491      cycles                    # 3671227.602 GHz                   (30.77%)
+ 1,818,929,278,206      instructions              #    3.63  insn per cycle           (38.46%)
+    50,685,905,324      branches                  # 371733812.424 M/sec               (38.46%)
+        12,977,326      branch-misses             #    0.03% of all branches          (38.46%)
+   707,180,667,638      L1-dcache-loads           # 5186510213.700 M/sec              (38.46%)
+     4,790,113,836      L1-dcache-load-misses     #    0.68% of all L1-dcache hits    (38.46%)
+        28,247,573      LLC-loads                 # 207169.586 M/sec                  (30.77%)
+         7,020,600      LLC-load-misses           #   24.85% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        26,237,769      L1-icache-load-misses                                         (30.77%)
+   707,626,246,610      dTLB-loads                # 5189778119.619 M/sec              (30.77%)
+           289,309      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             4,934      iTLB-loads                #   36.186 M/sec                    (30.77%)
+             3,868      iTLB-load-misses          #   78.39% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     136.351639738 seconds time elapsed
+
+     135.331345000 seconds user
+       0.105881000 seconds sys
+
+
+finished
+./stencils/adi/adi_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/adi/adi_time
+X, 0x7fa934a33000, 512000000
+A, 0x7fa915012000, 512000000
+B, 0x7fa8f5c02000, 512000000
+122.140457
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/adi/adi_time':
+
+        124,429.28 msec task-clock                #    1.000 CPUs utilized          
+                37      context-switches          #    0.297 M/sec                  
+                 2      cpu-migrations            #    0.016 M/sec                  
+           392,368      page-faults               # 3153.348 M/sec                  
+   456,727,235,038      cycles                    # 3670585.113 GHz                   (30.77%)
+ 1,260,079,140,549      instructions              #    2.76  insn per cycle           (38.46%)
+    13,288,385,604      branches                  # 106794924.045 M/sec               (38.46%)
+         6,067,648      branch-misses             #    0.05% of all branches          (38.46%)
+   533,315,087,738      L1-dcache-loads           # 4286099604.899 M/sec              (38.46%)
+     6,353,297,953      L1-dcache-load-misses     #    1.19% of all L1-dcache hits    (38.46%)
+        74,587,539      LLC-loads                 # 599438.547 M/sec                  (30.77%)
+        55,796,284      LLC-load-misses           #   74.81% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        45,953,184      L1-icache-load-misses                                         (30.77%)
+   533,690,821,500      dTLB-loads                # 4289119268.820 M/sec              (30.77%)
+        40,996,667      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+             5,577      iTLB-loads                #   44.821 M/sec                    (30.77%)
+             4,212      iTLB-load-misses          #   75.52% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     124.430471331 seconds time elapsed
+
+     122.747311000 seconds user
+       0.827954000 seconds sys
+
+
+finished
+./stencils/fdtd-2d/fdtd-2d_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/fdtd-2d/fdtd-2d_time
+ex, 0x7f84bb6f0000, 512000000
+ey, 0x7f849bccf000, 512000000
+hz, 0x7f847c8bf000, 512000000
+_fict_, 0x14f85d0, 800
+98.490821
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/fdtd-2d/fdtd-2d_time':
+
+        100,555.23 msec task-clock                #    1.000 CPUs utilized          
+                31      context-switches          #    0.308 M/sec                  
+                 2      cpu-migrations            #    0.020 M/sec                  
+           392,367      page-faults               # 3902.014 M/sec                  
+   369,102,472,587      cycles                    # 3670652.604 GHz                   (30.77%)
+ 1,215,179,250,427      instructions              #    3.29  insn per cycle           (38.46%)
+    19,675,153,694      branches                  # 195665592.899 M/sec               (38.46%)
+         5,692,414      branch-misses             #    0.03% of all branches          (38.46%)
+   507,684,313,830      L1-dcache-loads           # 5048822175.227 M/sec              (38.46%)
+     7,531,389,981      L1-dcache-load-misses     #    1.48% of all L1-dcache hits    (38.46%)
+        36,745,573      LLC-loads                 # 365427.607 M/sec                  (30.77%)
+        21,202,352      LLC-load-misses           #   57.70% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        30,969,749      L1-icache-load-misses                                         (30.77%)
+   507,721,612,060      dTLB-loads                # 5049193098.901 M/sec              (30.77%)
+        11,531,732      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             5,142      iTLB-loads                #   51.136 M/sec                    (30.77%)
+             3,591      iTLB-load-misses          #   69.84% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     100.556318137 seconds time elapsed
+
+      99.051912000 seconds user
+       0.824890000 seconds sys
+
+
+finished
+./stencils/fdtd-apml/fdtd-apml_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/fdtd-apml/fdtd-apml_time
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+0.714367
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/fdtd-apml/fdtd-apml_time':
+
+          1,329.56 msec task-clock                #    0.999 CPUs utilized          
+                 3      context-switches          #    2.257 M/sec                  
+                 2      cpu-migrations            #    1.505 M/sec                  
+           174,340      page-faults               # 131181.339 M/sec                
+     4,798,222,443      cycles                    # 3610400.634 GHz                   (30.75%)
+    11,013,121,739      instructions              #    2.30  insn per cycle           (38.48%)
+       170,821,303      branches                  # 128533711.813 M/sec               (38.56%)
+           697,206      branch-misses             #    0.41% of all branches          (38.63%)
+     3,819,806,631      L1-dcache-loads           # 2874196110.609 M/sec              (38.63%)
+        36,535,524      L1-dcache-load-misses     #    0.96% of all L1-dcache hits    (38.57%)
+           269,823      LLC-loads                 # 203027.088 M/sec                  (30.75%)
+           161,866      LLC-load-misses           #   59.99% of all LL-cache hits     (30.68%)
+   <not supported>      L1-icache-loads                                             
+         1,952,114      L1-icache-load-misses                                         (30.68%)
+     3,839,756,626      dTLB-loads                # 2889207393.529 M/sec              (30.69%)
+           135,237      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.69%)
+           177,035      iTLB-loads                # 133209.180 M/sec                  (30.69%)
+               186      iTLB-load-misses          #    0.11% of all iTLB cache hits   (30.69%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       1.330345748 seconds time elapsed
+
+       1.103257000 seconds user
+       0.218698000 seconds sys
+
+
+finished
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+[PolyBench] posix_memalign: request to allocate 80000000
+[PolyBench] posix_memalign: request to allocate 80000000
+52.614355
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time':
+
+         52,772.36 msec task-clock                #    1.000 CPUs utilized          
+                19      context-switches          #    0.360 M/sec                  
+                 2      cpu-migrations            #    0.038 M/sec                  
+            47,371      page-faults               #  897.654 M/sec                  
+   193,687,184,046      cycles                    # 3670264.232 GHz                   (30.77%)
+   520,523,251,692      instructions              #    2.69  insn per cycle           (38.46%)
+    20,105,499,759      branches                  # 380988019.385 M/sec               (38.46%)
+         1,261,959      branch-misses             #    0.01% of all branches          (38.46%)
+   230,087,631,382      L1-dcache-loads           # 4360032429.735 M/sec              (38.47%)
+     5,032,494,775      L1-dcache-load-misses     #    2.19% of all L1-dcache hits    (38.47%)
+        14,999,363      LLC-loads                 # 284229.573 M/sec                  (30.77%)
+         4,181,234      LLC-load-misses           #   27.88% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        10,563,391      L1-icache-load-misses                                         (30.77%)
+   230,475,056,567      dTLB-loads                # 4367373921.151 M/sec              (30.77%)
+         3,370,834      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+               923      iTLB-loads                #   17.490 M/sec                    (30.77%)
+             2,938      iTLB-load-misses          #  318.31% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      52.773478845 seconds time elapsed
+
+      52.329547000 seconds user
+       0.078392000 seconds sys
+
+
+finished
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+A, 0x7fa6de65e000, 512000000
+B, 0x7fa6bec3d000, 512000000
+58.089975
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time':
+
+         59,451.90 msec task-clock                #    1.000 CPUs utilized          
+                27      context-switches          #    0.454 M/sec                  
+                 2      cpu-migrations            #    0.034 M/sec                  
+           264,352      page-faults               # 4446.553 M/sec                  
+   218,151,002,299      cycles                    # 3669425.280 GHz                   (30.77%)
+   694,842,223,120      instructions              #    3.19  insn per cycle           (38.46%)
+    13,118,485,436      branches                  # 220660467.208 M/sec               (38.46%)
+         3,823,843      branch-misses             #    0.03% of all branches          (38.47%)
+   289,353,528,394      L1-dcache-loads           # 4867092704.816 M/sec              (38.47%)
+     4,995,066,709      L1-dcache-load-misses     #    1.73% of all L1-dcache hits    (38.46%)
+        21,854,414      LLC-loads                 # 367603.808 M/sec                  (30.77%)
+        11,777,710      LLC-load-misses           #   53.89% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        19,747,264      L1-icache-load-misses                                         (30.77%)
+   289,587,922,232      dTLB-loads                # 4871035343.930 M/sec              (30.77%)
+         2,160,578      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             3,396      iTLB-loads                #   57.123 M/sec                    (30.77%)
+             3,331      iTLB-load-misses          #   98.09% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      59.453089851 seconds time elapsed
+
+      58.647784000 seconds user
+       0.390507000 seconds sys
+
+
+finished
+./stencils/seidel-2d/seidel-2d_time
+perf stat -B -d -d -d numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/seidel-2d/seidel-2d_time
+[PolyBench] posix_memalign: request to allocate 200000000
+29.548698
+
+ Performance counter stats for 'numactl --cpunodebind=0 --physcpubind=+1 --membind=0 ./stencils/seidel-2d/seidel-2d_time':
+
+         29,849.47 msec task-clock                #    1.000 CPUs utilized          
+                15      context-switches          #    0.503 M/sec                  
+                 2      cpu-migrations            #    0.067 M/sec                  
+            57,138      page-faults               # 1914.235 M/sec                  
+   109,553,596,327      cycles                    # 3670260.187 GHz                   (30.77%)
+   268,132,861,697      instructions              #    2.45  insn per cycle           (38.47%)
+     2,605,173,048      branches                  # 87278402.895 M/sec                (38.46%)
+         1,401,791      branch-misses             #    0.05% of all branches          (38.46%)
+   107,778,997,791      L1-dcache-loads           # 3610807658.247 M/sec              (38.46%)
+       948,551,881      L1-dcache-load-misses     #    0.88% of all L1-dcache hits    (38.46%)
+           501,412      LLC-loads                 # 16798.285 M/sec                   (30.77%)
+           104,315      LLC-load-misses           #   20.80% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         7,837,568      L1-icache-load-misses                                         (30.77%)
+   107,831,955,807      dTLB-loads                # 3612581855.573 M/sec              (30.77%)
+            13,839      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             2,675      iTLB-loads                #   89.618 M/sec                    (30.77%)
+             1,193      iTLB-load-misses          #   44.60% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      29.850452959 seconds time elapsed
+
+      29.574757000 seconds user
+       0.099421000 seconds sys
+
+
+finished
