@@ -1,0 +1,50 @@
+mkdir ./comerge-pb-subset-results-2019_07_31__12_56_10
+Start ./linear-algebra/kernels/gemm/gemm_time
+./run-comerge-aep-subset.sh: line 37: 20805 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (22 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+./run-comerge-aep-subset.sh: line 37: 21077 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gemm/gemm_time
+Start ./linear-algebra/kernels/mvt/mvt_time
+./run-comerge-aep-subset.sh: line 37: 21458 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (1 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 2 sec
+./run-comerge-aep-subset.sh: line 37: 21627 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/mvt/mvt_time
+Start ./linear-algebra/kernels/symm/symm_time
+./run-comerge-aep-subset.sh: line 52: 21823 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (31 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+./run-comerge-aep-subset.sh: line 37: 21863 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/symm/symm_time
+Start ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+./run-comerge-aep-subset.sh: line 37: 21934 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (13 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 16 sec
+./run-comerge-aep-subset.sh: line 37: 22051 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+Start ./datamining/covariance/covariance_time
+./run-comerge-aep-subset.sh: line 37: 22139 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (3 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 4 sec
+./run-comerge-aep-subset.sh: line 37: 22251 Killed                  AEPWatch 1 -f $aeplog
+End ./datamining/covariance/covariance_time
+Start ./medley/floyd-warshall/floyd-warshall_time
+./run-comerge-aep-subset.sh: line 52: 22540 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (158 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 256 sec
+./run-comerge-aep-subset.sh: line 37: 22648 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/floyd-warshall/floyd-warshall_time
+Start ./medley/reg_detect/reg_detect_time
+./run-comerge-aep-subset.sh: line 52: 23139 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (319 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 512 sec
+./run-comerge-aep-subset.sh: line 37: 23465 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/reg_detect/reg_detect_time

@@ -1,0 +1,36 @@
+AEPWatch 1 -f ./comerge-pb-subset-numactl-results-2019_07_31__13_55_29/aep-pmem7-gemm_time-2019_07_31__13_55_29.csv
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek LD_PRELOAD=libvmmalloc.so.1 perf stat -B -d -d -d numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gemm/gemm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+15.891302
+
+ Performance counter stats for 'numactl --cpunodebind=1 --membind=1 ./linear-algebra/kernels/gemm/gemm_time':
+
+         15,987.81 msec task-clock                #    1.000 CPUs utilized          
+                10      context-switches          #    0.626 M/sec                  
+                 9      cpu-migrations            #    0.563 M/sec                  
+               261      page-faults               #   16.326 M/sec                  
+    58,395,177,689      cycles                    # 3652666.397 GHz                   (30.76%)
+    72,226,113,657      instructions              #    1.24  insn per cycle           (38.45%)
+     8,032,383,662      branches                  # 502432205.042 M/sec               (38.45%)
+         4,496,175      branch-misses             #    0.06% of all branches          (38.46%)
+    16,052,061,485      L1-dcache-loads           # 1004069649.403 M/sec              (38.46%)
+     8,557,537,218      L1-dcache-load-misses     #   53.31% of all L1-dcache hits    (38.47%)
+     1,009,865,590      LLC-loads                 # 63167923.313 M/sec                (30.77%)
+           134,643      LLC-load-misses           #    0.01% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         3,661,102      L1-icache-load-misses                                         (30.77%)
+    16,060,966,831      dTLB-loads                # 1004626686.120 M/sec              (30.77%)
+             4,094      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            16,701      iTLB-loads                # 1044.661 M/sec                    (30.77%)
+             1,134      iTLB-load-misses          #    6.79% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      15.988913291 seconds time elapsed
+
+      15.805759000 seconds user
+       0.061905000 seconds sys
+
+

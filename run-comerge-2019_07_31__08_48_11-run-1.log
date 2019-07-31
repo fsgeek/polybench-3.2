@@ -1,0 +1,55 @@
+mkdir ./comerge-pb-results-2019_07_31__08_48_11
+Start ./linear-algebra/kernels/2mm/2mm_time
+
+WARNING: The collection overhead (1 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 2 sec
+./run-comerge-aep.sh: line 62: 16056 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (15 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 16 sec
+
+WARNING: The collection overhead (19 sec) is more than the sampling time.
+         Updating the sampling time from 16 sec to 32 sec
+./run-comerge-aep.sh: line 62: 16396 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/2mm/2mm_time
+Start ./linear-algebra/kernels/3mm/3mm_time
+
+WARNING: The collection overhead (1 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 2 sec
+./run-comerge-aep.sh: line 77: 16417 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (15 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 16 sec
+
+WARNING: The collection overhead (28 sec) is more than the sampling time.
+         Updating the sampling time from 16 sec to 32 sec
+./run-comerge-aep.sh: line 62: 16438 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/3mm/3mm_time
+Start ./linear-algebra/kernels/atax/atax_time
+
+WARNING: The collection overhead (1 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 2 sec
+./run-comerge-aep.sh: line 62: 16460 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (15 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 16 sec
+./run-comerge-aep.sh: line 62: 16497 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/atax/atax_time
+Start ./linear-algebra/kernels/bicg/bicg_time
+
+WARNING: The collection overhead (1 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 2 sec
+./run-comerge-aep.sh: line 62: 16518 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (15 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 16 sec
+./run-comerge-aep.sh: line 62: 16535 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/bicg/bicg_time
+Start ./linear-algebra/kernels/cholesky/cholesky_time
+
+WARNING: The collection overhead (1 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 2 sec
+./run-comerge-aep.sh: line 77: 16730 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (15 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 16 sec

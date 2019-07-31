@@ -1,0 +1,2 @@
+mkdir ./comerge-pb-subset-numactl-results-2019_07_31__13_55_29
+Start ./linear-algebra/kernels/gemm/gemm_time
