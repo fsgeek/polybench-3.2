@@ -1,2 +1,31 @@
 mkdir ./comerge-pb-subset-numactl-results-2019_07_31__13_55_29
 Start ./linear-algebra/kernels/gemm/gemm_time
+./run-comerge-aep-subset-numactl.sh: line 39: 25115 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/gemm/gemm_time
+Start ./linear-algebra/kernels/mvt/mvt_time
+./run-comerge-aep-subset-numactl.sh: line 39: 25350 Killed                  AEPWatch 1 -f $aeplog
+./run-comerge-aep-subset-numactl.sh: line 39: 25651 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/mvt/mvt_time
+Start ./linear-algebra/kernels/symm/symm_time
+./run-comerge-aep-subset-numactl.sh: line 54: 25677 Killed                  AEPWatch 1 -f $aeplog
+./run-comerge-aep-subset-numactl.sh: line 39: 25756 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/kernels/symm/symm_time
+Start ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+./run-comerge-aep-subset-numactl.sh: line 39: 25787 Killed                  AEPWatch 1 -f $aeplog
+./run-comerge-aep-subset-numactl.sh: line 39: 25811 Killed                  AEPWatch 1 -f $aeplog
+End ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+Start ./datamining/covariance/covariance_time
+./run-comerge-aep-subset-numactl.sh: line 39: 25832 Killed                  AEPWatch 1 -f $aeplog
+./run-comerge-aep-subset-numactl.sh: line 39: 25853 Killed                  AEPWatch 1 -f $aeplog
+End ./datamining/covariance/covariance_time
+Start ./medley/floyd-warshall/floyd-warshall_time
+./run-comerge-aep-subset-numactl.sh: line 39: 25925 Killed                  AEPWatch 1 -f $aeplog
+./run-comerge-aep-subset-numactl.sh: line 39: 25997 Killed                  AEPWatch 1 -f $aeplog
+End ./medley/floyd-warshall/floyd-warshall_time
+Start ./medley/reg_detect/reg_detect_time
+./run-comerge-aep-subset-numactl.sh: line 54: 26355 Killed                  AEPWatch 1 -f $aeplog
+./run-comerge-aep-subset-numactl.sh: line 39: 26902 Killed                  AEPWatch 1 -f $aeplog
+
+WARNING: The collection overhead (29 sec) is more than the sampling time.
+         Updating the sampling time from 1 sec to 32 sec
+End ./medley/reg_detect/reg_detect_time
