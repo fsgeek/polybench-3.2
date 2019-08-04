@@ -59,11 +59,11 @@ make -f Makefile.comerge >> $MAKE_LOG 2>&1
 # Partition the disk
 umount /mnt/pmem4
 umount /mnt/pmem3
-parted -s -a optimal -- /dev/pmem4 mklabel gpt mkpart primary 2MiB -4096s >> $PMEM4_FILE 2>&1
-mkfs.ext4 -b 4096 -E stride=512 -F /dev/pmem4p1 >> $PMEM4_FILE 2>&1
+parted -s -a optimal -- /dev/pmem4 mklabel gpt mkpart primary ext4 1MiB -4096s >> $PMEM4_FILE 2>&1
+mkfs.ext4 -b 4096 -F /dev/pmem4p1 >> $PMEM4_FILE 2>&1
 fdisk -l /dev/pmem4 >> $PMEM4_FILE 2>&1
-parted -s -a optimal -- /dev/pmem3 mklabel gpt mkpart primary ext4 1MiB -4096s >> $PMEM3_FILE 2>&1
-mkfs.ext4 -b 4096 -F /dev/pmem3p1 >> $PMEM3_FILE 2>&1
+parted -s -a optimal -- /dev/pmem3 mklabel gpt mkpart primary 2MiB -4096s >> $PMEM3_FILE 2>&1
+mkfs.ext4 -b 4096 -E stride=512 -F /dev/pmem3p1 >> $PMEM3_FILE 2>&1
 fdisk -l /dev/pmem3 >> $PMEM3_FILE 2>&1
 mount -o dax /dev/pmem4p1 /mnt/pmem4
 mount -o dax /dev/pmem3p1 /mnt/pmem3
