@@ -1,0 +1,1140 @@
+      Size  Minimum  Current  Maximum  Default
+   2097152        0        0     8192        *
+1073741824        0        0        0         
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/2mm/2mm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+8.125179
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/2mm/2mm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+          8,151.52 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.245 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               297      page-faults               #   36.437 M/sec                  
+    29,738,789,219      cycles                    # 3648483.526 GHz                   (38.46%)
+    57,471,187,171      instructions              #    1.93  insn per cycle           (46.16%)
+     6,766,445,889      branches                  # 830136902.098 M/sec               (46.16%)
+         4,800,870      branch-misses             #    0.07% of all branches          (46.16%)
+    13,519,140,584      L1-dcache-loads           # 1658586748.129 M/sec              (46.16%)
+     7,605,221,342      L1-dcache-load-misses     #   56.26% of all L1-dcache hits    (46.16%)
+       845,217,231      LLC-loads                 # 103694912.403 M/sec               (30.77%)
+         1,707,230      LLC-load-misses           #    0.20% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         1,623,581      L1-icache-load-misses                                         (30.77%)
+    13,514,220,061      dTLB-loads                # 1657983077.046 M/sec              (30.77%)
+               101      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            22,778      iTLB-loads                # 2794.504 M/sec                    (30.77%)
+                33      iTLB-load-misses          #    0.14% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       8.151874683 seconds time elapsed
+
+       8.070476000 seconds user
+       0.018717000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/3mm/3mm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+12.187735
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/3mm/3mm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         12,211.09 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.246 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               320      page-faults               #   26.206 M/sec                  
+    44,712,590,873      cycles                    # 3661664.964 GHz                   (38.45%)
+    81,114,021,147      instructions              #    1.81  insn per cycle           (46.15%)
+    10,147,858,159      branches                  # 831042351.896 M/sec               (46.16%)
+         7,162,226      branch-misses             #    0.07% of all branches          (46.17%)
+    20,264,687,700      L1-dcache-loads           # 1659543665.547 M/sec              (46.17%)
+    11,408,252,933      L1-dcache-load-misses     #   56.30% of all L1-dcache hits    (46.17%)
+     1,268,108,500      LLC-loads                 # 103849684.711 M/sec               (30.77%)
+         3,462,866      LLC-load-misses           #    0.27% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+         2,495,040      L1-icache-load-misses                                         (30.76%)
+    20,270,920,958      dTLB-loads                # 1660054128.081 M/sec              (30.76%)
+               296      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            12,039      iTLB-loads                #  985.914 M/sec                    (30.76%)
+               117      iTLB-load-misses          #    0.97% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      12.211391465 seconds time elapsed
+
+      12.089551000 seconds user
+       0.030726000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/atax/atax_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+0.402766
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/atax/atax_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+            874.04 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    3.432 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             1,120      page-faults               # 1281.465 M/sec                  
+     3,123,583,303      cycles                    # 3573893.939 GHz                   (38.40%)
+     3,383,856,104      instructions              #    1.08  insn per cycle           (46.20%)
+       413,291,127      branches                  # 472873143.021 M/sec               (46.31%)
+           198,875      branch-misses             #    0.05% of all branches          (46.35%)
+       698,222,847      L1-dcache-loads           # 798881975.973 M/sec               (46.35%)
+       169,835,677      L1-dcache-load-misses     #   24.32% of all L1-dcache hits    (46.34%)
+           795,755      LLC-loads                 # 910474.828 M/sec                  (30.69%)
+           417,316      LLC-load-misses           #   52.44% of all LL-cache hits     (30.65%)
+   <not supported>      L1-icache-loads                                             
+           425,289      L1-icache-load-misses                                         (30.65%)
+       686,208,416      dTLB-loads                # 785135487.414 M/sec               (30.66%)
+               499      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.66%)
+             1,654      iTLB-loads                # 1892.449 M/sec                    (30.66%)
+               310      iTLB-load-misses          #   18.74% of all iTLB cache hits   (30.66%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.874383011 seconds time elapsed
+
+       0.538870000 seconds user
+       0.328015000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/bicg/bicg_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1352000000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+0.437973
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/bicg/bicg_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+            792.15 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    2.525 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               903      page-faults               # 1140.152 M/sec                  
+     2,904,877,088      cycles                    # 3667774.101 GHz                   (38.37%)
+     2,540,846,885      instructions              #    0.87  insn per cycle           (46.08%)
+       226,054,000      branches                  # 285421717.172 M/sec               (46.10%)
+           174,670      branch-misses             #    0.08% of all branches          (46.10%)
+     1,033,143,990      L1-dcache-loads           # 1304474734.848 M/sec              (46.10%)
+       106,652,505      L1-dcache-load-misses     #   10.32% of all L1-dcache hits    (46.11%)
+           568,355      LLC-loads                 # 717619.949 M/sec                  (30.80%)
+           325,134      LLC-load-misses           #   57.21% of all LL-cache hits     (30.80%)
+   <not supported>      L1-icache-loads                                             
+           335,108      L1-icache-load-misses                                         (30.80%)
+     1,024,708,096      dTLB-loads                # 1293823353.535 M/sec              (30.80%)
+               776      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.80%)
+             1,552      iTLB-loads                # 1959.596 M/sec                    (30.80%)
+               266      iTLB-load-misses          #   17.14% of all iTLB cache hits   (30.79%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.792386682 seconds time elapsed
+
+       0.537761000 seconds user
+       0.248047000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/cholesky/cholesky_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 32000
+12.097768
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/cholesky/cholesky_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         12,131.21 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.247 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               330      page-faults               #   27.203 M/sec                  
+    44,506,398,103      cycles                    # 3668815.275 GHz                   (38.46%)
+    48,195,554,004      instructions              #    1.08  insn per cycle           (46.16%)
+     5,390,878,001      branches                  # 444388591.295 M/sec               (46.16%)
+         8,160,949      branch-misses             #    0.15% of all branches          (46.16%)
+    10,699,197,311      L1-dcache-loads           # 881971586.102 M/sec               (46.16%)
+     1,966,439,730      L1-dcache-load-misses     #   18.38% of all L1-dcache hits    (46.16%)
+        14,090,709      LLC-loads                 # 1161545.544 M/sec                 (30.76%)
+         1,049,673      LLC-load-misses           #    7.45% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+         2,841,444      L1-icache-load-misses                                         (30.76%)
+    10,705,997,574      dTLB-loads                # 882532155.140 M/sec               (30.76%)
+               114      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            29,512      iTLB-loads                # 2432.776 M/sec                    (30.76%)
+               228      iTLB-load-misses          #    0.77% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      12.131474947 seconds time elapsed
+
+      12.016443000 seconds user
+       0.024759000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/doitgen/doitgen_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 268435456
+[PolyBench] posix_memalign: request to allocate 268435456
+[PolyBench] posix_memalign: request to allocate 524288
+9.169555
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/doitgen/doitgen_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+          9,238.35 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.216 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               514      page-faults               #   55.640 M/sec                  
+    33,926,908,670      cycles                    # 3672538.284 GHz                   (38.44%)
+    69,145,814,060      instructions              #    2.04  insn per cycle           (46.13%)
+     8,658,412,388      branches                  # 937260487.984 M/sec               (46.14%)
+        34,412,309      branch-misses             #    0.40% of all branches          (46.16%)
+    17,216,343,850      L1-dcache-loads           # 1863644062.568 M/sec              (46.17%)
+     8,665,920,802      L1-dcache-load-misses     #   50.34% of all L1-dcache hits    (46.18%)
+           268,939      LLC-loads                 # 29112.254 M/sec                   (30.78%)
+           342,095      LLC-load-misses           #  127.20% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         2,311,836      L1-icache-load-misses                                         (30.78%)
+    17,230,951,469      dTLB-loads                # 1865225315.977 M/sec              (30.77%)
+               416      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+             1,226      iTLB-loads                #  132.713 M/sec                    (30.75%)
+                68      iTLB-load-misses          #    5.55% of all iTLB cache hits   (30.74%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       9.238613571 seconds time elapsed
+
+       9.087943000 seconds user
+       0.097910000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/gemm/gemm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+11.210515
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/gemm/gemm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         11,238.53 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.178 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               306      page-faults               #   27.229 M/sec                  
+    41,198,400,505      cycles                    # 3665990.435 GHz                   (38.44%)
+    72,094,151,814      instructions              #    1.75  insn per cycle           (46.14%)
+     8,017,424,566      branches                  # 713420943.762 M/sec               (46.15%)
+         4,385,713      branch-misses             #    0.05% of all branches          (46.16%)
+    16,021,857,648      L1-dcache-loads           # 1425685855.846 M/sec              (46.17%)
+     8,570,360,337      L1-dcache-load-misses     #   53.49% of all L1-dcache hits    (46.18%)
+     1,011,105,034      LLC-loads                 # 89971973.127 M/sec                (30.79%)
+        29,930,081      LLC-load-misses           #    2.96% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         2,474,840      L1-icache-load-misses                                         (30.77%)
+    16,022,363,118      dTLB-loads                # 1425730834.490 M/sec              (30.76%)
+               101      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.75%)
+            29,027      iTLB-loads                # 2582.933 M/sec                    (30.75%)
+            16,263      iTLB-load-misses          #   56.03% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      11.238762961 seconds time elapsed
+
+      11.133545000 seconds user
+       0.017829000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/gemver/gemver_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+1.151496
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/gemver/gemver_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+          1,623.42 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    2.465 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             1,116      page-faults               #  687.616 M/sec                  
+     5,945,253,714      cycles                    # 3663126.133 GHz                   (38.40%)
+     5,836,315,520      instructions              #    0.98  insn per cycle           (46.11%)
+       632,313,917      branches                  # 389595759.088 M/sec               (46.11%)
+           231,358      branch-misses             #    0.04% of all branches          (46.10%)
+     1,256,616,336      L1-dcache-loads           # 774255290.203 M/sec               (46.12%)
+       451,921,069      L1-dcache-load-misses     #   35.96% of all L1-dcache hits    (46.18%)
+        93,259,672      LLC-loads                 # 57461288.971 M/sec                (30.79%)
+        38,527,174      LLC-load-misses           #   41.31% of all LL-cache hits     (30.80%)
+   <not supported>      L1-icache-loads                                             
+           659,948      L1-icache-load-misses                                         (30.80%)
+     1,259,299,294      dTLB-loads                # 775908375.847 M/sec               (30.80%)
+             1,110      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.80%)
+             2,768      iTLB-loads                # 1705.484 M/sec                    (30.78%)
+               107      iTLB-load-misses          #    3.87% of all iTLB cache hits   (30.72%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       1.623751861 seconds time elapsed
+
+       1.285123000 seconds user
+       0.325451000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/gesummv/gesummv_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+0.261338
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/gesummv/gesummv_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+            664.37 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    4.518 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             1,022      page-faults               # 1539.157 M/sec                  
+     2,434,643,944      cycles                    # 3666632.446 GHz                   (38.47%)
+     1,546,953,466      instructions              #    0.64  insn per cycle           (46.27%)
+       144,225,414      branches                  # 217206948.795 M/sec               (46.27%)
+           168,813      branch-misses             #    0.12% of all branches          (46.27%)
+       615,095,356      L1-dcache-loads           # 926348427.711 M/sec               (46.27%)
+        88,575,433      L1-dcache-load-misses     #   14.40% of all L1-dcache hits    (46.27%)
+           616,259      LLC-loads                 # 928100.904 M/sec                  (30.70%)
+           330,040      LLC-load-misses           #   53.56% of all LL-cache hits     (30.71%)
+   <not supported>      L1-icache-loads                                             
+           357,295      L1-icache-load-misses                                         (30.71%)
+       614,029,593      dTLB-loads                # 924743362.952 M/sec               (30.70%)
+             1,085      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.70%)
+               922      iTLB-loads                # 1388.554 M/sec                    (30.70%)
+               270      iTLB-load-misses          #   29.28% of all iTLB cache hits   (30.70%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.664629016 seconds time elapsed
+
+       0.369515000 seconds user
+       0.289596000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/mvt/mvt_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+0.901634
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/mvt/mvt_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+          1,372.91 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    2.187 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             1,114      page-faults               #  811.953 M/sec                  
+     5,022,878,043      cycles                    # 3660989.827 GHz                   (38.27%)
+     4,149,099,338      instructions              #    0.83  insn per cycle           (46.01%)
+       518,833,694      branches                  # 378158669.096 M/sec               (46.08%)
+           205,273      branch-misses             #    0.04% of all branches          (46.15%)
+       924,442,008      L1-dcache-loads           # 673791551.020 M/sec               (46.22%)
+       366,642,449      L1-dcache-load-misses     #   39.66% of all L1-dcache hits    (46.29%)
+        88,284,665      LLC-loads                 # 64347423.469 M/sec                (30.88%)
+        33,324,196      LLC-load-misses           #   37.75% of all LL-cache hits     (30.88%)
+   <not supported>      L1-icache-loads                                             
+           590,422      L1-icache-load-misses                                         (30.84%)
+       914,412,614      dTLB-loads                # 666481497.085 M/sec               (30.77%)
+               648      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.69%)
+             3,024      iTLB-loads                # 2204.082 M/sec                    (30.62%)
+                46      iTLB-load-misses          #    1.52% of all iTLB cache hits   (30.59%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       1.373239844 seconds time elapsed
+
+       1.034778000 seconds user
+       0.326969000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/symm/symm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+10.376252
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/symm/symm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         10,403.41 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.288 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               304      page-faults               #   29.222 M/sec                  
+    38,123,809,795      cycles                    # 3664693.819 GHz                   (38.46%)
+    40,246,788,887      instructions              #    1.06  insn per cycle           (46.16%)
+     2,030,312,593      branches                  # 195166066.808 M/sec               (46.17%)
+         4,467,080      branch-misses             #    0.22% of all branches          (46.17%)
+    16,037,902,591      L1-dcache-loads           # 1541661308.373 M/sec              (46.17%)
+    12,624,295,476      L1-dcache-load-misses     #   78.72% of all L1-dcache hits    (46.17%)
+     1,005,501,995      LLC-loads                 # 96655002.884 M/sec                (30.76%)
+       184,793,287      LLC-load-misses           #   18.38% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+         5,069,760      L1-icache-load-misses                                         (30.76%)
+    16,041,389,389      dTLB-loads                # 1541996480.727 M/sec              (30.76%)
+                65      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            25,927      iTLB-loads                # 2492.262 M/sec                    (30.76%)
+                 0      iTLB-load-misses          #    0.00% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      10.403722029 seconds time elapsed
+
+      10.297004000 seconds user
+       0.019795000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/syr2k/syr2k_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+18.663711
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/syr2k/syr2k_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         18,691.03 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.161 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               303      page-faults               #   16.211 M/sec                  
+    68,524,994,082      cycles                    # 3666202.669 GHz                   (38.45%)
+   104,082,740,429      instructions              #    1.52  insn per cycle           (46.15%)
+     8,023,565,245      branches                  # 429274262.747 M/sec               (46.15%)
+         4,511,951      branch-misses             #    0.06% of all branches          (46.15%)
+    32,031,538,582      L1-dcache-loads           # 1713741296.988 M/sec              (46.15%)
+     4,035,596,055      L1-dcache-load-misses     #   12.60% of all L1-dcache hits    (46.16%)
+         2,707,742      LLC-loads                 # 144868.760 M/sec                  (30.77%)
+           479,206      LLC-load-misses           #   17.70% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         3,499,132      L1-icache-load-misses                                         (30.77%)
+    32,035,487,700      dTLB-loads                # 1713952581.456 M/sec              (30.77%)
+               341      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            48,463      iTLB-loads                # 2592.852 M/sec                    (30.77%)
+               319      iTLB-load-misses          #    0.66% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      18.691362459 seconds time elapsed
+
+      18.520586000 seconds user
+       0.023995000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/syrk/syrk_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+9.035863
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/syrk/syrk_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+          9,055.65 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.331 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               292      page-faults               #   32.247 M/sec                  
+    33,209,616,693      cycles                    # 3667544.638 GHz                   (38.44%)
+    64,079,776,001      instructions              #    1.93  insn per cycle           (46.14%)
+     8,015,753,470      branches                  # 885229538.377 M/sec               (46.15%)
+         4,336,514      branch-misses             #    0.05% of all branches          (46.16%)
+    16,014,149,590      L1-dcache-loads           # 1768542196.576 M/sec              (46.17%)
+     1,025,441,900      L1-dcache-load-misses     #    6.40% of all L1-dcache hits    (46.18%)
+         3,542,221      LLC-loads                 # 391189.509 M/sec                  (30.79%)
+           324,198      LLC-load-misses           #    9.15% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         1,930,653      L1-icache-load-misses                                         (30.77%)
+    16,027,785,603      dTLB-loads                # 1770048106.350 M/sec              (30.76%)
+               195      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.75%)
+            25,277      iTLB-loads                # 2791.496 M/sec                    (30.74%)
+                 0      iTLB-load-misses          #    0.00% of all iTLB cache hits   (30.74%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       9.055951128 seconds time elapsed
+
+       8.971416000 seconds user
+       0.015126000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/trisolv/trisolv_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+0.154087
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/trisolv/trisolv_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+            625.18 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    3.200 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             1,116      page-faults               # 1785.600 M/sec                  
+     2,292,358,832      cycles                    # 3667774.131 GHz                   (38.41%)
+     1,583,398,891      instructions              #    0.69  insn per cycle           (46.25%)
+       187,082,062      branches                  # 299331299.200 M/sec               (46.26%)
+           180,000      branch-misses             #    0.10% of all branches          (46.26%)
+       247,148,884      L1-dcache-loads           # 395438214.400 M/sec               (46.26%)
+        85,046,830      L1-dcache-load-misses     #   34.41% of all L1-dcache hits    (46.26%)
+           741,780      LLC-loads                 # 1186848.000 M/sec                 (30.71%)
+           480,673      LLC-load-misses           #   64.80% of all LL-cache hits     (30.71%)
+   <not supported>      L1-icache-loads                                             
+           376,381      L1-icache-load-misses                                         (30.71%)
+       238,792,515      dTLB-loads                # 382068024.000 M/sec               (30.71%)
+             1,104      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.71%)
+               651      iTLB-loads                # 1041.600 M/sec                    (30.71%)
+               283      iTLB-load-misses          #   43.47% of all iTLB cache hits   (30.71%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.625434852 seconds time elapsed
+
+       0.294694000 seconds user
+       0.325492000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/kernels/trmm/trmm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 128000000
+42.611815
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/kernels/trmm/trmm_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         42,677.66 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.070 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               382      page-faults               #    8.951 M/sec                  
+   156,543,613,048      cycles                    # 3668102.562 GHz                   (38.46%)
+   256,120,745,628      instructions              #    1.64  insn per cycle           (46.15%)
+    32,034,619,741      branches                  # 750629607.072 M/sec               (46.15%)
+        16,814,304      branch-misses             #    0.05% of all branches          (46.15%)
+    64,048,936,501      L1-dcache-loads           # 1500783478.244 M/sec              (46.15%)
+     6,923,632,008      L1-dcache-load-misses     #   10.81% of all L1-dcache hits    (46.15%)
+        38,645,504      LLC-loads                 # 905534.691 M/sec                  (30.77%)
+        17,377,735      LLC-load-misses           #   44.97% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         8,081,294      L1-icache-load-misses                                         (30.77%)
+    64,087,298,468      dTLB-loads                # 1501682369.145 M/sec              (30.77%)
+               627      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+           115,599      iTLB-loads                # 2708.696 M/sec                    (30.77%)
+               413      iTLB-load-misses          #    0.36% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      42.678036272 seconds time elapsed
+
+      42.295997000 seconds user
+       0.041610000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/solvers/durbin/durbin_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+0.518028
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/solvers/durbin/durbin_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+            921.17 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    4.343 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+             1,024      page-faults               # 1111.835 M/sec                  
+     3,376,972,774      cycles                    # 3666637.105 GHz                   (38.33%)
+     1,290,771,314      instructions              #    0.38  insn per cycle           (46.05%)
+       140,179,314      branches                  # 152203381.107 M/sec               (46.05%)
+           178,922      branch-misses             #    0.13% of all branches          (46.05%)
+       366,151,874      L1-dcache-loads           # 397559038.002 M/sec               (46.10%)
+       260,275,107      L1-dcache-load-misses     #   71.08% of all L1-dcache hits    (46.21%)
+        40,924,409      LLC-loads                 # 44434754.615 M/sec                (30.83%)
+         1,821,542      LLC-load-misses           #    4.45% of all LL-cache hits     (30.83%)
+   <not supported>      L1-icache-loads                                             
+           504,206      L1-icache-load-misses                                         (30.83%)
+       362,354,254      dTLB-loads                # 393435672.096 M/sec               (30.83%)
+             1,126      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.83%)
+               156      iTLB-loads                #  169.381 M/sec                    (30.77%)
+                85      iTLB-load-misses          #   54.49% of all iTLB cache hits   (30.67%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.921560069 seconds time elapsed
+
+       0.624011000 seconds user
+       0.289664000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/solvers/dynprog/dynprog_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 256000000
+[PolyBench] posix_memalign: request to allocate 640000
+[PolyBench] posix_memalign: request to allocate 640000
+11.344800
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/solvers/dynprog/dynprog_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         11,349.67 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.176 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               384      page-faults               #   33.836 M/sec                  
+    41,636,465,631      cycles                    # 3668734.305 GHz                   (38.46%)
+    76,021,756,750      instructions              #    1.83  insn per cycle           (46.16%)
+    10,829,985,025      branches                  # 954267779.099 M/sec               (46.16%)
+        72,234,548      branch-misses             #    0.67% of all branches          (46.16%)
+    32,224,056,518      L1-dcache-loads           # 2839374087.409 M/sec              (46.16%)
+     1,791,466,334      L1-dcache-load-misses     #    5.56% of all L1-dcache hits    (46.16%)
+        53,632,959      LLC-loads                 # 4725787.206 M/sec                 (30.77%)
+        28,856,537      LLC-load-misses           #   53.80% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         3,148,944      L1-icache-load-misses                                         (30.77%)
+    32,299,303,797      dTLB-loads                # 2846004387.787 M/sec              (30.77%)
+               371      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            28,774      iTLB-loads                # 2535.378 M/sec                    (30.77%)
+                16      iTLB-load-misses          #    0.06% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      11.349946375 seconds time elapsed
+
+      11.218075000 seconds user
+       0.042301000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/solvers/gramschmidt/gramschmidt_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+11.218244
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/solvers/gramschmidt/gramschmidt_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         11,246.38 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.178 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               308      page-faults               #   27.388 M/sec                  
+    41,238,366,525      cycles                    # 3666936.380 GHz                   (38.46%)
+    52,122,589,526      instructions              #    1.26  insn per cycle           (46.16%)
+     6,017,221,815      branches                  # 535054402.899 M/sec               (46.16%)
+         4,376,553      branch-misses             #    0.07% of all branches          (46.16%)
+    16,021,175,965      L1-dcache-loads           # 1424611058.599 M/sec              (46.16%)
+    16,053,955,358      L1-dcache-load-misses     #  100.20% of all L1-dcache hits    (46.16%)
+       506,408,662      LLC-loads                 # 45030113.996 M/sec                (30.77%)
+        10,729,689      LLC-load-misses           #    2.12% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         2,342,708      L1-icache-load-misses                                         (30.77%)
+    16,029,024,117      dTLB-loads                # 1425308920.238 M/sec              (30.77%)
+                52      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            27,943      iTLB-loads                # 2484.706 M/sec                    (30.77%)
+                16      iTLB-load-misses          #    0.06% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      11.246633710 seconds time elapsed
+
+      11.139291000 seconds user
+       0.023017000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/solvers/lu/lu_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+16.239353
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/solvers/lu/lu_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         16,275.75 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.184 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               314      page-faults               #   19.293 M/sec                  
+    59,687,444,331      cycles                    # 3667431.295 GHz                   (38.46%)
+    85,695,553,217      instructions              #    1.44  insn per cycle           (46.15%)
+    10,698,448,944      branches                  # 657354773.825 M/sec               (46.15%)
+         8,803,643      branch-misses             #    0.08% of all branches          (46.15%)
+    21,323,721,140      L1-dcache-loads           # 1310213280.492 M/sec              (46.15%)
+     4,946,159,993      L1-dcache-load-misses     #   23.20% of all L1-dcache hits    (46.15%)
+       517,766,987      LLC-loads                 # 31813639.754 M/sec                (30.77%)
+       446,131,279      LLC-load-misses           #   86.16% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         4,646,109      L1-icache-load-misses                                         (30.77%)
+    21,494,266,463      dTLB-loads                # 1320692255.791 M/sec              (30.77%)
+                91      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            40,374      iTLB-loads                # 2480.737 M/sec                    (30.77%)
+               127      iTLB-load-misses          #    0.31% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      16.276018025 seconds time elapsed
+
+      16.115624000 seconds user
+       0.026970000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./linear-algebra/solvers/ludcmp/ludcmp_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512128008
+[PolyBench] posix_memalign: request to allocate 64008
+[PolyBench] posix_memalign: request to allocate 64008
+[PolyBench] posix_memalign: request to allocate 64008
+347.638273
+
+ Performance counter stats for './wrapper-hugetlb.sh ./linear-algebra/solvers/ludcmp/ludcmp_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+        347,774.66 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.009 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               500      page-faults               #    1.438 M/sec                  
+ 1,275,797,763,172      cycles                    # 3668467.922 GHz                   (38.46%)
+   940,830,136,421      instructions              #    0.74  insn per cycle           (46.15%)
+    85,844,581,118      branches                  # 246840135.024 M/sec               (46.15%)
+        70,885,447      branch-misses             #    0.08% of all branches          (46.15%)
+   299,869,300,399      L1-dcache-loads           # 862253361.088 M/sec               (46.15%)
+   248,398,190,214      L1-dcache-load-misses     #   82.84% of all L1-dcache hits    (46.15%)
+    11,016,309,669      LLC-loads                 # 31676633.874 M/sec                (30.77%)
+     5,819,954,833      LLC-load-misses           #   52.83% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+       123,033,102      L1-icache-load-misses                                         (30.77%)
+   299,152,553,849      dTLB-loads                # 860192406.129 M/sec               (30.77%)
+             1,258      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+           895,478      iTLB-loads                # 2574.885 M/sec                    (30.77%)
+               435      iTLB-load-misses          #    0.05% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     347.774964675 seconds time elapsed
+
+     344.824893000 seconds user
+       0.097375000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./datamining/correlation/correlation_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 24000
+[PolyBench] posix_memalign: request to allocate 24000
+22.930308
+
+ Performance counter stats for './wrapper-hugetlb.sh ./datamining/correlation/correlation_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         22,953.00 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.131 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               336      page-faults               #   14.639 M/sec                  
+    84,099,288,203      cycles                    # 3663978.051 GHz                   (38.45%)
+    94,835,722,236      instructions              #    1.13  insn per cycle           (46.15%)
+    13,549,219,651      branches                  # 590302777.458 M/sec               (46.15%)
+         5,136,953      branch-misses             #    0.04% of all branches          (46.15%)
+    27,045,216,033      L1-dcache-loads           # 1178286761.338 M/sec              (46.16%)
+    26,970,046,736      L1-dcache-load-misses     #   99.72% of all L1-dcache hits    (46.16%)
+     1,689,945,977      LLC-loads                 # 73626365.922 M/sec                (30.78%)
+       643,341,947      LLC-load-misses           #   38.07% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+         4,524,032      L1-icache-load-misses                                         (30.77%)
+    27,070,229,685      dTLB-loads                # 1179376538.361 M/sec              (30.77%)
+               595      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            65,049      iTLB-loads                # 2834.009 M/sec                    (30.76%)
+               124      iTLB-load-misses          #    0.19% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      22.953310218 seconds time elapsed
+
+      22.743742000 seconds user
+       0.029982000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./datamining/covariance/covariance_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 25920000
+[PolyBench] posix_memalign: request to allocate 25920000
+[PolyBench] posix_memalign: request to allocate 14400
+4.176780
+
+ Performance counter stats for './wrapper-hugetlb.sh ./datamining/covariance/covariance_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+          4,187.11 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.955 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               282      page-faults               #   67.351 M/sec                  
+    15,356,503,059      cycles                    # 3667662.541 GHz                   (38.46%)
+    20,501,478,077      instructions              #    1.34  insn per cycle           (46.17%)
+     2,933,560,356      branches                  # 700635384.762 M/sec               (46.17%)
+         1,852,659      branch-misses             #    0.06% of all branches          (46.17%)
+     5,854,648,499      L1-dcache-loads           # 1398291974.922 M/sec              (46.17%)
+     5,826,207,300      L1-dcache-load-misses     #   99.51% of all L1-dcache hits    (46.17%)
+       362,621,686      LLC-loads                 # 86606564.605 M/sec                (30.76%)
+        38,484,438      LLC-load-misses           #   10.61% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+         1,332,766      L1-icache-load-misses                                         (30.76%)
+     5,845,304,696      dTLB-loads                # 1396060352.520 M/sec              (30.76%)
+                88      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+             9,551      iTLB-loads                # 2281.108 M/sec                    (30.76%)
+               940      iTLB-load-misses          #    9.84% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       4.187459944 seconds time elapsed
+
+       4.146162000 seconds user
+       0.009140000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./medley/floyd-warshall/floyd-warshall_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 128000000
+64.834250
+
+ Performance counter stats for './wrapper-hugetlb.sh ./medley/floyd-warshall/floyd-warshall_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         64,870.75 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.031 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               322      page-faults               #    4.964 M/sec                  
+   238,018,874,607      cycles                    # 3669167.174 GHz                   (38.46%)
+   448,286,697,817      instructions              #    1.88  insn per cycle           (46.16%)
+   128,044,037,097      branches                  # 1973855974.981 M/sec              (46.15%)
+        17,623,167      branch-misses             #    0.01% of all branches          (46.15%)
+   128,097,791,457      L1-dcache-loads           # 1974684622.429 M/sec              (46.15%)
+    16,099,935,441      L1-dcache-load-misses     #   12.57% of all L1-dcache hits    (46.15%)
+        67,578,366      LLC-loads                 # 1041750.671 M/sec                 (30.77%)
+        53,576,139      LLC-load-misses           #   79.28% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        18,623,203      L1-icache-load-misses                                         (30.77%)
+   128,123,039,445      dTLB-loads                # 1975073831.432 M/sec              (30.77%)
+               117      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+           161,279      iTLB-loads                # 2486.188 M/sec                    (30.77%)
+             6,572      iTLB-load-misses          #    4.07% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      64.871010992 seconds time elapsed
+
+      64.344913000 seconds user
+       0.024754000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./medley/reg_detect/reg_detect_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 200000000
+[PolyBench] posix_memalign: request to allocate 200000000
+29.236150
+
+ Performance counter stats for './wrapper-hugetlb.sh ./medley/reg_detect/reg_detect_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         29,242.33 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.103 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               450      page-faults               #   15.389 M/sec                  
+   107,276,794,391      cycles                    # 3668586.088 GHz                   (38.46%)
+   151,634,713,907      instructions              #    1.41  insn per cycle           (46.15%)
+    31,611,895,111      branches                  # 1081044221.018 M/sec              (46.16%)
+        11,037,171      branch-misses             #    0.03% of all branches          (46.16%)
+    25,300,599,155      L1-dcache-loads           # 865214388.722 M/sec               (46.16%)
+     4,753,899,259      L1-dcache-load-misses     #   18.79% of all L1-dcache hits    (46.17%)
+        55,039,699      LLC-loads                 # 1882213.905 M/sec                 (30.77%)
+        51,393,711      LLC-load-misses           #   93.38% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         6,081,320      L1-icache-load-misses                                         (30.76%)
+    25,264,430,619      dTLB-loads                # 863977519.287 M/sec               (30.76%)
+               156      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            75,359      iTLB-loads                # 2577.081 M/sec                    (30.76%)
+               127      iTLB-load-misses          #    0.17% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      29.242687878 seconds time elapsed
+
+      28.932361000 seconds user
+       0.076836000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./stencils/adi/adi_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+44.573997
+
+ Performance counter stats for './wrapper-hugetlb.sh ./stencils/adi/adi_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         44,978.69 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.089 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               991      page-faults               #   22.033 M/sec                  
+   165,041,359,311      cycles                    # 3669379.681 GHz                   (38.46%)
+   122,481,241,326      instructions              #    0.74  insn per cycle           (46.15%)
+     8,063,307,645      branches                  # 179272258.549 M/sec               (46.15%)
+         2,632,489      branch-misses             #    0.03% of all branches          (46.15%)
+    46,466,945,648      L1-dcache-loads           # 1033103865.179 M/sec              (46.15%)
+     6,079,235,048      L1-dcache-load-misses     #   13.08% of all L1-dcache hits    (46.15%)
+       164,921,387      LLC-loads                 # 3666712.326 M/sec                 (30.77%)
+       159,039,070      LLC-load-misses           #   96.43% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         8,085,564      L1-icache-load-misses                                         (30.77%)
+    46,465,242,375      dTLB-loads                # 1033065996.154 M/sec              (30.77%)
+             2,236      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            99,090      iTLB-loads                # 2203.077 M/sec                    (30.77%)
+             1,622      iTLB-load-misses          #    1.64% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      44.979040749 seconds time elapsed
+
+      44.349224000 seconds user
+       0.277552000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./stencils/fdtd-2d/fdtd-2d_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 800
+31.893144
+
+ Performance counter stats for './wrapper-hugetlb.sh ./stencils/fdtd-2d/fdtd-2d_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         32,296.37 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.093 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               990      page-faults               #   30.654 M/sec                  
+   118,331,226,716      cycles                    # 3663959.212 GHz                   (38.46%)
+   109,522,140,056      instructions              #    0.93  insn per cycle           (46.15%)
+     9,653,765,811      branches                  # 298915215.847 M/sec               (46.15%)
+         3,195,648      branch-misses             #    0.03% of all branches          (46.16%)
+    35,253,323,569      L1-dcache-loads           # 1091569345.089 M/sec              (46.16%)
+     7,271,273,550      L1-dcache-load-misses     #   20.63% of all L1-dcache hits    (46.16%)
+       502,421,212      LLC-loads                 # 15556762.819 M/sec                (30.77%)
+       497,435,331      LLC-load-misses           #   99.01% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         6,980,046      L1-icache-load-misses                                         (30.77%)
+    35,257,475,087      dTLB-loads                # 1091697890.977 M/sec              (30.76%)
+               904      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            87,642      iTLB-loads                # 2713.711 M/sec                    (30.76%)
+             2,737      iTLB-load-misses          #    3.12% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      32.296707606 seconds time elapsed
+
+      31.766960000 seconds user
+       0.272540000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./stencils/fdtd-apml/fdtd-apml_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+0.213057
+
+ Performance counter stats for './wrapper-hugetlb.sh ./stencils/fdtd-apml/fdtd-apml_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+            319.46 msec task-clock                #    0.999 CPUs utilized          
+                 2      context-switches          #    6.270 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               584      page-faults               # 1830.721 M/sec                  
+     1,172,169,690      cycles                    # 3674513.135 GHz                   (37.65%)
+     1,445,922,222      instructions              #    1.23  insn per cycle           (45.54%)
+        45,040,152      branches                  # 141191699.060 M/sec               (45.85%)
+           333,235      branch-misses             #    0.74% of all branches          (46.17%)
+       663,585,728      L1-dcache-loads           # 2080206043.887 M/sec              (46.46%)
+        25,814,307      L1-dcache-load-misses     #    3.89% of all L1-dcache hits    (46.78%)
+           312,825      LLC-loads                 # 980642.633 M/sec                  (31.29%)
+           392,926      LLC-load-misses           #  125.61% of all LL-cache hits     (31.29%)
+   <not supported>      L1-icache-loads                                             
+           235,212      L1-icache-load-misses                                         (31.00%)
+       651,388,160      dTLB-loads                # 2041969153.605 M/sec              (30.69%)
+               510      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.37%)
+                73      iTLB-loads                #  228.840 M/sec                    (30.06%)
+                 0      iTLB-load-misses          #    0.00% of all iTLB cache hits   (30.05%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.319780787 seconds time elapsed
+
+       0.205387000 seconds user
+       0.111809000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./stencils/jacobi-1d-imper/jacobi-1d-imper_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 80000000
+[PolyBench] posix_memalign: request to allocate 80000000
+25.670100
+
+ Performance counter stats for './wrapper-hugetlb.sh ./stencils/jacobi-1d-imper/jacobi-1d-imper_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         25,715.22 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.078 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               340      page-faults               #   13.222 M/sec                  
+    94,337,873,653      cycles                    # 3668593.181 GHz                   (38.46%)
+    75,115,556,078      instructions              #    0.80  insn per cycle           (46.16%)
+    10,027,330,413      branches                  # 389940906.591 M/sec               (46.16%)
+           670,749      branch-misses             #    0.01% of all branches          (46.16%)
+    20,058,466,383      L1-dcache-loads           # 780029802.955 M/sec               (46.16%)
+     5,015,236,089      L1-dcache-load-misses     #   25.00% of all L1-dcache hits    (46.16%)
+       525,003,072      LLC-loads                 # 20416219.016 M/sec                (30.77%)
+       485,343,631      LLC-load-misses           #   92.45% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         4,502,806      L1-icache-load-misses                                         (30.77%)
+    20,016,120,644      dTLB-loads                # 778383069.959 M/sec               (30.77%)
+               140      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+            67,392      iTLB-loads                # 2620.727 M/sec                    (30.77%)
+               192      iTLB-load-misses          #    0.28% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      25.715484168 seconds time elapsed
+
+      25.479436000 seconds user
+       0.033348000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./stencils/jacobi-2d-imper/jacobi-2d-imper_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+18.738006
+
+ Performance counter stats for './wrapper-hugetlb.sh ./stencils/jacobi-2d-imper/jacobi-2d-imper_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         19,011.07 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.158 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               749      page-faults               #   39.398 M/sec                  
+    69,749,867,620      cycles                    # 3668921.552 GHz                   (38.46%)
+    61,345,474,952      instructions              #    0.88  insn per cycle           (46.15%)
+     6,440,031,215      branches                  # 338752891.221 M/sec               (46.16%)
+         2,106,172      branch-misses             #    0.03% of all branches          (46.16%)
+    19,228,879,221      L1-dcache-loads           # 1011460692.283 M/sec              (46.17%)
+     4,846,282,154      L1-dcache-load-misses     #   25.20% of all L1-dcache hits    (46.17%)
+       247,715,918      LLC-loads                 # 13030136.132 M/sec                (30.77%)
+       242,849,790      LLC-load-misses           #   98.04% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         3,588,635      L1-icache-load-misses                                         (30.76%)
+    19,219,473,265      dTLB-loads                # 1010965928.410 M/sec              (30.76%)
+               611      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            45,775      iTLB-loads                # 2407.817 M/sec                    (30.76%)
+               553      iTLB-load-misses          #    1.21% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      19.011425444 seconds time elapsed
+
+      18.674760000 seconds user
+       0.185676000 seconds sys
+
+
+finished
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh ./stencils/seidel-2d/seidel-2d_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log
+binding on cpu set 0xffffff00,0x0000ffff,0xff000000
+[PolyBench] posix_memalign: request to allocate 200000000
+26.094948
+
+ Performance counter stats for './wrapper-hugetlb.sh ./stencils/seidel-2d/seidel-2d_time ./comerge-pb-src-dram-results-2019_08_04__17_39_55/pb-dram1-h-intelsdp1044-2019_08_04__17_39_55.log':
+
+         26,150.18 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.115 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               353      page-faults               #   13.499 M/sec                  
+    95,851,235,891      cycles                    # 3665439.231 GHz                   (38.46%)
+    40,177,293,671      instructions              #    0.42  insn per cycle           (46.15%)
+     1,282,484,174      branches                  # 49043371.855 M/sec                (46.15%)
+         1,140,132      branch-misses             #    0.09% of all branches          (46.16%)
+     7,540,407,038      L1-dcache-loads           # 288352085.583 M/sec               (46.16%)
+       948,597,409      L1-dcache-load-misses     #   12.58% of all L1-dcache hits    (46.16%)
+           442,772      LLC-loads                 # 16932.008 M/sec                   (30.78%)
+           326,294      LLC-load-misses           #   73.69% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         3,129,104      L1-icache-load-misses                                         (30.77%)
+     7,539,908,456      dTLB-loads                # 288333019.350 M/sec               (30.76%)
+               289      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+            67,501      iTLB-loads                # 2581.300 M/sec                    (30.76%)
+                88      iTLB-load-misses          #    0.13% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      26.150482264 seconds time elapsed
+
+      25.931286000 seconds user
+       0.040863000 seconds sys
+
+
+finished
