@@ -1,0 +1,38 @@
+hwloc-bind --single node:0.pu:12 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh /mnt/pmem3/fsgeek 5368709120 ./linear-algebra/solvers/gramschmidt/gramschmidt_time ./gs-pb-src-results-2019_08_05__23_19_15/pb-pmem3-extralarge-intelsdp1044-2019_08_05__23_19_15.log
+binding on cpu set 0x00000040
+VMMALLOC_POOL_DIR=/mnt/pmem3/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 128000000
+1609077451088
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem3/fsgeek 5368709120 ./linear-algebra/solvers/gramschmidt/gramschmidt_time ./gs-pb-src-results-2019_08_05__23_19_15/pb-pmem3-extralarge-intelsdp1044-2019_08_05__23_19_15.log':
+
+        733,983.09 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    0.007 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               481      page-faults               #    0.655 M/sec                  
+ 2,688,571,398,234      cycles                    # 3662988.650 GHz                   (38.46%)
+   419,336,484,181      instructions              #    0.16  insn per cycle           (46.15%)
+    48,575,625,324      branches                  # 66180858.854 M/sec                (46.15%)
+        30,379,364      branch-misses             #    0.06% of all branches          (46.15%)
+   128,876,643,834      L1-dcache-loads           # 175585325.320 M/sec               (46.15%)
+   132,830,008,609      L1-dcache-load-misses     #  103.07% of all L1-dcache hits    (46.15%)
+    51,988,615,029      LLC-loads                 # 70830816.285 M/sec                (30.77%)
+           364,213      LLC-load-misses           #    0.00% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+       123,997,610      L1-icache-load-misses                                         (30.77%)
+   129,115,860,630      dTLB-loads                # 175911241.309 M/sec               (30.77%)
+               270      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+           199,071      iTLB-loads                #  271.220 M/sec                    (30.77%)
+               123      iTLB-load-misses          #    0.06% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     733.984077679 seconds time elapsed
+
+     727.525502000 seconds user
+       0.251110000 seconds sys
+
+
+finished

@@ -1,0 +1,21 @@
+mke2fs 1.44.2 (14-May-2018)
+Creating filesystem with 65026560 4k blocks and 16261120 inodes
+Filesystem UUID: ed2bfedc-7075-414b-905b-b049b149fa11
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:    0/1985         done                            
+Writing inode tables:    0/1985         done                            
+Creating journal (262144 blocks): done
+Writing superblocks and filesystem accounting information:    0/1985         done
+
+Disk /dev/pmem3: 248.1 GiB, 266352984064 bytes, 520220672 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 4123EE88-6FDD-45BF-9598-50DB3E4968B5
+
+Device       Start       End   Sectors   Size Type
+/dev/pmem3p1  4096 520216576 520212481 248.1G Linux filesystem
