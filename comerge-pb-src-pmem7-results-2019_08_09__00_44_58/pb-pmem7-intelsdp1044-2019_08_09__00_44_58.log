@@ -1,0 +1,1189 @@
+mke2fs 1.44.2 (14-May-2018)
+Creating filesystem with 390167296 4k blocks and 97542144 inodes
+Filesystem UUID: 8c4775e4-d7e3-468f-8574-5d9f71b270e2
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968, 
+	102400000, 214990848
+
+Allocating group tables:     0/11907 5664/11907           done                            
+Writing inode tables:     0/11907           done                            
+Creating journal (262144 blocks): done
+Writing superblocks and filesystem accounting information:     0/11907           done
+
+Disk /dev/pmem7: 1.5 TiB, 1598128390144 bytes, 3121344512 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 7BCD56CE-29E4-43F9-85EF-9535B726C137
+
+Device       Start        End    Sectors  Size Type
+/dev/pmem7p1  2048 3121340416 3121338369  1.5T Linux filesystem
+./linear-algebra/kernels/2mm/2mm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/2mm/2mm_time
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+22.271059
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/2mm/2mm_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         22,401.29 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.134 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            22,302      page-faults               #  995.581 M/sec                  
+    80,849,308,238      cycles                    # 3609182.994 GHz                   (38.46%)
+    57,684,046,571      instructions              #    0.71  insn per cycle           (46.15%)
+     6,811,116,633      branches                  # 304054132.985 M/sec               (46.16%)
+         5,332,656      branch-misses             #    0.08% of all branches          (46.16%)
+    13,587,072,250      L1-dcache-loads           # 606538647.828 M/sec               (46.16%)
+     9,007,589,276      L1-dcache-load-misses     #   66.30% of all L1-dcache hits    (46.16%)
+       851,334,196      LLC-loads                 # 38004294.273 M/sec                (30.77%)
+            26,009      LLC-load-misses           #    0.00% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         8,142,691      L1-icache-load-misses                                         (30.77%)
+    13,590,025,493      dTLB-loads                # 606670483.148 M/sec               (30.77%)
+     2,040,148,861      dTLB-load-misses          #   15.01% of all dTLB cache hits   (30.77%)
+             1,996      iTLB-loads                #   89.103 M/sec                    (30.76%)
+            47,425      iTLB-load-misses          # 2376.00% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      22.401883523 seconds time elapsed
+
+      22.109171000 seconds user
+       0.124994000 seconds sys
+
+
+finished
+./linear-algebra/kernels/3mm/3mm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/3mm/3mm_time
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+[PolyBench] posix_memalign: request to allocate 18000000
+24.402561
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/3mm/3mm_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         24,529.31 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.163 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,096      page-faults               # 1267.724 M/sec                  
+    88,849,829,398      cycles                    # 3622236.104 GHz                   (38.46%)
+    81,455,715,131      instructions              #    0.92  insn per cycle           (46.15%)
+    10,215,057,260      branches                  # 416448173.998 M/sec               (46.15%)
+         7,824,507      branch-misses             #    0.08% of all branches          (46.15%)
+    20,366,190,262      L1-dcache-loads           # 830290279.343 M/sec               (46.15%)
+    13,597,645,903      L1-dcache-load-misses     #   66.77% of all L1-dcache hits    (46.15%)
+     1,277,481,603      LLC-loads                 # 52080459.986 M/sec                (30.77%)
+            34,226      LLC-load-misses           #    0.00% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        15,138,777      L1-icache-load-misses                                         (30.77%)
+    20,353,970,910      dTLB-loads                # 829792119.940 M/sec               (30.77%)
+     3,307,178,545      dTLB-load-misses          #   16.25% of all dTLB cache hits   (30.77%)
+             2,743      iTLB-loads                #  111.827 M/sec                    (30.77%)
+            54,395      iTLB-load-misses          # 1983.05% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      24.538298625 seconds time elapsed
+
+      24.126354000 seconds user
+       0.220331000 seconds sys
+
+
+finished
+./linear-algebra/kernels/atax/atax_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/atax/atax_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+0.809254
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/atax/atax_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          3,693.99 msec task-clock                #    1.000 CPUs utilized          
+                23      context-switches          #    6.228 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           439,875      page-faults               # 119110.479 M/sec                
+    13,416,047,514      cycles                    # 3632831.712 GHz                   (38.44%)
+     6,953,775,898      instructions              #    0.52  insn per cycle           (46.16%)
+     1,100,013,918      branches                  # 297864586.515 M/sec               (46.17%)
+         3,923,896      branch-misses             #    0.36% of all branches          (46.19%)
+     1,629,696,230      L1-dcache-loads           # 441293319.794 M/sec               (46.19%)
+       161,843,491      L1-dcache-load-misses     #    9.93% of all L1-dcache hits    (46.19%)
+         1,149,294      LLC-loads                 # 311208.773 M/sec                  (30.77%)
+            48,895      LLC-load-misses           #    4.25% of all LL-cache hits     (30.74%)
+   <not supported>      L1-icache-loads                                             
+        40,667,791      L1-icache-load-misses                                         (30.74%)
+     1,624,337,957      dTLB-loads                # 439842392.905 M/sec               (30.74%)
+            20,069      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.74%)
+             6,169      iTLB-loads                # 1670.458 M/sec                    (30.75%)
+           438,190      iTLB-load-misses          # 7103.10% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       3.695175097 seconds time elapsed
+
+       1.451778000 seconds user
+       2.212956000 seconds sys
+
+
+finished
+./linear-algebra/kernels/bicg/bicg_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/bicg/bicg_time
+[PolyBench] posix_memalign: request to allocate 1352000000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+[PolyBench] posix_memalign: request to allocate 104000
+0.613522
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/bicg/bicg_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          2,774.84 msec task-clock                #    1.000 CPUs utilized          
+                16      context-switches          #    5.768 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           330,520      page-faults               # 119149.243 M/sec                
+    10,180,425,132      cycles                    # 3669944.172 GHz                   (38.39%)
+     5,217,545,434      instructions              #    0.51  insn per cycle           (46.11%)
+       738,110,419      branches                  # 266081621.846 M/sec               (46.14%)
+         3,006,104      branch-misses             #    0.41% of all branches          (46.18%)
+     1,735,569,124      L1-dcache-loads           # 625655776.496 M/sec               (46.21%)
+       100,702,761      L1-dcache-load-misses     #    5.80% of all L1-dcache hits    (46.24%)
+           887,267      LLC-loads                 # 319851.118 M/sec                  (30.83%)
+            33,083      LLC-load-misses           #    3.73% of all LL-cache hits     (30.80%)
+   <not supported>      L1-icache-loads                                             
+        33,120,928      L1-icache-load-misses                                         (30.77%)
+     1,728,300,433      dTLB-loads                # 623035484.138 M/sec               (30.73%)
+            15,337      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.70%)
+               528      iTLB-loads                #  190.339 M/sec                    (30.70%)
+               355      iTLB-load-misses          #   67.23% of all iTLB cache hits   (30.70%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       2.775651068 seconds time elapsed
+
+       1.108537000 seconds user
+       1.644653000 seconds sys
+
+
+finished
+./linear-algebra/kernels/cholesky/cholesky_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/cholesky/cholesky_time
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 32000
+18.952122
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/cholesky/cholesky_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         19,163.48 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.157 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,601      page-faults               # 1649.063 M/sec                  
+    70,288,835,143      cycles                    # 3667945.267 GHz                   (38.46%)
+    48,479,805,048      instructions              #    0.69  insn per cycle           (46.16%)
+     5,450,103,364      branches                  # 284407627.407 M/sec               (46.16%)
+         8,622,996      branch-misses             #    0.16% of all branches          (46.16%)
+    10,781,849,158      L1-dcache-loads           # 562638895.684 M/sec               (46.16%)
+     1,977,165,134      L1-dcache-load-misses     #   18.34% of all L1-dcache hits    (46.16%)
+        24,428,280      LLC-loads                 # 1274762.824 M/sec                 (30.77%)
+           214,032      LLC-load-misses           #    0.88% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         6,285,482      L1-icache-load-misses                                         (30.77%)
+    10,785,490,088      dTLB-loads                # 562828893.597 M/sec               (30.77%)
+         9,062,648      dTLB-load-misses          #    0.08% of all dTLB cache hits   (30.77%)
+               637      iTLB-loads                #   33.241 M/sec                    (30.77%)
+             2,805      iTLB-load-misses          #  440.35% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      19.163962588 seconds time elapsed
+
+      18.862974000 seconds user
+       0.160009000 seconds sys
+
+
+finished
+./linear-algebra/kernels/doitgen/doitgen_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/doitgen/doitgen_time
+[PolyBench] posix_memalign: request to allocate 268435456
+[PolyBench] posix_memalign: request to allocate 268435456
+[PolyBench] posix_memalign: request to allocate 524288
+14.099408
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/doitgen/doitgen_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         14,549.27 msec task-clock                #    1.000 CPUs utilized          
+                 6      context-switches          #    0.412 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           131,533      page-faults               # 9040.690 M/sec                  
+    53,365,437,752      cycles                    # 3667979.775 GHz                   (38.46%)
+    70,284,604,903      instructions              #    1.32  insn per cycle           (46.16%)
+     8,876,404,146      branches                  # 610104072.170 M/sec               (46.16%)
+        36,094,298      branch-misses             #    0.41% of all branches          (46.16%)
+    17,511,416,282      L1-dcache-loads           # 1203616487.869 M/sec              (46.16%)
+     9,323,248,612      L1-dcache-load-misses     #   53.24% of all L1-dcache hits    (46.16%)
+           466,586      LLC-loads                 # 32069.970 M/sec                   (30.76%)
+            41,065      LLC-load-misses           #    8.80% of all LL-cache hits     (30.76%)
+   <not supported>      L1-icache-loads                                             
+        30,745,270      L1-icache-load-misses                                         (30.76%)
+    17,512,353,382      dTLB-loads                # 1203680897.794 M/sec              (30.76%)
+             6,209      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+             6,498      iTLB-loads                #  446.629 M/sec                    (30.76%)
+               835      iTLB-load-misses          #   12.85% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      14.549796696 seconds time elapsed
+
+      13.815747000 seconds user
+       0.654951000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gemm/gemm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/gemm/gemm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+37.102985
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/gemm/gemm_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         37,269.39 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.080 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,770      page-faults               #  637.795 M/sec                  
+   136,602,271,104      cycles                    # 3665305.511 GHz                   (38.46%)
+    72,394,896,343      instructions              #    0.53  insn per cycle           (46.15%)
+     8,071,560,026      branches                  # 216575707.049 M/sec               (46.15%)
+         5,018,236      branch-misses             #    0.06% of all branches          (46.15%)
+    16,106,313,900      L1-dcache-loads           # 432163833.213 M/sec               (46.15%)
+    12,571,627,413      L1-dcache-load-misses     #   78.05% of all L1-dcache hits    (46.16%)
+     1,018,801,114      LLC-loads                 # 27336422.067 M/sec                (30.77%)
+            67,202      LLC-load-misses           #    0.01% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         7,580,414      L1-icache-load-misses                                         (30.77%)
+    16,110,259,633      dTLB-loads                # 432269704.929 M/sec               (30.77%)
+     6,896,750,492      dTLB-load-misses          #   42.81% of all dTLB cache hits   (30.77%)
+             1,190      iTLB-loads                #   31.930 M/sec                    (30.77%)
+             8,399      iTLB-load-misses          #  705.80% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      37.278270275 seconds time elapsed
+
+      36.867220000 seconds user
+       0.132003000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gemver/gemver_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/gemver/gemver_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+6.191095
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/gemver/gemver_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          9,084.24 msec task-clock                #    1.000 CPUs utilized          
+                22      context-switches          #    2.422 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           440,031      page-faults               # 48440.225 M/sec                 
+    33,280,482,550      cycles                    # 3663637.445 GHz                   (38.44%)
+     9,444,552,763      instructions              #    0.28  insn per cycle           (46.14%)
+     1,331,590,523      branches                  # 146586363.166 M/sec               (46.14%)
+         4,280,857      branch-misses             #    0.32% of all branches          (46.14%)
+     2,200,087,550      L1-dcache-loads           # 242193697.710 M/sec               (46.15%)
+       675,216,164      L1-dcache-load-misses     #   30.69% of all L1-dcache hits    (46.16%)
+       449,927,423      LLC-loads                 # 49529659.071 M/sec                (30.78%)
+            81,782      LLC-load-misses           #    0.02% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads                                             
+        40,905,392      L1-icache-load-misses                                         (30.78%)
+     2,197,795,962      dTLB-loads                # 241941431.308 M/sec               (30.78%)
+       225,069,471      dTLB-load-misses          #   10.24% of all dTLB cache hits   (30.78%)
+               865      iTLB-loads                #   95.222 M/sec                    (30.77%)
+             2,890      iTLB-load-misses          #  334.10% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       9.085176215 seconds time elapsed
+
+       6.821329000 seconds user
+       2.193333000 seconds sys
+
+
+finished
+./linear-algebra/kernels/gesummv/gesummv_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/gesummv/gesummv_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+0.465804
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/gesummv/gesummv_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          3,011.63 msec task-clock                #    1.000 CPUs utilized          
+                20      context-switches          #    6.642 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           391,019      page-faults               # 129863.500 M/sec                
+    11,040,316,073      cycles                    # 3666660.934 GHz                   (38.39%)
+     4,684,534,579      instructions              #    0.42  insn per cycle           (46.10%)
+       748,521,380      branches                  # 248595609.432 M/sec               (46.09%)
+         4,087,563      branch-misses             #    0.55% of all branches          (46.11%)
+     1,450,439,885      L1-dcache-loads           # 481713678.180 M/sec               (46.15%)
+        88,355,521      L1-dcache-load-misses     #    6.09% of all L1-dcache hits    (46.18%)
+         3,178,283      LLC-loads                 # 1055557.290 M/sec                 (30.81%)
+            42,161      LLC-load-misses           #    1.33% of all LL-cache hits     (30.81%)
+   <not supported>      L1-icache-loads                                             
+        35,319,827      L1-icache-load-misses                                         (30.81%)
+     1,469,871,231      dTLB-loads                # 488167130.854 M/sec               (30.81%)
+            31,777      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.78%)
+               637      iTLB-loads                #  211.558 M/sec                    (30.75%)
+               788      iTLB-load-misses          #  123.70% of all iTLB cache hits   (30.71%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       3.012741226 seconds time elapsed
+
+       1.184844000 seconds user
+       1.801720000 seconds sys
+
+
+finished
+./linear-algebra/kernels/mvt/mvt_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/mvt/mvt_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+4.925457
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/mvt/mvt_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          7,773.03 msec task-clock                #    1.000 CPUs utilized          
+                21      context-switches          #    2.702 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           439,901      page-faults               # 56593.465 M/sec                 
+    28,492,913,147      cycles                    # 3665626.289 GHz                   (38.46%)
+     7,793,500,010      instructions              #    0.27  insn per cycle           (46.15%)
+     1,213,775,749      branches                  # 156152804.451 M/sec               (46.15%)
+         4,023,589      branch-misses             #    0.33% of all branches          (46.15%)
+     1,867,128,766      L1-dcache-loads           # 240206968.481 M/sec               (46.15%)
+       584,829,523      L1-dcache-load-misses     #   31.32% of all L1-dcache hits    (46.15%)
+       447,247,270      LLC-loads                 # 57538565.547 M/sec                (30.77%)
+            59,123      LLC-load-misses           #    0.01% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        43,101,324      L1-icache-load-misses                                         (30.77%)
+     1,861,886,417      dTLB-loads                # 239532537.888 M/sec               (30.77%)
+       225,630,813      dTLB-load-misses          #   12.12% of all dTLB cache hits   (30.77%)
+               900      iTLB-loads                #  115.785 M/sec                    (30.77%)
+             1,651      iTLB-load-misses          #  183.44% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       7.774034518 seconds time elapsed
+
+       5.542249000 seconds user
+       2.172220000 seconds sys
+
+
+finished
+./linear-algebra/kernels/symm/symm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/symm/symm_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+68.259372
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/symm/symm_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         68,424.37 msec task-clock                #    1.000 CPUs utilized          
+                 2      context-switches          #    0.029 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,770      page-faults               #  347.393 M/sec                  
+   250,826,527,031      cycles                    # 3665768.254 GHz                   (38.46%)
+    40,646,929,358      instructions              #    0.16  insn per cycle           (46.15%)
+     2,109,224,378      branches                  # 30825797.644 M/sec                (46.15%)
+         5,697,406      branch-misses             #    0.27% of all branches          (46.16%)
+    16,161,486,584      L1-dcache-loads           # 236196167.777 M/sec               (46.16%)
+    17,866,301,260      L1-dcache-load-misses     #  110.55% of all L1-dcache hits    (46.16%)
+     1,085,184,231      LLC-loads                 # 15859701.727 M/sec                (30.77%)
+           247,171      LLC-load-misses           #    0.02% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        15,446,722      L1-icache-load-misses                                         (30.77%)
+    16,146,943,395      dTLB-loads                # 235983622.632 M/sec               (30.77%)
+    10,015,170,127      dTLB-load-misses          #   62.03% of all dTLB cache hits   (30.77%)
+               982      iTLB-loads                #   14.352 M/sec                    (30.77%)
+            12,211      iTLB-load-misses          # 1243.48% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      68.433289020 seconds time elapsed
+
+      67.790739000 seconds user
+       0.124406000 seconds sys
+
+
+finished
+./linear-algebra/kernels/syr2k/syr2k_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/syr2k/syr2k_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+28.704117
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/syr2k/syr2k_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         28,868.86 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.139 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,767      page-faults               #  823.299 M/sec                  
+   105,819,200,078      cycles                    # 3665622.838 GHz                   (38.45%)
+   104,429,117,201      instructions              #    0.99  insn per cycle           (46.15%)
+     8,075,432,119      branches                  # 279736459.713 M/sec               (46.15%)
+         4,905,021      branch-misses             #    0.06% of all branches          (46.15%)
+    32,092,000,317      L1-dcache-loads           # 1111680764.757 M/sec              (46.15%)
+     4,021,789,107      L1-dcache-load-misses     #   12.53% of all L1-dcache hits    (46.16%)
+       171,042,936      LLC-loads                 # 5925001.247 M/sec                 (30.77%)
+           180,948      LLC-load-misses           #    0.11% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         7,108,599      L1-icache-load-misses                                         (30.77%)
+    32,072,056,117      dTLB-loads                # 1110989889.047 M/sec              (30.77%)
+           420,369      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             2,444      iTLB-loads                #   84.661 M/sec                    (30.76%)
+             7,094      iTLB-load-misses          #  290.26% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      28.877844309 seconds time elapsed
+
+      28.543695000 seconds user
+       0.123420000 seconds sys
+
+
+finished
+./linear-algebra/kernels/syrk/syrk_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/syrk/syrk_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+18.508356
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/syrk/syrk_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         18,621.79 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.161 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            15,956      page-faults               #  856.882 M/sec                  
+    68,312,654,317      cycles                    # 3668581.404 GHz                   (38.45%)
+    64,260,423,408      instructions              #    0.94  insn per cycle           (46.15%)
+     8,052,057,050      branches                  # 432418079.051 M/sec               (46.15%)
+         4,694,412      branch-misses             #    0.06% of all branches          (46.16%)
+    16,069,242,508      L1-dcache-loads           # 862963455.668 M/sec               (46.17%)
+     1,045,755,062      L1-dcache-load-misses     #    6.51% of all L1-dcache hits    (46.17%)
+         6,416,470      LLC-loads                 # 344582.461 M/sec                  (30.78%)
+            53,692      LLC-load-misses           #    0.84% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         4,921,398      L1-icache-load-misses                                         (30.76%)
+    16,064,793,048      dTLB-loads                # 862724507.169 M/sec               (30.76%)
+            24,899      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.76%)
+               702      iTLB-loads                #   37.699 M/sec                    (30.76%)
+               780      iTLB-load-misses          #  111.11% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      18.622295329 seconds time elapsed
+
+      18.401885000 seconds user
+       0.087227000 seconds sys
+
+
+finished
+./linear-algebra/kernels/trisolv/trisolv_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/trisolv/trisolv_time
+[PolyBench] posix_memalign: request to allocate 1800000000
+[PolyBench] posix_memalign: request to allocate 120000
+[PolyBench] posix_memalign: request to allocate 120000
+0.370348
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/trisolv/trisolv_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          3,245.75 msec task-clock                #    1.000 CPUs utilized          
+                24      context-switches          #    7.396 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           439,845      page-faults               # 135545.455 M/sec                
+    11,904,491,599      cycles                    # 3668564.437 GHz                   (38.39%)
+     5,158,364,751      instructions              #    0.43  insn per cycle           (46.09%)
+       879,073,604      branches                  # 270900956.549 M/sec               (46.09%)
+         4,038,488      branch-misses             #    0.46% of all branches          (46.13%)
+     1,184,542,862      L1-dcache-loads           # 365036321.109 M/sec               (46.16%)
+        77,086,326      L1-dcache-load-misses     #    6.51% of all L1-dcache hits    (46.19%)
+         1,039,597      LLC-loads                 # 320368.875 M/sec                  (30.81%)
+            47,370      LLC-load-misses           #    4.56% of all LL-cache hits     (30.81%)
+   <not supported>      L1-icache-loads                                             
+        40,084,290      L1-icache-load-misses                                         (30.81%)
+     1,171,905,421      dTLB-loads                # 361141886.287 M/sec               (30.80%)
+            37,366      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+               517      iTLB-loads                #  159.322 M/sec                    (30.74%)
+               788      iTLB-load-misses          #  152.42% of all iTLB cache hits   (30.71%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       3.246838697 seconds time elapsed
+
+       1.026434000 seconds user
+       2.192067000 seconds sys
+
+
+finished
+./linear-algebra/kernels/trmm/trmm_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/kernels/trmm/trmm_time
+[PolyBench] posix_memalign: request to allocate 128000000
+[PolyBench] posix_memalign: request to allocate 128000000
+87.285467
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/kernels/trmm/trmm_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         87,701.91 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    0.057 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            62,835      page-faults               #  716.468 M/sec                  
+   321,578,061,440      cycles                    # 3666754.785 GHz                   (38.46%)
+   256,891,707,822      instructions              #    0.80  insn per cycle           (46.15%)
+    32,177,562,552      branches                  # 366900748.589 M/sec               (46.15%)
+        18,331,323      branch-misses             #    0.06% of all branches          (46.16%)
+    64,235,993,691      L1-dcache-loads           # 732443115.711 M/sec               (46.16%)
+     6,949,522,738      L1-dcache-load-misses     #   10.82% of all L1-dcache hits    (46.16%)
+        53,565,959      LLC-loads                 # 610779.341 M/sec                  (30.77%)
+         1,728,227      LLC-load-misses           #    3.23% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        23,728,833      L1-icache-load-misses                                         (30.77%)
+    64,260,732,808      dTLB-loads                # 732725200.488 M/sec               (30.77%)
+        17,106,530      dTLB-load-misses          #    0.03% of all dTLB cache hits   (30.77%)
+             6,955      iTLB-loads                #   79.304 M/sec                    (30.77%)
+            11,522      iTLB-load-misses          #  165.66% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      87.711078242 seconds time elapsed
+
+      86.764751000 seconds user
+       0.302912000 seconds sys
+
+
+finished
+./linear-algebra/solvers/durbin/durbin_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/durbin/durbin_time
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 800000000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+[PolyBench] posix_memalign: request to allocate 80000
+3.015076
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/solvers/durbin/durbin_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          5,636.80 msec task-clock                #    1.000 CPUs utilized          
+                25      context-switches          #    4.436 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           391,036      page-faults               # 69381.831 M/sec                 
+    20,657,060,190      cycles                    # 3665198.756 GHz                   (38.43%)
+     4,458,054,993      instructions              #    0.22  insn per cycle           (46.13%)
+       758,972,010      branches                  # 134665012.420 M/sec               (46.14%)
+         4,081,864      branch-misses             #    0.54% of all branches          (46.16%)
+     1,212,759,856      L1-dcache-loads           # 215180953.868 M/sec               (46.18%)
+       437,365,327      L1-dcache-load-misses     #   36.06% of all L1-dcache hits    (46.18%)
+       165,163,434      LLC-loads                 # 29305080.554 M/sec                (30.79%)
+            67,964      LLC-load-misses           #    0.04% of all LL-cache hits     (30.79%)
+   <not supported>      L1-icache-loads                                             
+        35,792,935      L1-icache-load-misses                                         (30.78%)
+     1,195,060,582      dTLB-loads                # 212040557.488 M/sec               (30.76%)
+       114,251,935      dTLB-load-misses          #    9.56% of all dTLB cache hits   (30.75%)
+               735      iTLB-loads                #  130.412 M/sec                    (30.74%)
+             1,503      iTLB-load-misses          #  204.49% of all iTLB cache hits   (30.74%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       5.638573617 seconds time elapsed
+
+       3.716073000 seconds user
+       1.877131000 seconds sys
+
+
+finished
+./linear-algebra/solvers/dynprog/dynprog_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/dynprog/dynprog_time
+[PolyBench] posix_memalign: request to allocate 256000000
+[PolyBench] posix_memalign: request to allocate 640000
+[PolyBench] posix_memalign: request to allocate 640000
+41.249680
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/solvers/dynprog/dynprog_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         41,261.52 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.097 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            32,088      page-faults               #  777.684 M/sec                  
+   151,240,442,779      cycles                    # 3665457.521 GHz                   (38.46%)
+    76,504,784,747      instructions              #    0.51  insn per cycle           (46.15%)
+    10,916,787,002      branches                  # 264578827.513 M/sec               (46.15%)
+        74,348,755      branch-misses             #    0.68% of all branches          (46.15%)
+    32,375,219,369      L1-dcache-loads           # 784644564.334 M/sec               (46.15%)
+     1,637,237,618      L1-dcache-load-misses     #    5.06% of all L1-dcache hits    (46.15%)
+        53,262,224      LLC-loads                 # 1290861.201 M/sec                 (30.77%)
+           362,538      LLC-load-misses           #    0.68% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        12,046,300      L1-icache-load-misses                                         (30.77%)
+    32,398,037,440      dTLB-loads                # 785197582.220 M/sec               (30.77%)
+         1,826,119      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+             2,607      iTLB-loads                #   63.183 M/sec                    (30.77%)
+             9,364      iTLB-load-misses          #  359.19% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      41.270496054 seconds time elapsed
+
+      40.709498000 seconds user
+       0.255720000 seconds sys
+
+
+finished
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/gramschmidt/gramschmidt_time
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+[PolyBench] posix_memalign: request to allocate 32000000
+73.853266
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/solvers/gramschmidt/gramschmidt_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         74,019.56 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.041 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            23,785      page-faults               #  321.336 M/sec                  
+   271,680,275,830      cycles                    # 3670412.676 GHz                   (38.46%)
+    52,576,997,258      instructions              #    0.19  insn per cycle           (46.15%)
+     6,099,874,460      branches                  # 82409576.730 M/sec                (46.15%)
+         5,701,207      branch-misses             #    0.09% of all branches          (46.15%)
+    16,152,461,011      L1-dcache-loads           # 218220470.568 M/sec               (46.15%)
+    23,867,246,152      L1-dcache-load-misses     #  147.76% of all L1-dcache hits    (46.15%)
+       506,802,206      LLC-loads                 # 6846920.466 M/sec                 (30.77%)
+            41,335      LLC-load-misses           #    0.01% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        12,649,287      L1-icache-load-misses                                         (30.77%)
+    16,157,370,909      dTLB-loads                # 218286803.510 M/sec               (30.77%)
+    14,731,415,802      dTLB-load-misses          #   91.17% of all dTLB cache hits   (30.77%)
+             1,053      iTLB-loads                #   14.226 M/sec                    (30.77%)
+             5,428      iTLB-load-misses          #  515.48% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      74.028463458 seconds time elapsed
+
+      73.433644000 seconds user
+       0.116092000 seconds sys
+
+
+finished
+./linear-algebra/solvers/lu/lu_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/lu/lu_time
+[PolyBench] posix_memalign: request to allocate 128000000
+73.184765
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/solvers/lu/lu_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         73,398.71 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.054 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,584      page-faults               #  430.311 M/sec                  
+   269,159,381,047      cycles                    # 3667121.462 GHz                   (38.46%)
+    86,144,987,996      instructions              #    0.32  insn per cycle           (46.15%)
+    10,822,709,590      branches                  # 147452377.313 M/sec               (46.15%)
+        10,093,710      branch-misses             #    0.09% of all branches          (46.15%)
+    21,546,580,410      L1-dcache-loads           # 293558140.685 M/sec               (46.15%)
+     4,987,155,902      L1-dcache-load-misses     #   23.15% of all L1-dcache hits    (46.15%)
+       530,360,974      LLC-loads                 # 7225823.238 M/sec                 (30.77%)
+           391,765      LLC-load-misses           #    0.07% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        13,045,204      L1-icache-load-misses                                         (30.77%)
+    21,498,931,431      dTLB-loads                # 292908954.345 M/sec               (30.77%)
+         6,734,791      dTLB-load-misses          #    0.03% of all dTLB cache hits   (30.77%)
+             6,376      iTLB-loads                #   86.869 M/sec                    (30.77%)
+             8,011      iTLB-load-misses          #  125.64% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      73.407710138 seconds time elapsed
+
+      72.716619000 seconds user
+       0.166102000 seconds sys
+
+
+finished
+./linear-algebra/solvers/ludcmp/ludcmp_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./linear-algebra/solvers/ludcmp/ludcmp_time
+[PolyBench] posix_memalign: request to allocate 512128008
+[PolyBench] posix_memalign: request to allocate 64008
+[PolyBench] posix_memalign: request to allocate 64008
+[PolyBench] posix_memalign: request to allocate 64008
+1353.358395
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./linear-algebra/solvers/ludcmp/ludcmp_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+      1,354,173.53 msec task-clock                #    1.000 CPUs utilized          
+                 9      context-switches          #    0.007 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           125,411      page-faults               #   92.611 M/sec                  
+ 4,966,814,177,778      cycles                    # 3667784.085 GHz                   (38.46%)
+   946,204,737,689      instructions              #    0.19  insn per cycle           (46.15%)
+    86,778,695,679      branches                  # 64082429.408 M/sec                (46.15%)
+        90,805,278      branch-misses             #    0.10% of all branches          (46.15%)
+   300,919,159,621      L1-dcache-loads           # 222216186.278 M/sec               (46.15%)
+   347,904,968,938      L1-dcache-load-misses     #  115.61% of all L1-dcache hits    (46.15%)
+    17,838,446,488      LLC-loads                 # 13172945.028 M/sec                (30.77%)
+        15,949,306      LLC-load-misses           #    0.09% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+       240,448,756      L1-icache-load-misses                                         (30.77%)
+   300,911,113,612      dTLB-loads                # 222210244.638 M/sec               (30.77%)
+   154,345,260,967      dTLB-load-misses          #   51.29% of all dTLB cache hits   (30.77%)
+             7,053      iTLB-loads                #    5.208 M/sec                    (30.77%)
+           131,684      iTLB-load-misses          # 1867.06% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+    1354.182797513 seconds time elapsed
+
+    1343.267451000 seconds user
+       0.629283000 seconds sys
+
+
+finished
+./datamining/correlation/correlation_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./datamining/correlation/correlation_time
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 72000000
+[PolyBench] posix_memalign: request to allocate 24000
+[PolyBench] posix_memalign: request to allocate 24000
+122.795499
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./datamining/correlation/correlation_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+        122,919.32 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.024 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            35,508      page-faults               #  288.873 M/sec                  
+   450,500,985,695      cycles                    # 3665023.192 GHz                   (38.46%)
+    95,335,831,765      instructions              #    0.21  insn per cycle           (46.15%)
+    13,671,562,158      branches                  # 111224157.030 M/sec               (46.15%)
+         7,487,072      branch-misses             #    0.05% of all branches          (46.16%)
+    27,293,478,593      L1-dcache-loads           # 222044424.320 M/sec               (46.16%)
+    37,004,369,379      L1-dcache-load-misses     #  135.58% of all L1-dcache hits    (46.16%)
+     1,719,276,678      LLC-loads                 # 13987070.168 M/sec                (30.77%)
+           614,016      LLC-load-misses           #    0.04% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        25,867,730      L1-icache-load-misses                                         (30.77%)
+    27,255,205,412      dTLB-loads                # 221733055.199 M/sec               (30.77%)
+    24,723,453,997      dTLB-load-misses          #   90.71% of all dTLB cache hits   (30.77%)
+             1,115      iTLB-loads                #    9.071 M/sec                    (30.77%)
+            33,489      iTLB-load-misses          # 3003.50% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     122.928674598 seconds time elapsed
+
+     121.723308000 seconds user
+       0.269702000 seconds sys
+
+
+finished
+./datamining/covariance/covariance_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./datamining/covariance/covariance_time
+[PolyBench] posix_memalign: request to allocate 25920000
+[PolyBench] posix_memalign: request to allocate 25920000
+[PolyBench] posix_memalign: request to allocate 14400
+21.009615
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./datamining/covariance/covariance_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         21,059.97 msec task-clock                #    1.000 CPUs utilized          
+                 3      context-switches          #    0.142 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            12,992      page-faults               #  616.933 M/sec                  
+    77,097,550,859      cycles                    # 3661026.205 GHz                   (38.46%)
+    20,688,308,624      instructions              #    0.27  insn per cycle           (46.15%)
+     2,963,891,546      branches                  # 140742273.897 M/sec               (46.15%)
+         2,304,638      branch-misses             #    0.08% of all branches          (46.15%)
+     5,887,669,451      L1-dcache-loads           # 279579726.055 M/sec               (46.15%)
+     7,100,980,145      L1-dcache-load-misses     #  120.61% of all L1-dcache hits    (46.15%)
+       365,228,181      LLC-loads                 # 17343092.312 M/sec                (30.77%)
+            32,874      LLC-load-misses           #    0.01% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         5,935,828      L1-icache-load-misses                                         (30.77%)
+     5,920,246,484      dTLB-loads                # 281126667.173 M/sec               (30.77%)
+     4,947,186,486      dTLB-load-misses          #   83.56% of all dTLB cache hits   (30.77%)
+               611      iTLB-loads                #   29.014 M/sec                    (30.77%)
+            12,408      iTLB-load-misses          # 2030.77% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      21.060548340 seconds time elapsed
+
+      20.817628000 seconds user
+       0.088678000 seconds sys
+
+
+finished
+./medley/floyd-warshall/floyd-warshall_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./medley/floyd-warshall/floyd-warshall_time
+[PolyBench] posix_memalign: request to allocate 128000000
+181.047697
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./medley/floyd-warshall/floyd-warshall_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+        181,258.03 msec task-clock                #    1.000 CPUs utilized          
+                 5      context-switches          #    0.028 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            31,584      page-faults               #  174.249 M/sec                  
+   664,927,706,875      cycles                    # 3668404.743 GHz                   (38.46%)
+   449,368,914,945      instructions              #    0.68  insn per cycle           (46.15%)
+   128,224,416,918      branches                  # 707413835.075 M/sec               (46.15%)
+        20,213,066      branch-misses             #    0.02% of all branches          (46.15%)
+   128,323,408,282      L1-dcache-loads           # 707959970.219 M/sec               (46.15%)
+    16,111,690,828      L1-dcache-load-misses     #   12.56% of all L1-dcache hits    (46.15%)
+        86,479,754      LLC-loads                 # 477108.619 M/sec                  (30.77%)
+         1,577,386      LLC-load-misses           #    1.82% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        34,219,427      L1-icache-load-misses                                         (30.77%)
+   128,343,282,972      dTLB-loads                # 708069618.842 M/sec               (30.77%)
+        14,946,117      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+             8,444      iTLB-loads                #   46.586 M/sec                    (30.77%)
+            15,523      iTLB-load-misses          #  183.83% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     181.267155761 seconds time elapsed
+
+     179.808878000 seconds user
+       0.166148000 seconds sys
+
+
+finished
+./medley/reg_detect/reg_detect_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./medley/reg_detect/reg_detect_time
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 40000
+[PolyBench] posix_memalign: request to allocate 200000000
+[PolyBench] posix_memalign: request to allocate 200000000
+176.727259
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./medley/reg_detect/reg_detect_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+        176,740.67 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.023 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            49,873      page-faults               #  282.183 M/sec                  
+   648,278,715,926      cycles                    # 3667979.608 GHz                   (38.46%)
+   152,627,937,868      instructions              #    0.24  insn per cycle           (46.15%)
+    31,775,497,185      branches                  # 179786676.389 M/sec               (46.15%)
+        13,876,095      branch-misses             #    0.04% of all branches          (46.15%)
+    25,601,991,265      L1-dcache-loads           # 144856802.450 M/sec               (46.16%)
+     4,786,912,182      L1-dcache-load-misses     #   18.70% of all L1-dcache hits    (46.16%)
+       124,426,944      LLC-loads                 # 704011.226 M/sec                  (30.77%)
+         1,411,064      LLC-load-misses           #    1.13% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        26,149,486      L1-icache-load-misses                                         (30.77%)
+    25,579,874,825      dTLB-loads                # 144731666.997 M/sec               (30.77%)
+           364,232      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             9,156      iTLB-loads                #   51.805 M/sec                    (30.77%)
+             5,899      iTLB-load-misses          #   64.43% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     176.750906304 seconds time elapsed
+
+     175.119733000 seconds user
+       0.404602000 seconds sys
+
+
+finished
+./stencils/adi/adi_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/adi/adi_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+165.412114
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./stencils/adi/adi_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+        169,583.92 msec task-clock                #    1.000 CPUs utilized          
+                27      context-switches          #    0.159 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           375,335      page-faults               # 2213.282 M/sec                  
+   622,290,732,347      cycles                    # 3669534.873 GHz                   (38.46%)
+   126,083,781,234      instructions              #    0.20  insn per cycle           (46.15%)
+     8,756,474,655      branches                  # 51635332.875 M/sec                (46.15%)
+         8,938,156      branch-misses             #    0.10% of all branches          (46.15%)
+    47,409,646,600      L1-dcache-loads           # 279566033.152 M/sec               (46.15%)
+     6,136,002,851      L1-dcache-load-misses     #   12.94% of all L1-dcache hits    (46.15%)
+       643,131,412      LLC-loads                 # 3792428.557 M/sec                 (30.77%)
+         4,153,366      LLC-load-misses           #    0.65% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        57,865,333      L1-icache-load-misses                                         (30.77%)
+    47,422,918,185      dTLB-loads                # 279644293.266 M/sec               (30.77%)
+        33,764,880      dTLB-load-misses          #    0.07% of all dTLB cache hits   (30.77%)
+             8,128      iTLB-loads                #   47.929 M/sec                    (30.77%)
+             5,535      iTLB-load-misses          #   68.10% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     169.593583180 seconds time elapsed
+
+     167.777634000 seconds user
+       1.805261000 seconds sys
+
+
+finished
+./stencils/fdtd-2d/fdtd-2d_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/fdtd-2d/fdtd-2d_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 800
+133.263466
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./stencils/fdtd-2d/fdtd-2d_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+        135,984.51 msec task-clock                #    1.000 CPUs utilized          
+                20      context-switches          #    0.147 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           375,338      page-faults               # 2760.163 M/sec                  
+   498,917,083,221      cycles                    # 3668939.605 GHz                   (38.46%)
+   113,129,977,146      instructions              #    0.23  insn per cycle           (46.15%)
+    10,350,251,560      branches                  # 76113745.441 M/sec                (46.15%)
+         8,965,924      branch-misses             #    0.09% of all branches          (46.16%)
+    36,200,954,090      L1-dcache-loads           # 266214805.345 M/sec               (46.16%)
+     7,339,738,655      L1-dcache-load-misses     #   20.27% of all L1-dcache hits    (46.16%)
+       841,032,392      LLC-loads                 # 6184789.328 M/sec                 (30.77%)
+         2,172,604      LLC-load-misses           #    0.26% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        50,924,836      L1-icache-load-misses                                         (30.77%)
+    36,161,772,675      dTLB-loads                # 265926672.807 M/sec               (30.77%)
+         4,293,601      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+             4,878      iTLB-loads                #   35.872 M/sec                    (30.77%)
+             9,799      iTLB-load-misses          #  200.88% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     135.994060158 seconds time elapsed
+
+     134.198807000 seconds user
+       1.784268000 seconds sys
+
+
+finished
+./stencils/fdtd-apml/fdtd-apml_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/fdtd-apml/fdtd-apml_time
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 528392
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 135796744
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+[PolyBench] posix_memalign: request to allocate 2056
+0.643444
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./stencils/fdtd-apml/fdtd-apml_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+          1,743.91 msec task-clock                #    1.000 CPUs utilized          
+                12      context-switches          #    6.885 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           166,376      page-faults               # 95453.815 M/sec                 
+     6,397,348,916      cycles                    # 3670309.189 GHz                   (38.45%)
+     2,679,096,768      instructions              #    0.42  insn per cycle           (46.19%)
+       285,846,130      branches                  # 163996632.243 M/sec               (46.23%)
+         1,861,172      branch-misses             #    0.65% of all branches          (46.23%)
+       977,319,854      L1-dcache-loads           # 560711333.333 M/sec               (46.23%)
+        43,431,968      L1-dcache-load-misses     #    4.44% of all L1-dcache hits    (46.23%)
+           601,713      LLC-loads                 # 345216.867 M/sec                  (30.72%)
+            16,357      LLC-load-misses           #    2.72% of all LL-cache hits     (30.72%)
+   <not supported>      L1-icache-loads                                             
+        16,263,713      L1-icache-load-misses                                         (30.72%)
+       977,425,000      dTLB-loads                # 560771658.061 M/sec               (30.72%)
+           242,227      dTLB-load-misses          #    0.02% of all dTLB cache hits   (30.74%)
+               251      iTLB-loads                #  144.005 M/sec                    (30.74%)
+             1,464      iTLB-load-misses          #  583.27% of all iTLB cache hits   (30.73%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       1.744413905 seconds time elapsed
+
+       1.093222000 seconds user
+       0.649749000 seconds sys
+
+
+finished
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+[PolyBench] posix_memalign: request to allocate 80000000
+[PolyBench] posix_memalign: request to allocate 80000000
+112.079982
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+        112,351.56 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.036 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            39,405      page-faults               #  350.731 M/sec                  
+   412,227,265,954      cycles                    # 3669101.886 GHz                   (38.46%)
+    75,777,104,084      instructions              #    0.18  insn per cycle           (46.15%)
+    10,153,826,137      branches                  # 90375930.228 M/sec                (46.15%)
+         2,823,019      branch-misses             #    0.03% of all branches          (46.15%)
+    20,237,310,525      L1-dcache-loads           # 180125771.244 M/sec               (46.16%)
+     5,036,892,142      L1-dcache-load-misses     #   24.89% of all L1-dcache hits    (46.16%)
+       566,640,119      LLC-loads                 # 5043480.868 M/sec                 (30.77%)
+         1,714,584      LLC-load-misses           #    0.30% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        20,061,182      L1-icache-load-misses                                         (30.77%)
+    20,225,797,533      dTLB-loads                # 180023297.817 M/sec               (30.77%)
+           226,536      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             4,631      iTLB-loads                #   41.219 M/sec                    (30.77%)
+             3,494      iTLB-load-misses          #   75.45% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+     112.360671591 seconds time elapsed
+
+     112.157100000 seconds user
+       0.194249000 seconds sys
+
+
+finished
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+[PolyBench] posix_memalign: request to allocate 512000000
+[PolyBench] posix_memalign: request to allocate 512000000
+81.654409
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         83,491.86 msec task-clock                #    1.000 CPUs utilized          
+                18      context-switches          #    0.216 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+           250,328      page-faults               # 2998.263 M/sec                  
+   306,368,693,878      cycles                    # 3669481.667 GHz                   (38.46%)
+    63,589,666,461      instructions              #    0.21  insn per cycle           (46.15%)
+     6,879,191,547      branches                  # 82394408.343 M/sec                (46.16%)
+         5,704,882      branch-misses             #    0.08% of all branches          (46.16%)
+    19,841,166,418      L1-dcache-loads           # 237644373.861 M/sec               (46.16%)
+     4,850,722,567      L1-dcache-load-misses     #   24.45% of all L1-dcache hits    (46.16%)
+       387,634,177      LLC-loads                 # 4642825.897 M/sec                 (30.77%)
+         1,112,646      LLC-load-misses           #    0.29% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+        32,638,061      L1-icache-load-misses                                         (30.77%)
+    19,838,741,844      dTLB-loads                # 237615333.916 M/sec               (30.77%)
+           224,582      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             2,152      iTLB-loads                #   25.775 M/sec                    (30.77%)
+             4,147      iTLB-load-misses          #  192.70% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      83.501633515 seconds time elapsed
+
+      82.301240000 seconds user
+       1.188617000 seconds sys
+
+
+finished
+./stencils/seidel-2d/seidel-2d_time
+binding on cpu set 0x000000ff,0xffff0000,0x00ffffff
+VMMALLOC_POOL_DIR=/mnt/pmem7/fsgeek VMMALLOC_POOL_SIZE=5368709120 LD_PRELOAD=libvmmalloc.so.1 ./stencils/seidel-2d/seidel-2d_time
+[PolyBench] posix_memalign: request to allocate 200000000
+26.661528
+
+ Performance counter stats for './wrapper-comerge.sh /mnt/pmem7/fsgeek 5368709120 ./stencils/seidel-2d/seidel-2d_time ./comerge-pb-src-pmem7-results-2019_08_09__00_44_58/pb-pmem7-intelsdp1044-2019_08_09__00_44_58.log':
+
+         26,994.33 msec task-clock                #    1.000 CPUs utilized          
+                 4      context-switches          #    0.148 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+            49,158      page-faults               # 1821.071 M/sec                  
+    99,006,715,046      cycles                    # 3667730.423 GHz                   (38.46%)
+    40,553,442,705      instructions              #    0.41  insn per cycle           (46.15%)
+     1,357,939,107      branches                  # 50305219.938 M/sec                (46.16%)
+         1,585,954      branch-misses             #    0.12% of all branches          (46.15%)
+     7,654,695,092      L1-dcache-loads           # 283570241.239 M/sec               (46.16%)
+       948,395,600      L1-dcache-load-misses     #   12.39% of all L1-dcache hits    (46.16%)
+           536,594      LLC-loads                 # 19878.269 M/sec                   (30.77%)
+            39,707      LLC-load-misses           #    7.40% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads                                             
+         7,602,494      L1-icache-load-misses                                         (30.76%)
+     7,638,899,107      dTLB-loads                # 282985074.720 M/sec               (30.76%)
+             6,617      dTLB-load-misses          #    0.00% of all dTLB cache hits   (30.77%)
+             2,766      iTLB-loads                #  102.467 M/sec                    (30.77%)
+             3,455      iTLB-load-misses          #  124.91% of all iTLB cache hits   (30.77%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+      27.003313707 seconds time elapsed
+
+      26.733894000 seconds user
+       0.258996000 seconds sys
+
+
+finished
