@@ -104,11 +104,11 @@ fdisk -l /dev/pmem3 >> $PMEM3_FILE 2>&1
 mount -o dax /dev/pmem4p1 /mnt/pmem4
 mount -o dax /dev/pmem3p1 /mnt/pmem3
 
-umount /mnt/pmem7
-parted -s -a optimal -- /dev/pmem7 mklabel gpt mkpart primary 2MiB -4096s >> $PMEM72M_FILE 2>&1
-mkfs.ext4 -b 4096 -E stride=512 -F /dev/pmem7p1 >> $PMEM72M_FILE 2>&1
-fdisk -l /dev/pmem7 >> $PMEM72M_FILE 2>&1
-mount -o dax /dev/pmem7p1 /mnt/pmem7
+#umount /mnt/pmem7
+#parted -s -a optimal -- /dev/pmem7 mklabel gpt mkpart primary 2MiB -4096s >> $PMEM72M_FILE 2>&1
+#mkfs.ext4 -b 4096 -E stride=512 -F /dev/pmem7p1 >> $PMEM72M_FILE 2>&1
+#fdisk -l /dev/pmem7 >> $PMEM72M_FILE 2>&1
+#mount -o dax /dev/pmem7p1 /mnt/pmem7
 
 [ ! -d $PMEM4_POOL_DIR ] && mkdir $PMEM4_POOL_DIR && echo "mkdir $PMEM4_POOL_DIR"
 [ ! -d $PMEM3_POOL_DIR ] && mkdir $PMEM3_POOL_DIR && echo "mkdir $PMEM3_POOL_DIR"
@@ -141,11 +141,11 @@ do
 done
 
 # Now, do it again on pmem7 with 4KB pages
-umount /mnt/pmem7
-parted -s -a optimal -- /dev/pmem7 mklabel gpt mkpart primary ext4 1MiB -4096s >> $PMEM74K_FILE 2>&1
-mkfs.ext4 -b 4096 -F /dev/pmem7p1 >> $PMEM74K_FILE 2>&1
-fdisk -l /dev/pmem4 >> $PMEM74K_FILE 2>&1
-mount -o dax /dev/pmem7p1 /mnt/pmem7
+#umount /mnt/pmem7
+#parted -s -a optimal -- /dev/pmem7 mklabel gpt mkpart primary ext4 1MiB -4096s >> $PMEM74K_FILE 2>&1
+#mkfs.ext4 -b 4096 -F /dev/pmem7p1 >> $PMEM74K_FILE 2>&1
+#fdisk -l /dev/pmem4 >> $PMEM74K_FILE 2>&1
+#mount -o dax /dev/pmem7p1 /mnt/pmem7
 
 [ ! -d $PMEM7_POOL_DIR ] && mkdir $PMEM7_POOL_DIR && echo "mkdir $PMEM7_POOL_DIR"
 
