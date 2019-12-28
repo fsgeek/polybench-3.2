@@ -90,7 +90,7 @@ BENCH="
 [ ! -d $RESULTS_DIR ] && mkdir $RESULTS_DIR && echo "mkdir $RESULTS_DIR"
 
 ## Rebuild
-make -f Makefile.comerge >> $MAKE_LOG 2>&1
+make -f Makefile-clang-comerge >> $MAKE_LOG 2>&1
 
 # Partition the disk
 umount /mnt/pmem4
