@@ -40,126 +40,157 @@ LIB = #utilities/lib_my_malloc.a -lnuma
 #CFLAGS=-ggdb -O3 -DPOLYBENCH_TIME -DPOLYBENCH_LINUX_FIFO_SCHEDULER -DPOLYBENCH_MEMTRACE
 #CFLAGS=-O3 -mllvm -polly  -DPOLYBENCH_TIME -DPOLYBENCH_LINUX_FIFO_SCHEDULER
 CFLAGS=-O3 -DPOLYBENCH_TIME -DPOLYBENCH_LINUX_FIFO_SCHEDULER
+POLLY_FLAGS = -mllvm -polly
 
 atax:
 	clang ${CFLAGS} -DNX=15000 -DNY=15000 -I utilities -I linear-algebra/kernels/atax utilities/polybench.c linear-algebra/kernels/atax/atax.c  $(LIB) -o linear-algebra/kernels/atax/atax_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DNX=15000 -DNY=15000 -I utilities -I linear-algebra/kernels/atax utilities/polybench.c linear-algebra/kernels/atax/atax.c  $(LIB) -o linear-algebra/kernels/atax/atax_poly_time
 
 2mm:
 	clang ${CFLAGS} -DNI=1500 -DNJ=1500 -DNK=1500 -DNL=1500 -I utilities -I linear-algebra/kernels/2mm utilities/polybench.c linear-algebra/kernels/2mm/2mm.c $(LIB) -o linear-algebra/kernels/2mm/2mm_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DNI=1500 -DNJ=1500 -DNK=1500 -DNL=1500 -I utilities -I linear-algebra/kernels/2mm utilities/polybench.c linear-algebra/kernels/2mm/2mm.c $(LIB) -o linear-algebra/kernels/2mm/2mm_poly_time
 
 3mm:
 	clang ${CFLAGS} -DNI=1500 -DNJ=1500 -DNK=1500 -DNL=1500 -DNM=1500 -I utilities -I linear-algebra/kernels/3mm utilities/polybench.c linear-algebra/kernels/3mm/3mm.c -o linear-algebra/kernels/3mm/3mm_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DNI=1500 -DNJ=1500 -DNK=1500 -DNL=1500 -DNM=1500 -I utilities -I linear-algebra/kernels/3mm utilities/polybench.c linear-algebra/kernels/3mm/3mm.c -o linear-algebra/kernels/3mm/3mm_poly_time
 
 bicg:
 	clang ${CFLAGS} -DNX=13000 -DNY=13000 -I utilities -I linear-algebra/kernels/bicg utilities/polybench.c linear-algebra/kernels/bicg/bicg.c $(LIB) -o linear-algebra/kernels/bicg/bicg_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DNX=13000 -DNY=13000 -I utilities -I linear-algebra/kernels/bicg utilities/polybench.c linear-algebra/kernels/bicg/bicg.c $(LIB) -o linear-algebra/kernels/bicg/bicg_poly_time
 
 cholesky:
 	clang ${CFLAGS} -DEXTRALARGE_DATASET -I utilities -I linear-algebra/kernels/cholesky utilities/polybench.c linear-algebra/kernels/cholesky/cholesky.c  -o linear-algebra/kernels/cholesky/cholesky_time -lm
+	clang ${CFLAGS} ${POLLY_FLAGS} -DEXTRALARGE_DATASET -I utilities -I linear-algebra/kernels/cholesky utilities/polybench.c linear-algebra/kernels/cholesky/cholesky.c  -o linear-algebra/kernels/cholesky/cholesky_poly_time -lm
 
 doitgen:
 	clang ${CFLAGS} -DNQ=512 -DNR=256 -DNP=256 -I utilities -I linear-algebra/kernels/doitgen utilities/polybench.c linear-algebra/kernels/doitgen/doitgen.c $(LIB) -o linear-algebra/kernels/doitgen/doitgen_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DNQ=512 -DNR=256 -DNP=256 -I utilities -I linear-algebra/kernels/doitgen utilities/polybench.c linear-algebra/kernels/doitgen/doitgen.c $(LIB) -o linear-algebra/kernels/doitgen/doitgen_poly_time 
 
 gemm:
 	clang ${CFLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/gemm utilities/polybench.c linear-algebra/kernels/gemm/gemm.c -o linear-algebra/kernels/gemm/gemm_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/gemm utilities/polybench.c linear-algebra/kernels/gemm/gemm.c -o linear-algebra/kernels/gemm/gemm_poly_time 
 
 gemver:
 	clang ${CFLAGS} -DN=15000 -I utilities -I linear-algebra/kernels/gemver utilities/polybench.c linear-algebra/kernels/gemver/gemver.c -o linear-algebra/kernels/gemver/gemver_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=15000 -I utilities -I linear-algebra/kernels/gemver utilities/polybench.c linear-algebra/kernels/gemver/gemver.c -o linear-algebra/kernels/gemver/gemver_poly_time 
 
 gesummv:
 	clang ${CFLAGS} -DN=10000 -I utilities -I linear-algebra/kernels/gesummv utilities/polybench.c linear-algebra/kernels/gesummv/gesummv.c -o linear-algebra/kernels/gesummv/gesummv_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=10000 -I utilities -I linear-algebra/kernels/gesummv utilities/polybench.c linear-algebra/kernels/gesummv/gesummv.c -o linear-algebra/kernels/gesummv/gesummv_poly_time 
 
 mvt:
 	clang ${CFLAGS} -DN=15000 -I utilities -I linear-algebra/kernels/mvt utilities/polybench.c linear-algebra/kernels/mvt/mvt.c -o linear-algebra/kernels/mvt/mvt_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=15000 -I utilities -I linear-algebra/kernels/mvt utilities/polybench.c linear-algebra/kernels/mvt/mvt.c -o linear-algebra/kernels/mvt/mvt_poly_time 
 
 symm:
 	clang ${CFLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/symm utilities/polybench.c linear-algebra/kernels/symm/symm.c  -o linear-algebra/kernels/symm/symm_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/symm utilities/polybench.c linear-algebra/kernels/symm/symm.c  -o linear-algebra/kernels/symm/symm_poly_time 
 
 syr2k:
 	clang ${CFLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/syr2k utilities/polybench.c linear-algebra/kernels/syr2k/syr2k.c  -o linear-algebra/kernels/syr2k/syr2k_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/syr2k utilities/polybench.c linear-algebra/kernels/syr2k/syr2k.c  -o linear-algebra/kernels/syr2k/syr2k_poly_time 
 
 syrk:
 	clang ${CFLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/syrk utilities/polybench.c linear-algebra/kernels/syrk/syrk.c  -o linear-algebra/kernels/syrk/syrk_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/kernels/syrk utilities/polybench.c linear-algebra/kernels/syrk/syrk.c  -o linear-algebra/kernels/syrk/syrk_poly_time 
 
 trisolv:
 	clang ${CFLAGS} -DN=15000 -I utilities -I linear-algebra/kernels/trisolv utilities/polybench.c linear-algebra/kernels/trisolv/trisolv.c  $(LIB) -o linear-algebra/kernels/trisolv/trisolv_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=15000 -I utilities -I linear-algebra/kernels/trisolv utilities/polybench.c linear-algebra/kernels/trisolv/trisolv.c  $(LIB) -o linear-algebra/kernels/trisolv/trisolv_poly_time 
 
 trmm:
 	clang ${CFLAGS} -DEXTRALARGE_DATASET -I utilities -I linear-algebra/kernels/trmm utilities/polybench.c linear-algebra/kernels/trmm/trmm.c $(LIB) -o linear-algebra/kernels/trmm/trmm_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DEXTRALARGE_DATASET -I utilities -I linear-algebra/kernels/trmm utilities/polybench.c linear-algebra/kernels/trmm/trmm.c $(LIB) -o linear-algebra/kernels/trmm/trmm_poly_time 
 
 durbin:
 	clang ${CFLAGS} -DN=10000 -I utilities -I linear-algebra/solvers/durbin utilities/polybench.c linear-algebra/solvers/durbin/durbin.c -o linear-algebra/solvers/durbin/durbin_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=10000 -I utilities -I linear-algebra/solvers/durbin utilities/polybench.c linear-algebra/solvers/durbin/durbin.c -o linear-algebra/solvers/durbin/durbin_poly_time 
 
 dynprog:
 	clang ${CFLAGS} -DTSTEPS=1000 -DLENGTH=400 -I utilities -I linear-algebra/solvers/dynprog utilities/polybench.c linear-algebra/solvers/dynprog/dynprog.c -o linear-algebra/solvers/dynprog/dynprog_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DTSTEPS=1000 -DLENGTH=400 -I utilities -I linear-algebra/solvers/dynprog utilities/polybench.c linear-algebra/solvers/dynprog/dynprog.c -o linear-algebra/solvers/dynprog/dynprog_poly_time 
 
 gramschmidt:
 	clang ${CFLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/solvers/gramschmidt utilities/polybench.c linear-algebra/solvers/gramschmidt/gramschmidt.c  -o linear-algebra/solvers/gramschmidt/gramschmidt_time -lm
+	clang ${CFLAGS} ${POLLY_FLAGS} -DLARGE_DATASET -I utilities -I linear-algebra/solvers/gramschmidt utilities/polybench.c linear-algebra/solvers/gramschmidt/gramschmidt.c  -o linear-algebra/solvers/gramschmidt/gramschmidt_poly_time -lm
 
 lu:
 	clang ${CFLAGS} -DN=4000 -I utilities -I linear-algebra/solvers/lu utilities/polybench.c linear-algebra/solvers/lu/lu.c -o linear-algebra/solvers/lu/lu_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=4000 -I utilities -I linear-algebra/solvers/lu utilities/polybench.c linear-algebra/solvers/lu/lu.c -o linear-algebra/solvers/lu/lu_poly_time 
 
 ludcmp:
 	clang ${CFLAGS} -DN=8000 -I utilities -I linear-algebra/solvers/ludcmp utilities/polybench.c linear-algebra/solvers/ludcmp/ludcmp.c $(LIB) -o linear-algebra/solvers/ludcmp/ludcmp_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=8000 -I utilities -I linear-algebra/solvers/ludcmp utilities/polybench.c linear-algebra/solvers/ludcmp/ludcmp.c $(LIB) -o linear-algebra/solvers/ludcmp/ludcmp_poly_time 
 
 correlation:
 	clang ${CFLAGS} -DN=3000 -DM=3000 -I utilities -I datamining/correlation utilities/polybench.c datamining/correlation/correlation.c  -o datamining/correlation/correlation_time -lm
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=3000 -DM=3000 -I utilities -I datamining/correlation utilities/polybench.c datamining/correlation/correlation.c  -o datamining/correlation/correlation_poly_time -lm
 
 covariance:
 	clang ${CFLAGS} -DN=1800 -DM=1800 -I utilities -I datamining/covariance utilities/polybench.c datamining/covariance/covariance.c -o datamining/covariance/covariance_time 
+	clang ${CFLAGS} ${POLLY_FLAGS} -DN=1800 -DM=1800 -I utilities -I datamining/covariance utilities/polybench.c datamining/covariance/covariance.c -o datamining/covariance/covariance_poly_time 
 
 floyd-warshall:
 	clang ${CFLAGS} -DEXTRALARGE_DATASET -I utilities -I medley/floyd-warshall utilities/polybench.c medley/floyd-warshall/floyd-warshall.c  -o medley/floyd-warshall/floyd-warshall_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DEXTRALARGE_DATASET -I utilities -I medley/floyd-warshall utilities/polybench.c medley/floyd-warshall/floyd-warshall.c  -o medley/floyd-warshall/floyd-warshall_poly_time
 
 reg_detect:
 	clang ${CFLAGS} -DNITER=1000 -DLENGTH=5000 -DMAXGRID=100 -I utilities -I medley/reg_detect utilities/polybench.c medley/reg_detect/reg_detect.c  -o medley/reg_detect/reg_detect_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DNITER=1000 -DLENGTH=5000 -DMAXGRID=100 -I utilities -I medley/reg_detect utilities/polybench.c medley/reg_detect/reg_detect.c  -o medley/reg_detect/reg_detect_poly_time
 
 adi:
 	clang ${CFLAGS} -DTSTEPS=50 -DN=8000 -I utilities -I stencils/adi utilities/polybench.c stencils/adi/adi.c  $(LIB) -o stencils/adi/adi_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DTSTEPS=50 -DN=8000 -I utilities -I stencils/adi utilities/polybench.c stencils/adi/adi.c  $(LIB) -o stencils/adi/adi_poly_time
 
 fdtd-2d:
 	clang ${CFLAGS} -DTMAX=100 -DNX=8000 -DNY=8000 -I utilities -I stencils/fdtd-2d utilities/polybench.c stencils/fdtd-2d/fdtd-2d.c  $(LIB) -o stencils/fdtd-2d/fdtd-2d_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DTMAX=100 -DNX=8000 -DNY=8000 -I utilities -I stencils/fdtd-2d utilities/polybench.c stencils/fdtd-2d/fdtd-2d.c  $(LIB) -o stencils/fdtd-2d/fdtd-2d_poly_time
 
 fdtd-apml:
 	clang ${CFLAGS} -DCZ=256 -DCYM=256 -DCXM=256 -I utilities -I stencils/fdtd-apml utilities/polybench.c stencils/fdtd-apml/fdtd-apml.c  -o stencils/fdtd-apml/fdtd-apml_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DCZ=256 -DCYM=256 -DCXM=256 -I utilities -I stencils/fdtd-apml utilities/polybench.c stencils/fdtd-apml/fdtd-apml.c  -o stencils/fdtd-apml/fdtd-apml_poly_time
 
 jacobi-1d-imper:
 	clang ${CFLAGS} -DTSTEPS=1000 -DN=10000000 -I utilities -I stencils/jacobi-1d-imper utilities/polybench.c stencils/jacobi-1d-imper/jacobi-1d-imper.c  -o stencils/jacobi-1d-imper/jacobi-1d-imper_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DTSTEPS=1000 -DN=10000000 -I utilities -I stencils/jacobi-1d-imper utilities/polybench.c stencils/jacobi-1d-imper/jacobi-1d-imper.c  -o stencils/jacobi-1d-imper/jacobi-1d-imper_poly_time
 
 jacobi-2d-imper:
 	clang ${CFLAGS} -DTSTEPS=100 -DN=8000 -I utilities -I stencils/jacobi-2d-imper utilities/polybench.c stencils/jacobi-2d-imper/jacobi-2d-imper.c  $(LIB) -o stencils/jacobi-2d-imper/jacobi-2d-imper_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DTSTEPS=100 -DN=8000 -I utilities -I stencils/jacobi-2d-imper utilities/polybench.c stencils/jacobi-2d-imper/jacobi-2d-imper.c  $(LIB) -o stencils/jacobi-2d-imper/jacobi-2d-imper_poly_time
 
 seidel-2d:
 	clang ${CFLAGS} -DTSTEPS=100 -DN=5000 -I utilities -I stencils/seidel-2d utilities/polybench.c stencils/seidel-2d/seidel-2d.c  -o stencils/seidel-2d/seidel-2d_time
+	clang ${CFLAGS} ${POLLY_FLAGS} -DTSTEPS=100 -DN=5000 -I utilities -I stencils/seidel-2d utilities/polybench.c stencils/seidel-2d/seidel-2d.c  -o stencils/seidel-2d/seidel-2d_poly_time
 
 clean:
-	rm linear-algebra/kernels/atax/atax_time
-	rm linear-algebra/kernels/2mm/2mm_time
-	rm linear-algebra/kernels/3mm/3mm_time
-	rm linear-algebra/kernels/bicg/bicg_time
-	rm linear-algebra/kernels/cholesky/cholesky_time
-	rm linear-algebra/kernels/doitgen/doitgen_time 
-	rm linear-algebra/kernels/gemm/gemm_time 
-	rm linear-algebra/kernels/gemver/gemver_time 
-	rm linear-algebra/kernels/gesummv/gesummv_time 
-	rm linear-algebra/kernels/mvt/mvt_time 
-	rm linear-algebra/kernels/symm/symm_time 
-	rm linear-algebra/kernels/syr2k/syr2k_time 
-	rm linear-algebra/kernels/syrk/syrk_time 
-	rm linear-algebra/kernels/trisolv/trisolv_time 
-	rm linear-algebra/kernels/trmm/trmm_time 
-	rm linear-algebra/solvers/durbin/durbin_time 
-	rm linear-algebra/solvers/dynprog/dynprog_time 
-	rm linear-algebra/solvers/gramschmidt/gramschmidt_time
-	rm linear-algebra/solvers/lu/lu_time 
-	rm linear-algebra/solvers/ludcmp/ludcmp_time 
-	rm datamining/correlation/correlation_time
-	rm datamining/covariance/covariance_time 
-	rm medley/floyd-warshall/floyd-warshall_time
-	rm medley/reg_detect/reg_detect_time
-	rm stencils/adi/adi_time
-	rm stencils/fdtd-2d/fdtd-2d_time
-	rm stencils/fdtd-apml/fdtd-apml_time
-	rm stencils/jacobi-1d-imper/jacobi-1d-imper_time
-	rm stencils/jacobi-2d-imper/jacobi-2d-imper_time
-	rm stencils/seidel-2d/seidel-2d_time
+	rm linear-algebra/kernels/atax/atax_*time
+	rm linear-algebra/kernels/2mm/2mm_*time
+	rm linear-algebra/kernels/3mm/3mm_*time
+	rm linear-algebra/kernels/bicg/bicg_*time
+	rm linear-algebra/kernels/cholesky/cholesky_*time
+	rm linear-algebra/kernels/doitgen/doitgen_*time 
+	rm linear-algebra/kernels/gemm/gemm_*time 
+	rm linear-algebra/kernels/gemver/gemver_*time 
+	rm linear-algebra/kernels/gesummv/gesummv_*time 
+	rm linear-algebra/kernels/mvt/mvt_*time 
+	rm linear-algebra/kernels/symm/symm_*time 
+	rm linear-algebra/kernels/syr2k/syr2k_*time 
+	rm linear-algebra/kernels/syrk/syrk_*time 
+	rm linear-algebra/kernels/trisolv/trisolv_*time 
+	rm linear-algebra/kernels/trmm/trmm_*time 
+	rm linear-algebra/solvers/durbin/durbin_*time 
+	rm linear-algebra/solvers/dynprog/dynprog_*time 
+	rm linear-algebra/solvers/gramschmidt/gramschmidt_*time
+	rm linear-algebra/solvers/lu/lu_*time 
+	rm linear-algebra/solvers/ludcmp/ludcmp_*time 
+	rm datamining/correlation/correlation_*time
+	rm datamining/covariance/covariance_*time 
+	rm medley/floyd-warshall/floyd-warshall_*time
+	rm medley/reg_detect/reg_detect_*time
+	rm stencils/adi/adi_*time
+	rm stencils/fdtd-2d/fdtd-2d_*time
+	rm stencils/fdtd-apml/fdtd-apml_*time
+	rm stencils/jacobi-1d-imper/jacobi-1d-imper_*time
+	rm stencils/jacobi-2d-imper/jacobi-2d-imper_*time
+	rm stencils/seidel-2d/seidel-2d_*time
 
