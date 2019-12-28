@@ -1,5 +1,7 @@
 #/bin/sh
 
+export PATH=~tony/projects/polly/llvm_build/bin:$PATH
+
 VMMALLOC_POOL_SIZE=$((5*1024*1024*1024))
 
 #LD_PRELOAD=libvmmalloc.so.1 grep "pmem" /proc/mounts
@@ -10,7 +12,7 @@ timestamp=`date '+%Y_%m_%d__%H_%M_%S'`;
 hostname=`hostname`
 
 # log files
-RESULTS_DIR="./comerge-pb-src-results-"$timestamp
+RESULTS_DIR="./comerge-pb-poly-results-"$timestamp
 MAKE_LOG=$RESULTS_DIR"/pb-make-"$hostname"-"$timestamp".log"
 DRAM4K_FILE=$RESULTS_DIR"/pb-dram4K-"$hostname"-"$timestamp".log"
 DRAM2M_FILE=$RESULTS_DIR"/pb-dram2M-"$hostname"-"$timestamp".log"
@@ -123,23 +125,25 @@ for b in $BENCH
 do
     echo "Start $b"
     echo $b >> $PMEM4_FILE
-    echo hwloc-bind--single node:$node_pmem4 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM4_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM4_FILE >> $PMEM4_FILE 2>&1
+    hwloc-bind --single node:$node_pmem4 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM4_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM4_FILE >> $PMEM4_FILE 2>&1
     echo finished >> $PMEM4_FILE
     echo $b >> $PMEM3_FILE
-    echo hwloc-bind--single node:$node_pmem3 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM3_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM3_FILE >> $PMEM3_FILE 2>&1
+    hwloc-bind --single node:$node_pmem3 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM3_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM3_FILE >> $PMEM3_FILE 2>&1
     echo finished >> $PMEM3_FILE
     echo $b >> $PMEM72M_FILE
-    echo hwloc-bind--single node:$node_pmem7 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM72M_FILE >> $PMEM72M_FILE 2>&1
+    echo hwloc-bind --single node:$node_pmem7 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM72M_FILE >> $PMEM72M_FILE 2>&1
     echo finished >> $PMEM72M_FILE
     echo $b >> $DRAM4K_FILE
-    echo hwloc-bind--single node:0  --verbose -- perf stat -B -d -d -d $b >>$DRAM4K_FILE 2>&1
+    hwloc-bind --single node:0  --verbose -- perf stat -B -d -d -d $b >>$DRAM4K_FILE 2>&1
     echo finished >> $DRAM4K_FILE
-    echo $b >> $DRAM2M_FILE
-    echo hwloc-bind--single node:1  --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh $b >>$DRAM2M_FILE 2>&1
-    echo finished >> $DRAM2M_FILE
+    # omitted - already run once
+    # echo $b >> $DRAM2M_FILE
+    # hwloc-bind --single node:1  --verbose -- perf stat -B -d -d -d ./wrapper-hugetlb.sh $b $DRAM2M_FILE >>$DRAM2M_FILE 2>&1
+    # echo finished >> $DRAM2M_FILE
     echo "End $b"
 done
 
+# omitted - need to coordinate for use of the pmem7 device
 # Now, do it again on pmem7 with 4KB pages
 #umount /mnt/pmem7
 #parted -s -a optimal -- /dev/pmem7 mklabel gpt mkpart primary ext4 1MiB -4096s >> $PMEM74K_FILE 2>&1
@@ -153,7 +157,7 @@ for b in $BENCH
 do
     echo "Start $b"
     echo $b >> $PMEM74K_FILE
-    echo hwloc-bind--single node:$node_pmem7 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM74K_FILE >> $PMEM74K_FILE 2>&1
+    echo hwloc-bind --single node:$node_pmem7 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh $PMEM7_POOL_DIR $VMMALLOC_POOL_SIZE $b $PMEM74K_FILE >> $PMEM74K_FILE 2>&1
     echo finished >> $PMEM74K_FILE
     echo "End $b"
 done
