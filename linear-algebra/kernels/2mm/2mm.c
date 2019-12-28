@@ -80,20 +80,32 @@ void kernel_2mm(int ni, int nj, int nk, int nl,
 
 #pragma scop
   /* D := alpha*A*B*C + beta*D */
-  for (i = 0; i < _PB_NI; i++)
-    for (j = 0; j < _PB_NJ; j++)
-      {
-	tmp[i][j] = 0;
-	for (k = 0; k < _PB_NK; ++k)
-	  tmp[i][j] += alpha * A[i][k] * B[k][j];
+  for (i = 0; i < _PB_NI; i++) {
+    for (j = 0; j < _PB_NJ; j++) {
+      POLYBENCH_MEMTRACE_WRITE_DATA_2D(tmp,i,j);
+      tmp[i][j] = 0;
+      for (k = 0; k < _PB_NK; ++k) {
+        POLYBENCH_MEMTRACE_READ_DATA_2D(tmp,i,j);
+        POLYBENCH_MEMTRACE_READ_DATA_2D(A,i,k);
+        POLYBENCH_MEMTRACE_READ_DATA_2D(B,k,j);
+        POLYBENCH_MEMTRACE_WRITE_DATA_2D(tmp,i,j);
+        tmp[i][j] += alpha * A[i][k] * B[k][j];
       }
-  for (i = 0; i < _PB_NI; i++)
-    for (j = 0; j < _PB_NL; j++)
-      {
-	D[i][j] *= beta;
-	for (k = 0; k < _PB_NJ; ++k)
-	  D[i][j] += tmp[i][k] * C[k][j];
+    }
+    for (i = 0; i < _PB_NI; i++) {
+      for (j = 0; j < _PB_NL; j++) {
+        POLYBENCH_MEMTRACE_WRITE_DATA_2D(D,i,j);
+        D[i][j] *= beta;
+        for (k = 0; k < _PB_NJ; ++k) {
+          POLYBENCH_MEMTRACE_READ_DATA_2D(D,i,j);
+          POLYBENCH_MEMTRACE_READ_DATA_2D(tmp,i,k);
+          POLYBENCH_MEMTRACE_READ_DATA_2D(C,k,j); 
+          POLYBENCH_MEMTRACE_WRITE_DATA_2D(D,i,j);
+          D[i][j] += tmp[i][k] * C[k][j];
+        }
       }
+    }
+  }
 #pragma endscop
 
 }

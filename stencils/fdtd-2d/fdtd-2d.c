@@ -81,19 +81,42 @@ void kernel_fdtd_2d(int tmax,
 
   for(t = 0; t < _PB_TMAX; t++)
     {
-      for (j = 0; j < _PB_NY; j++)
-	ey[0][j] = _fict_[t];
-      for (i = 1; i < _PB_NX; i++)
-	for (j = 0; j < _PB_NY; j++)
-	  ey[i][j] = ey[i][j] - 0.5*(hz[i][j]-hz[i-1][j]);
-      for (i = 0; i < _PB_NX; i++)
-	for (j = 1; j < _PB_NY; j++)
-	  ex[i][j] = ex[i][j] - 0.5*(hz[i][j]-hz[i][j-1]);
-      for (i = 0; i < _PB_NX - 1; i++)
-	for (j = 0; j < _PB_NY - 1; j++)
-	  hz[i][j] = hz[i][j] - 0.7*  (ex[i][j+1] - ex[i][j] +
-				       ey[i+1][j] - ey[i][j]);
+      for (j = 0; j < _PB_NY; j++) {
+        POLYBENCH_MEMTRACE_READ_DATA_1D(_fict_, t);
+        POLYBENCH_MEMTRACE_WRITE_DATA_2D(ey, 0, j); 
+	      ey[0][j] = _fict_[t];
+      }
+      for (i = 1; i < _PB_NX; i++) {
+      	for (j = 0; j < _PB_NY; j++) {
+          POLYBENCH_MEMTRACE_READ_DATA_2D(ey,i,j);
+          POLYBENCH_MEMTRACE_READ_DATA_2D(hz,i,j);
+          POLYBENCH_MEMTRACE_READ_DATA_2D(hz,i-1,j);
+          POLYBENCH_MEMTRACE_WRITE_DATA_2D(ey,i,j);
+	        ey[i][j] = ey[i][j] - 0.5*(hz[i][j]-hz[i-1][j]);
+        }
+      }
+      for (i = 0; i < _PB_NX; i++) {
+        for (j = 1; j < _PB_NY; j++) {
+          POLYBENCH_MEMTRACE_READ_DATA_2D(ex,i,j);
+          POLYBENCH_MEMTRACE_READ_DATA_2D(hz,i,j);
+          POLYBENCH_MEMTRACE_READ_DATA_2D(hz,i,j-1);
+          POLYBENCH_MEMTRACE_WRITE_DATA_2D(ex,i,j);
+	        ex[i][j] = ex[i][j] - 0.5*(hz[i][j]-hz[i][j-1]);
+        }
+      }      
+    for (i = 0; i < _PB_NX - 1; i++) {
+      for (j = 0; j < _PB_NY - 1; j++) {
+        POLYBENCH_MEMTRACE_READ_DATA_2D(hz,i,j);
+        POLYBENCH_MEMTRACE_READ_DATA_2D(ex,i,j+1);
+        POLYBENCH_MEMTRACE_READ_DATA_2D(ex,i,j);
+        POLYBENCH_MEMTRACE_READ_DATA_2D(ey,i+1,j);
+        POLYBENCH_MEMTRACE_READ_DATA_2D(ey,i,j);
+        POLYBENCH_MEMTRACE_WRITE_DATA_2D(hz,i,j);
+        hz[i][j] = hz[i][j] - 0.7*  (ex[i][j+1] - ex[i][j] +
+                  ey[i+1][j] - ey[i][j]); 
+      }
     }
+  }
 
 #pragma endscop
 }

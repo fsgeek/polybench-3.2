@@ -24,6 +24,7 @@
 # define POLYBENCH_H
 
 # include <stdlib.h>
+#include <stdint.h>
 
 /* Array padding. By default, none is used. */
 # ifndef POLYBENCH_PADDING_FACTOR
@@ -194,6 +195,26 @@ extern void polybench_papi_init();
 extern void polybench_papi_close();
 extern void polybench_papi_print();
 # endif
+
+/* used for tracing memory access pattern - not for profiling */
+/* header: access, base, offset, line */
+#ifdef POLYBENCH_MEMTRACE
+#define POLYBENCH_MEMTRACE_DATA(t,b,o) printf("%c,%p,0x%lx,%d\n",t,b,o,__LINE__)
+#define POLYBENCH_MEMTRACE_ACCESS(t,a,s) printf("%s,%p,%zu\n", t, a, s)
+#else
+#define POLYBENCH_MEMTRACE_DATA(t,b,o)
+#define POLYBENCH_MEMTRACE_ACCESS(t,a,s)
+#endif
+#define POLYBENCH_MEMTRACE_READ_ACCESS(a,s) POLYBENCH_MEMTRACE_ACCESS("r", a, s)
+#define POLYBENCH_MEMTRACE_WRITE_ACCESS(a,s) POLYBENCH_MEMTRACE_ACCESS("w", a, s)
+#define POLYBENCH_MEMTRACE_READ(d) POLYBENCH_MEMTRACE_READ_ACCESS(&d, sizeof(d))
+#define POLYBENCH_MEMTRACE_WRITE(d) POLYBENCH_MEMTRACE_WRITE_ACCESS(&d, sizeof(d))
+#define POLYBENCH_MEMTRACE_READ_DATA(b,a) POLYBENCH_MEMTRACE_DATA('r',b,(uintptr_t)(a) - (uintptr_t)(b))
+#define POLYBENCH_MEMTRACE_WRITE_DATA(b,a) POLYBENCH_MEMTRACE_DATA('w',b,(uintptr_t)(a) - (uintptr_t)(b))
+#define POLYBENCH_MEMTRACE_READ_DATA_2D(d,idx1,idx2) POLYBENCH_MEMTRACE_DATA('r',d,(uintptr_t)(&d[idx1][idx2]) - (uintptr_t)d)
+#define POLYBENCH_MEMTRACE_WRITE_DATA_2D(d,idx1,idx2) POLYBENCH_MEMTRACE_DATA('w',d,(uintptr_t)(&d[idx1][idx2]) - (uintptr_t)d)
+#define POLYBENCH_MEMTRACE_READ_DATA_1D(d,idx) POLYBENCH_MEMTRACE_DATA('r',d,(uintptr_t)(&d[idx]) - (uintptr_t)d)
+#define POLYBENCH_MEMTRACE_WRITE_DATA_1D(d,idx) POLYBENCH_MEMTRACE_DATA('w',d,(uintptr_t)(&d[idx]) - (uintptr_t)d)
 
 /* Function prototypes. */
 extern void* polybench_alloc_data(unsigned long long int n, int elt_size);
