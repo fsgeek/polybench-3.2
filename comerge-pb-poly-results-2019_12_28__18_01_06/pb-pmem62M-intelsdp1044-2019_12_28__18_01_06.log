@@ -1,0 +1,58 @@
+mke2fs 1.45.3 (14-Jul-2019)
+Creating filesystem with 390167040 4k blocks and 97542144 inodes
+Filesystem UUID: 3efd9a89-732a-4007-9b83-f94b883390c0
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968, 
+	102400000, 214990848
+
+Allocating group tables:     0/11907           done                            
+Writing inode tables:     0/11907           done                            
+Creating journal (262144 blocks): done
+Writing superblocks and filesystem accounting information:     0/11907           done
+
+Disk /dev/pmem6: 1.46 TiB, 1598128390144 bytes, 3121344512 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 5071BB33-CE4C-4AA1-BBA6-0905B72739D6
+
+Device       Start        End    Sectors  Size Type
+/dev/pmem6p1  4096 3121340416 3121336321  1.5T Linux filesystem
+./linear-algebra/kernels/2mm/2mm_time
+binding on cpu set 0x0000ffff,0xf00000ff,0xfff00000
+./wrapper-comerge.sh: line 5: $4: ambiguous redirect
+./wrapper-comerge.sh: line 6: $4: ambiguous redirect
+
+ Performance counter stats for './wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/2mm/2mm_time ./comerge-pb-poly-results-2019_12_28__18_01_06/pb-pmem62M-intelsdp1044-2019_12_28__18_01_06.log':
+
+              1.08 msec task-clock                #    0.840 CPUs utilized          
+                 1      context-switches          #    0.923 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               209      page-faults               #    0.193 M/sec                  
+         4,182,271      cycles                    #    3.862 GHz                      (84.74%)
+         3,236,265      instructions              #    0.77  insn per cycle         
+           667,803      branches                  #  616.666 M/sec                  
+            22,793      branch-misses             #    3.41% of all branches        
+           865,541      L1-dcache-loads           #  799.262 M/sec                  
+            54,517      L1-dcache-load-misses     #    6.30% of all L1-dcache hits  
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-load-misses                                               (0.00%)
+   <not supported>      L1-icache-loads                                             
+     <not counted>      L1-icache-load-misses                                         (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      iTLB-loads                                                    (0.00%)
+     <not counted>      iTLB-load-misses                                              (0.00%)
+   <not supported>      L1-dcache-prefetches                                        
+   <not supported>      L1-dcache-prefetch-misses                                   
+
+       0.001288500 seconds time elapsed
+
+       0.000153000 seconds user
+       0.001157000 seconds sys
+
+
+finished
+./linear-algebra/kernels/2mm/2mm_poly_time

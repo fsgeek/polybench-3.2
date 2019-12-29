@@ -1,0 +1,202 @@
+mke2fs 1.45.3 (14-Jul-2019)
+Creating filesystem with 390167040 4k blocks and 97542144 inodes
+Filesystem UUID: e2f0ad37-e178-4e37-9f3a-d71dcca40685
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968, 
+	102400000, 214990848
+
+Allocating group tables:     0/11907           done                            
+Writing inode tables:     0/11907           done                            
+Creating journal (262144 blocks): done
+Writing superblocks and filesystem accounting information:     0/11907           done
+
+Disk /dev/pmem6: 1.46 TiB, 1598128390144 bytes, 3121344512 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 35E0CD67-0F78-43C1-8F84-B42AF625E027
+
+Device       Start        End    Sectors  Size Type
+/dev/pmem6p1  4096 3121340416 3121336321  1.5T Linux filesystem
+./linear-algebra/kernels/2mm/2mm_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/2mm/2mm_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/2mm/2mm_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/2mm/2mm_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/3mm/3mm_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/3mm/3mm_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/3mm/3mm_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/3mm/3mm_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/atax/atax_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/atax/atax_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/atax/atax_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/atax/atax_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/bicg/bicg_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/bicg/bicg_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/bicg/bicg_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/bicg/bicg_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/cholesky/cholesky_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/cholesky/cholesky_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/cholesky/cholesky_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/cholesky/cholesky_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/doitgen/doitgen_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/doitgen/doitgen_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/doitgen/doitgen_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/doitgen/doitgen_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/gemm/gemm_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/gemm/gemm_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/gemm/gemm_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/gemm/gemm_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/gemver/gemver_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/gemver/gemver_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/gemver/gemver_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/gemver/gemver_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/gesummv/gesummv_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/gesummv/gesummv_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/gesummv/gesummv_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/gesummv/gesummv_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/mvt/mvt_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/mvt/mvt_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/mvt/mvt_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/mvt/mvt_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/symm/symm_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/symm/symm_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/symm/symm_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/symm/symm_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/syr2k/syr2k_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/syr2k/syr2k_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/syr2k/syr2k_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/syr2k/syr2k_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/syrk/syrk_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/syrk/syrk_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/syrk/syrk_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/syrk/syrk_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/trisolv/trisolv_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/trisolv/trisolv_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/trisolv/trisolv_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/trisolv/trisolv_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/trmm/trmm_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/trmm/trmm_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/kernels/trmm/trmm_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/kernels/trmm/trmm_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/durbin/durbin_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/durbin/durbin_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/durbin/durbin_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/durbin/durbin_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/dynprog/dynprog_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/dynprog/dynprog_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/dynprog/dynprog_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/dynprog/dynprog_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/gramschmidt/gramschmidt_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/gramschmidt/gramschmidt_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/gramschmidt/gramschmidt_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/gramschmidt/gramschmidt_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/lu/lu_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/lu/lu_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/lu/lu_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/lu/lu_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/ludcmp/ludcmp_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/ludcmp/ludcmp_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./linear-algebra/solvers/ludcmp/ludcmp_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./linear-algebra/solvers/ludcmp/ludcmp_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./datamining/correlation/correlation_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./datamining/correlation/correlation_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./datamining/correlation/correlation_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./datamining/correlation/correlation_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./datamining/covariance/covariance_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./datamining/covariance/covariance_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./datamining/covariance/covariance_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./datamining/covariance/covariance_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./medley/floyd-warshall/floyd-warshall_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./medley/floyd-warshall/floyd-warshall_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./medley/floyd-warshall/floyd-warshall_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./medley/floyd-warshall/floyd-warshall_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./medley/reg_detect/reg_detect_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./medley/reg_detect/reg_detect_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./medley/reg_detect/reg_detect_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./medley/reg_detect/reg_detect_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/adi/adi_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/adi/adi_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/adi/adi_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/adi/adi_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/fdtd-2d/fdtd-2d_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/fdtd-2d/fdtd-2d_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/fdtd-2d/fdtd-2d_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/fdtd-2d/fdtd-2d_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/fdtd-apml/fdtd-apml_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/fdtd-apml/fdtd-apml_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/fdtd-apml/fdtd-apml_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/fdtd-apml/fdtd-apml_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/jacobi-1d-imper/jacobi-1d-imper_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/jacobi-1d-imper/jacobi-1d-imper_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/jacobi-1d-imper/jacobi-1d-imper_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/jacobi-1d-imper/jacobi-1d-imper_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/jacobi-2d-imper/jacobi-2d-imper_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/jacobi-2d-imper/jacobi-2d-imper_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/jacobi-2d-imper/jacobi-2d-imper_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/jacobi-2d-imper/jacobi-2d-imper_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/seidel-2d/seidel-2d_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/seidel-2d/seidel-2d_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
+./stencils/seidel-2d/seidel-2d_poly_time
+hwloc-bind --single node:1 --verbose -- perf stat -B -d -d -d ./wrapper-comerge.sh 5368709120 ./stencils/seidel-2d/seidel-2d_poly_time ./comerge-pb-poly-results-2019_12_28__17_53_21/pb-pmem62M-intelsdp1044-2019_12_28__17_53_21.log
+finished
